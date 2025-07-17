@@ -688,3 +688,85 @@ th {
         top: 20px;
     }
 }
+
+.section>.head-tag {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 12px;
+    letter-spacing: 0.1em;
+    font-size: 11px;
+    line-height: none;
+}
+
+.head-tag::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 8px;
+    background-color: #00bc9b;
+    transform: translateY(-1px);
+    vertical-align: middle;
+}
+
+.header .title {
+    width: 100%;
+    display: flex;
+    text-align: left;
+    padding: 20px 0;
+    /* border-bottom: 1px solid #ccc; */
+    margin-bottom: 24px;
+}
+
+.header .title>* {
+    flex: 1;
+}
+
+.title h2 {
+    font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
+    font-size: 32px;
+    line-height: 110%;
+    font-weight: 300;
+    letter-spacing: -0.0025em;
+}
+
+.services-flex {
+    display: flex;
+    flex-direction: column;
+    /* gap: 12px; */
+}
+
+.services-flex .card {
+    border: none;
+    border-top: 1px dashed rgba(204, 204, 204, 0.5);
+    display: flex;
+    flex-direction: row;
+    padding: 8px 0;
+    padding-bottom: 24px;
+}
+
+.services-flex .card .service-title {
+    flex: 1;
+}
+
+.service-title .description {
+    padding: 0 12px;
+}
+
+.card .items {
+    width: 45%;
+    display: flex;
+    gap: 12px;
+}
+
+.col1,
+.col2 {
+    flex: 1;
+    list-style: none;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 0.875rem;
+    line-height: 1.35;
+    letter-spacing: -0.015em;
+    color: rgba(255, 255, 255, 0.6);
+}
