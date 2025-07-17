@@ -7,6 +7,7 @@
     <title>Bảng Giá Caresoft</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form.css">
 </head>
 
 <body>
@@ -26,7 +27,7 @@
                         </div>
                     </div>
                     <div class="card-btn">
-                        <a href="#" class="btn-primary">Sử dụng ngay</a>
+                        <a href="#" class="btn-primary btn-open-form">Sử dụng ngay</a>
                         <a href="#detail" class="btn-link">Xem chi tiết</a>
                     </div>
                 </div>
@@ -321,6 +322,50 @@
         </div>
         <button class="cta-btn">Đăng ký tư vấn</button>
     </div>
+
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup">
+            <div class="form-header">
+                <button class="btn-close" id="btnClosePopup">&times;</button>
+                <h2>Liên hệ/ Đăng ký tư vấn</h2>
+            </div>
+            <form id="contactForm" class="form">
+                <div class="form-item">
+                    <label for="name">Họ và tên *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="phone">Số điện thoại *</label>
+                    <input type="tel" id="phone" name="phone" required pattern="^0[0-9]{9,10}$"
+                        placeholder="Ví dụ: 0912345678">
+                </div>
+                <div class="form-item">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-item ">
+                    <label for="type">Mục đích của bạn *</label>
+                    <select name="type" id="type">
+                        <option value="" disabled selected>-- Chọn mục đích --</option>
+                        <option value="product">Tư vấn sản phẩm</option>
+                        <option value="support">Hỗ trợ kỹ thuật</option>
+                        <option value="other">Khác</option>
+                    </select>
+                </div>
+
+                <div class="form-item area">
+                    <label for="message">Nội dung chi tiết</label>
+                    <textarea id="message" name="message" rows="6"></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Gửi thông tin</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="openForm.js"></script>
 </body>
 
 </html>
