@@ -530,12 +530,10 @@ th {
 }
 
 .section-title {
-    text-align: center;
-    font-size: 1.875rem;
-    /* text-3xl */
+    text-align: left;
+    /* font-size: 1.875rem;
     font-weight: bold;
-    margin-bottom: 3rem;
-    /* mb-12 */
+    margin-bottom: 3rem; */
 }
 
 .benefits-grid {

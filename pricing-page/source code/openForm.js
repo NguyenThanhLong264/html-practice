@@ -1,20 +1,22 @@
-const btnOpen = document.querySelector('.btn-open-form');
+const btnsOpen = document.querySelectorAll('.btn-open-form');
 const popup = document.getElementById('popupOverlay');
 const btnClose = document.getElementById('btnClosePopup');
 const form = document.getElementById('contactForm');
 
-btnOpen.addEventListener('click', () => {
-    popup.style.display = 'flex';
+btnsOpen.forEach(btn => {
+    btn.addEventListener('click', () => {
+        popup.classList.add('active');
+    });
 });
 
 btnClose.addEventListener('click', () => {
-    popup.style.display = 'none';
+    popup.classList.remove('active');
 });
 
 // Đóng khi click ra ngoài popup
 popup.addEventListener('click', (e) => {
     if (e.target === popup) {
-        popup.style.display = 'none';
+        popup.classList.remove('active');
     }
 });
 
