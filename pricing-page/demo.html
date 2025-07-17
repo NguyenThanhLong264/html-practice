@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Page</title>
+    <link href="./styles.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-white text-gray-900">
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="header-title">Simple, transparent pricing</h1>
+            <p class="header-subtitle">Choose the perfect plan for your needs. Always know what you'll pay.</p>
+            <div class="toggle-buttons">
+                <button class="btn-monthly">Monthly</button>
+                <button class="btn-annual">Annual</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <!-- Card 1 -->
+        <div class="pricing-card">
+            <div class="pricing-inner">
+                <h3 class="pricing-title">Starter</h3>
+                <div class="pricing-price">
+                    <span>$19</span>
+                    <span class="period">per month</span>
+                </div>
+                <p class="pricing-description">Perfect for individuals and small projects</p>
+                <button class="btn-outline">Get Started</button>
+                <ul class="feature-list">
+                    <li><i data-lucide="check"></i>Up to 5 projects</li>
+                    <li><i data-lucide="check"></i>Basic analytics</li>
+                    <li><i data-lucide="check"></i>24-hour support response time</li>
+                    <li><i data-lucide="check"></i>1GB storage</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Card 2 - Popular -->
+        <div class="pricing-card popular">
+            <div class="pricing-inner">
+                <div class="badge-popular">Most Popular</div>
+                <h3 class="pricing-title">Professional</h3>
+                <div class="pricing-price">
+                    <span>$49</span>
+                    <span class="period">per month</span>
+                </div>
+                <p class="pricing-description">Ideal for growing businesses</p>
+                <button class="btn-primary">Get Started</button>
+                <ul class="feature-list">
+                    <li><i data-lucide="check"></i>Up to 15 projects</li>
+                    <li><i data-lucide="check"></i>Advanced analytics</li>
+                    <li><i data-lucide="check"></i>4-hour support response time</li>
+                    <li><i data-lucide="check"></i>10GB storage</li>
+                    <li><i data-lucide="check"></i>Custom domain</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="pricing-card">
+            <div class="pricing-inner">
+                <h3 class="pricing-title">Enterprise</h3>
+                <div class="pricing-price">
+                    <span>$99</span>
+                    <span class="period">per month</span>
+                </div>
+                <p class="pricing-description">For large organizations with specific needs</p>
+                <button class="btn-outline">Contact Sales</button>
+                <ul class="feature-list">
+                    <li><i data-lucide="check"></i>Unlimited projects</li>
+                    <li><i data-lucide="check"></i>Premium analytics</li>
+                    <li><i data-lucide="check"></i>1-hour support response time</li>
+                    <li><i data-lucide="check"></i>Unlimited storage</li>
+                    <li><i data-lucide="check"></i>Custom domain</li>
+                    <li><i data-lucide="check"></i>Dedicated account manager</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compare Plans Section -->
+    <section class="compare-section">
+        <div class="container">
+            <h2 class="section-title">Compare Plans</h2>
+            <div class="table-wrapper">
+                <table class="compare-table">
+                    <thead>
+                        <tr>
+                            <th>Features</th>
+                            <th>Starter</th>
+                            <th class="highlight">Professional</th>
+                            <th>Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Projects</td>
+                            <td>5</td>
+                            <td class="highlight">15</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td>Storage</td>
+                            <td>1GB</td>
+                            <td class="highlight">10GB</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td>Support</td>
+                            <td>24 hours</td>
+                            <td class="highlight">4 hours</td>
+                            <td>1 hour</td>
+                        </tr>
+                        <tr>
+                            <td>Custom domain</td>
+                            <td>&mdash;</td>
+                            <td class="highlight"><i data-lucide="check"></i></td>
+                            <td><i data-lucide="check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Dedicated manager</td>
+                            <td>&mdash;</td>
+                            <td class="highlight">&mdash;</td>
+                            <td><i data-lucide="check"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently asked questions</h2>
+            <div class="faq-item">
+                <h3>How does billing work?</h3>
+                <p>We offer both monthly and annual billing options. You can switch between plans at any time, and your
+                    billing will be prorated accordingly.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I change my plan later?</h3>
+                <p>Yes, you can upgrade or downgrade your plan at any time. Billing will be adjusted accordingly.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Do you offer a free trial?</h3>
+                <p>Yes, we offer a 14-day free trial on all plans. No credit card is required.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What happens when my trial ends?</h3>
+                <p>You’ll need to choose a plan to continue. We’ll notify you before the trial ends.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Do you offer discounts for nonprofits?</h3>
+                <p>Yes, contact our sales team for special pricing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Ready to get started?</h2>
+            <p class="cta-subtitle">Join thousands of customers already growing with us.</p>
+            <button class="btn-cta">Start your free trial</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Roadmap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Guides</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Company, Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

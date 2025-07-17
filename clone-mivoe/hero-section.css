@@ -1,0 +1,46 @@
+.hero-section {
+    align-items: center;
+}
+
+.hero-content {
+    width: 55%;
+    text-align: center;
+}
+
+.hero-text {
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.bill-btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 999px;
+    border-color: transparent;
+    font-size: 16px;
+    /* filter: brightness(100%); */
+
+}
+
+.bill-btn:hover {
+    filter: brightness(95%);
+}
+
+#learn-more {
+    background-color: #000;
+    color: whitesmoke;
+}
+
+.hero-img img {
+    width: 100%;
+    max-width: 1080px;
+}
