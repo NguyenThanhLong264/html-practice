@@ -1,0 +1,144 @@
+.hero-section {
+    background-color: rgb(254, 250, 242);
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-content .hero-text {
+    flex: 0.7;
+    padding: 0 12px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 900;
+    font-family: Feature, Times, serif;
+    line-height: calc(1em + 8px);
+    letter-spacing: 0.75px;
+    transform: scaleY(1.1);
+}
+
+.tag {
+    font-size: 12px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    transform: scaleY(1.2);
+}
+
+.hero-text .description {
+    font-weight: 500;
+}
+
+.hero-text>* {
+    margin: 0 0 12px;
+}
+
+.hero-content .hero-nav {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.hero-nav .text {
+    display: flex;
+}
+
+.new p {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
+    background-color: rgb(212, 244, 121);
+    border-radius: 4px;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.underline-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    padding-bottom: 4px;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 100% 100%;
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    transition: background-size 0.4s ease;
+    overflow: hidden;
+}
+
+.hero-item:hover .underline-link {
+    animation: underline-swipe 0.8s ease;
+}
+
+@keyframes underline-swipe {
+    0% {
+        background-size: 0% 2px;
+        background-position: 0 100%;
+
+    }
+
+    10% {
+        background-size: 10% 1px;
+    }
+
+    20% {
+        background-size: 20% 1px;
+    }
+
+    30% {
+        background-size: 30% 1px;
+    }
+
+    40% {
+        background-size: 40% 1px;
+    }
+
+    50% {
+        background-size: 50% 1px;
+    }
+
+    60% {
+        background-size: 60% 1px;
+    }
+
+    70% {
+        background-size: 70% 1px;
+    }
+
+    80% {
+        background-size: 80% 1px;
+    }
+
+    90% {
+        background-size: 90% 1px;
+    }
+
+    100% {
+        background-size: 100% 1px;
+        background-position: 100% 100%;
+    }
+}
+
+.hero-item {
+    align-items: center;
+}
+
+.hero-item .underline-link {
+    color: rgb(22, 20, 12);
+    font-weight: 500;
+    text-decoration: none;
+    font-stretch: expanded;
+    line-height: calc(1.25em + 6px);
+    min-height: calc(1.25em + 8px);
+    font-size: 18px;
+    font-family: 'Roboto Flex', sans-serif;
+}
