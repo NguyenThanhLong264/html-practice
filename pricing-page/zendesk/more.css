@@ -2,6 +2,10 @@
     background-color: rgb(254, 250, 242);
 }
 
+.card-section {
+    background-color: rgb(246, 240, 230);
+}
+
 .hero-content {
     display: flex;
     flex-direction: row;
@@ -141,4 +145,108 @@
     min-height: calc(1.25em + 8px);
     font-size: 18px;
     font-family: 'Roboto Flex', sans-serif;
+}
+
+.card-wrapper .card-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-flex>* {
+    width: 25%;
+    flex-shrink: 0;
+    background-color: rgb(254, 250, 242);
+    padding: 32px 18px;
+    border-bottom: 1px solid black;
+    min-height: 512px;
+    text-align: left;
+}
+
+.card-flex>*:not(:first-child) {
+    border-left: 1px solid #ccc;
+}
+
+.card-main {
+    display: flex;
+    flex-direction: column;
+    height: 290px;
+}
+
+.card-main .text h4 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.card-main .text p {
+    font-size: 14px;
+}
+
+.text .subtitle {
+    height: 70px;
+}
+
+.card-main .text .money {
+    height: 40px;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.text .tiny-tag {
+    height: 18px;
+}
+
+.text>* {
+    margin-bottom: 8px;
+}
+
+.card-main .btn {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.card-main .card-btn {
+    position: relative;
+    padding: 12px 24px;
+    border-radius: 999px;
+    background-color: #9a4497;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.card-main .card-btn span {
+    display: block;
+    transition: transform 0.3s ease;
+    transform: translateY(0);
+}
+
+.card-main .card-btn::after {
+    content: 'Buy now';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    transform: translateY(0);
+    transition: transform 600ms cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.card-main .card-btn:hover {
+    background-color: black;
+    transform: scale(1.05);
+}
+
+.card-main .card-btn:hover span {
+    transform: translateY(-200%);
+}
+
+.card-main .card-btn:hover::after {
+    transform: translateY(-160%);
 }
