@@ -17,12 +17,12 @@
 }
 
 .hero-text h1 {
-    font-size: 48px;
+    font-size: 50px;
     font-weight: 900;
-    font-family: Feature, Times, serif;
-    line-height: calc(1em + 8px);
+    font-family: Times, serif;
+    line-height: normal;
     letter-spacing: 0.75px;
-    transform: scaleY(1.1);
+    transform: scaleY(1.05);
 }
 
 .tag {
@@ -157,10 +157,11 @@
     width: 30%;
     flex-shrink: 0;
     background-color: rgb(254, 250, 242);
-    padding: 32px 18px;
+    padding: 32px 22px;
     border-bottom: 1px solid black;
     min-height: 512px;
     text-align: left;
+    position: relative;
 }
 
 .card-flex>*:not(:first-child) {
@@ -263,4 +264,44 @@
 .magic-btn:hover {
     background-color: #000;
     transform: scale(1.05);
+}
+
+.card-item .marker {
+    position: absolute;
+    height: 32px;
+    width: 100%;
+    background: #000;
+    left: 0;
+    top: -32px;
+    color: white;
+    text-align: center;
+    line-height: 32px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.title-med {
+    font-weight: 600;
+}
+
+.card-features,
+.card-features p {
+    font-size: 16px;
+}
+
+.list-features {
+    list-style: none;
+}
+
+.list-features li::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: currentColor;
+    -webkit-mask-image: url('assets/icons/tick.svg');
+    mask-image: url('assets/icons/tick.svg');
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    margin-right: 6px;
 }

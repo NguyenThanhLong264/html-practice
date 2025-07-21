@@ -49,3 +49,7 @@ button {
     font-weight: 500;
     padding: 12px 24px;
 }
+
+ul {
+    list-style: none;
+}
