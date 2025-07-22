@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+:root {
+    --color-bg-main: rgb(254, 250, 242);
+    --color-bg-secondary: rgb(246, 240, 230);
+}
+
 html,
 body {
     font-family: 'Roboto Flex', sans-serif;
@@ -17,6 +22,10 @@ section {
 .container {
     margin: 0 auto;
     max-width: 1020px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
 }
 
 p {
@@ -52,4 +61,11 @@ button {
 
 ul {
     list-style: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
 }
