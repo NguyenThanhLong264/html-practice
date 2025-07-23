@@ -1,4 +1,5 @@
-.hero-section {
+.hero-section,
+.plan-compare-section {
     background-color: var(--color-bg-main);
 }
 
@@ -51,11 +52,12 @@
 
 .hero-nav .text {
     display: flex;
+    justify-content: space-around;
 }
 
 .new p {
     display: inline-block;
-    margin-left: 8px;
+    /* margin-left: 8px; */
     padding: 4px 8px;
     font-size: 12px;
     font-weight: 700;
@@ -175,7 +177,7 @@
     height: auto;
 }
 
-.card-main .text h4 {
+.text h4 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 24px;
     font-weight: 600;
@@ -209,10 +211,11 @@
     align-items: center;
     letter-spacing: 1px;
     height: auto;
+    margin: 24px 0;
 }
 
 .button-wrapper {
-    margin: 24px 0;
+    /* margin: 24px 0; */
     height: 50px;
     width: 100%;
 }
@@ -269,18 +272,19 @@
     transform: scale(1.05);
 }
 
-.card-item .marker {
+.marker {
     position: absolute;
     height: 32px;
     width: 100%;
-    background: #000;
     left: 0;
     top: -32px;
+    background: #000;
     color: white;
     text-align: center;
     line-height: 32px;
     font-size: 12px;
     font-weight: 600;
+    box-sizing: border-box;
 }
 
 .title-med {
@@ -354,49 +358,9 @@
     max-width: 250px;
 }
 
-.add-on-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.add-on-flex {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    row-gap: 32px;
-}
-
-.add-on-item:only-child,
-.add-on-item:last-child:nth-child(odd) {
-    grid-column: 1 / -1;
-}
-
-.add-on-item {
-    background-color: var(--color-bg-main);
-    width: 100%;
-    aspect-ratio: 6/5;
-    max-height: 350px;
-    padding: 18px;
-    display: flex;
-    flex-direction: column;
-}
-
-.add-on-content {
-    flex: 1;
-}
-
-.add-on-btn {
-    width: 50%;
-    max-width: 150px;
-    max-height: 80px;
-}
-
 .cta-banner {
     width: 100%;
-    aspect-ratio: 5/1;
-    max-height: 280px;
+    max-height: 250px;
     background-color: var(--color-bg-main);
     padding: 48px 80px;
     display: flex;
@@ -426,4 +390,186 @@
 
 .button-wrapper.color-none .current {
     color: black;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    padding: 0 12px;
+}
+
+.text h3 {
+    font-size: 38px;
+    font-weight: 400;
+}
+
+.text h1,
+.text h2,
+.text h3,
+.text h4,
+.text h5,
+.text h6 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.add-on-wrapper {
+    width: 100%;
+}
+
+.add-on-flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.add-on-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 12px;
+}
+
+.item-content {
+    background-color: var(--color-bg-main);
+    padding: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.add-on-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.item-content .description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.add-on-li ul {
+    columns: 2;
+}
+
+.add-on-btn {
+    width: 30%;
+    min-width: 150px;
+}
+
+.mid {
+    text-align: center;
+}
+
+.table-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.table-wrapper h2 {
+    font-size: 48px;
+}
+
+.table-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background-color: var(--color-bg-main);
+}
+
+.table-wrapper td,
+.table-wrapper th {
+    text-align: center;
+    padding: 12px;
+}
+
+.table-wrapper thead {
+    border-bottom: 5px solid var(--color-table-hightlight);
+    padding-top: 10px;
+    height: 120px;
+    position: sticky;
+    background-color: var(--color-bg-main);
+    z-index: 1;
+}
+
+.table-wrapper tr {
+    width: 100%;
+}
+
+.table-wrapper th {
+    padding-top: 32px;
+}
+
+thead th:not(:first-child),
+tbody td:not(:first-child) {
+    width: 20%;
+}
+
+tbody tr td:first-child {
+    text-align: start;
+}
+
+.parent-row table {
+    width: 100%;
+}
+
+.table-inner {
+    max-height: 1000px;
+    overflow: hidden;
+    transition: max-height 0.3s;
+}
+
+.parent-row>td {
+    padding: 4px 0;
+}
+
+tr:hover {
+    background-color: var(--color-bg-secondary);
+}
+
+tbody tr.parent-row:hover,
+thead tr:hover {
+    background-color: transparent;
+}
+
+.row-btn {
+    width: 100%;
+    text-align: start;
+    position: relative;
+    background-color: var(--color-table-hightlight);
+    border-radius: 12px;
+    border-color: transparent;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row-btn .icon {
+    display: inline-flex;
+    transition: transform 0.3s;
+}
+
+.parent-row.close .table-inner {
+    max-height: 0;
+}
+
+.parent-row.close .icon {
+    transform: rotate(180deg);
+}
+
+.bg-sec {
+    background-color: var(--color-bg-secondary);
+}
+
+.pop {
+    position: relative;
+    border: 1px solid black;
 }

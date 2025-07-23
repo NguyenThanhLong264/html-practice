@@ -7,6 +7,7 @@
 :root {
     --color-bg-main: rgb(254, 250, 242);
     --color-bg-secondary: rgb(246, 240, 230);
+    --color-table-hightlight: rgb(222, 215, 202);
 }
 
 html,
@@ -57,6 +58,7 @@ button {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     padding: 12px 24px;
+    cursor: pointer;
 }
 
 ul {

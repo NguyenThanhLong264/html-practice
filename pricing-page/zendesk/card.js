@@ -1,4 +1,4 @@
-document.querySelectorAll('.card-item.marked').forEach(item => {
+document.querySelectorAll('.marked').forEach(item => {
     if (!item.querySelector('.marker')) {
         const marker = document.createElement('div');
         marker.classList.add('marker');
