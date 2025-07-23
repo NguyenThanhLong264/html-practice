@@ -423,6 +423,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    row-gap: 12px;
 }
 
 .add-on-item {
@@ -432,6 +433,7 @@
 }
 
 .item-content {
+    height: 100%;
     background-color: var(--color-bg-main);
     padding: 24px;
     margin-bottom: 24px;
@@ -669,6 +671,7 @@ thead tr:hover {
     width: 100%;
     font-size: 18px;
     font-weight: 600;
+    transition: border 0.1s;
 }
 
 .question:hover {

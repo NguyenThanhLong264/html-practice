@@ -47,6 +47,10 @@ const features = [
             {
                 title: 'Ticket - Case management',
                 description: 'Nothing'
+            },
+            {
+                title: 'Ticket - Case management',
+                description: 'Nothing'
             }
         ],
         marked: false
