@@ -483,19 +483,24 @@
     background-color: var(--color-bg-main);
 }
 
-.table-wrapper td,
-.table-wrapper th {
+.table-wrapper td {
     text-align: center;
+    position: relative;
     padding: 12px;
 }
 
 .table-wrapper thead {
-    border-bottom: 5px solid var(--color-table-hightlight);
     padding-top: 10px;
     height: 120px;
-    position: sticky;
-    background-color: var(--color-bg-main);
-    z-index: 1;
+}
+
+.th-content {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    position: relative;
 }
 
 .table-wrapper tr {
@@ -504,6 +509,13 @@
 
 .table-wrapper th {
     padding-top: 32px;
+    text-align: center;
+    position: relative;
+}
+
+thead th {
+    vertical-align: bottom;
+    padding: 0;
 }
 
 thead th:not(:first-child),
@@ -569,7 +581,18 @@ thead tr:hover {
     background-color: var(--color-bg-secondary);
 }
 
+.table-wrapper thead {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--color-bg-main);
+    box-shadow: 0 5px 0 var(--color-table-hightlight);
+    margin-top: 10px;
+}
+
 .pop {
-    position: relative;
     border: 1px solid black;
+    border-bottom: none;
+    border-top: none;
+    width: 100%;
 }
