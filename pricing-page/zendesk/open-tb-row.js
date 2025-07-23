@@ -6,3 +6,12 @@ document.querySelectorAll('.parent-row').forEach(row => {
         });
     }
 });
+
+document.querySelectorAll('.qt').forEach(qt => {
+    const question = qt.querySelector('.qt .question');
+    if (question) {
+        question.addEventListener('click', () => {
+            qt.classList.toggle('open');
+        });
+    }
+});
