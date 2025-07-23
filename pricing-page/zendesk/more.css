@@ -669,7 +669,6 @@ thead tr:hover {
     width: 100%;
     font-size: 18px;
     font-weight: 600;
-    /* transition: all 0.2s; */
 }
 
 .question:hover {

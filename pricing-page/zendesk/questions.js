@@ -32,7 +32,7 @@ const question_data = [
                 ans: "After clicking “Buy now”, you will create a Zendesk account and immediately be able to purchase your software. You can easily pay by credit card or Paypal. Customers who prefer to purchase through our sales representatives can opt to pay via invoice."
             }
         ]
-    }
+    },
 ]
 
 const question_area = document.querySelector('.q-area')
@@ -59,9 +59,8 @@ const topic = question_data.map(item =>
                             </div>
                         </div>`
     ).join('')}
+                </div>
                 </div>`
 ).join('')
 
-question_area.innerHTML = topic
-
-console.log('q', question_area);
+question_area.innerHTML = topic;

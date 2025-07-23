@@ -34,7 +34,7 @@ const features = [
                 description: 'Nothing'
             }
         ],
-        marked: false
+        marked: true
     }, {
         title: 'Smart Dialer',
         description: 'An advanced auto and semi-auto dialing solution that boosts agent productivity and reduces outbound call costs.',
@@ -49,7 +49,7 @@ const features = [
                 description: 'Nothing'
             }
         ],
-        marked: true
+        marked: false
     }
 ]
 

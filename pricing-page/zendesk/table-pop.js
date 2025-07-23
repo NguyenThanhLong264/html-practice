@@ -24,6 +24,6 @@ function addClassToColumn(tableSelector, columnIndex, className) {
 
 
 // window.addEventListener('DOMContentLoaded', () => {
-addClassToColumn('.com-table', 1, 'pop');
+addClassToColumn('.com-table', 2, 'pop');
 // });
 
