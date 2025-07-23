@@ -23,16 +23,7 @@ function addClassToColumn(tableSelector, columnIndex, className) {
 
 
 
-window.addEventListener('DOMContentLoaded', () => {
-    addClassToColumn('.com-table', 1, 'pop');
-    document.querySelectorAll('.marked').forEach(item => {
-        if (!item.querySelector('.marker')) {
-            const marker = document.createElement('div');
-            marker.classList.add('marker');
-            marker.textContent = 'Most popular';
-            item.appendChild(marker);
-        }
-    });
-
-});
+// window.addEventListener('DOMContentLoaded', () => {
+addClassToColumn('.com-table', 1, 'pop');
+// });
 
