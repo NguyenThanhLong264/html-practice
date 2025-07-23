@@ -14,6 +14,7 @@ html,
 body {
     font-family: 'Roboto Flex', sans-serif;
     color: #1a1a1a;
+    scroll-behavior: smooth;
 }
 
 section {
