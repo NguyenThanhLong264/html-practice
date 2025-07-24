@@ -15,10 +15,11 @@ body {
     font-family: 'Roboto Flex', sans-serif;
     color: #1a1a1a;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 section {
-    padding: 88px 0;
+    padding: 88px 10px;
 }
 
 .container {

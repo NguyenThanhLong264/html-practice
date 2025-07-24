@@ -44,7 +44,7 @@
     margin: 0 0 12px;
 }
 
-.hero-content .hero-nav {
+.hero-nav {
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -53,7 +53,8 @@
 
 .hero-nav .text {
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
+    gap: 8px;
 }
 
 .underline-link {
@@ -341,7 +342,7 @@ li svg {
 }
 
 .see-all-btn {
-    width: 30%;
+    width: 50%;
     max-width: 250px;
 }
 
@@ -592,6 +593,7 @@ thead tr:hover {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    text-align: center;
 }
 
 .logo-gallery-wrapper {
@@ -607,11 +609,12 @@ thead tr:hover {
     display: flex;
     align-items: center;
     background-color: transparent;
+    height: 100%;
 }
 
 .gallery>img {
     height: 100%;
-    width: 25%;
+    aspect-ratio: 3/2;
     object-fit: contain;
     background-color: transparent;
     padding: 0 12px;
