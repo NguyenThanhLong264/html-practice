@@ -729,9 +729,7 @@ thead tr:hover {
     z-index: 1200;
 }
 
-.hidden {
-    display: none;
-}
+
 
 #modal {
     position: absolute;
@@ -739,7 +737,6 @@ thead tr:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     height: auto;
-    width: 600px;
     max-height: 90%;
     max-width: 99%;
     background: var(--color-bg-main);
@@ -814,4 +811,39 @@ thead tr:hover {
 .submit-btn {
     width: 80%;
     margin: 24px auto;
+}
+
+.modal-section {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-section.active {
+    display: block;
+}
+
+.survey-form {
+    width: 600px;
+}
+
+.key-points {
+    width: 950px;
+    text-align: center;
+    padding: 0 32px;
+}
+
+.key-points h1 {
+    font-size: 48px;
+}
+
+.key-points p {
+    font-size: 16px;
+}
+
+.key-points img {
+    margin-top: 32px;
+    background-color: white;
 }

@@ -87,7 +87,7 @@ features.forEach(item => {
                         </div>`)
 
     const listItems = item.keys.map(key => {
-        return `<li><span>${key.title}</span></li>`;
+        return `<li class='openBtn-keys'><span>${key.title}</span></li>`;
     }).join('');
     const card_features = createElementFromHTML(`<div class="card-features">
                             <p class="title-med">${item.key_feature}</p>

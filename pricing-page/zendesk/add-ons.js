@@ -63,7 +63,7 @@ container.innerHTML = add_on_data.map(item => `
             <div class="description">${item.bottomText}</div>
             <div class="add-on-btn">
                 <div class="button-wrapper color-none">
-                    <button class="magic-btn openBtn" >
+                    <button class="magic-btn openBtn-form" >
                         <span class="text current">Learn More</span>
                         <span class="text hover">Learn More</span>
                     </button>

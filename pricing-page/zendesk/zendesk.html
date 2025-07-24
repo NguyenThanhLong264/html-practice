@@ -597,19 +597,14 @@
     </section>
 
 
-    <div class="form">
-        <div id="overlay" class="overlay hidden">
-            <div id="modal">
-                <button id="closeBtn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path fill="currentColor"
-                            d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z" />
-                    </svg>
-                </button>
+    <div id="overlay" class="overlay hidden">
+        <div id="modal">
+            <div id="formContent" class="modal-section survey-form">
                 <form id="myForm">
                     <div class="title text">
                         <h3>Get Expert Advice Today</h3>
-                        <p>Please leave your information and our team will get in touch with you shortly to assist.</p>
+                        <p>Please leave your information and our team will get in touch with you shortly to assist.
+                        </p>
                     </div>
                     <div class="inputs">
                         <div class="input">
@@ -640,8 +635,18 @@
                         </div>
                     </div>
                 </form>
-                <div id="statusMessage"></div>
             </div>
+            <div id="features" class="modal-section key-points text">
+                <h1>Title</h1>
+                <p>description</p>
+                <img src="assets/imgs/fb-logo.png" alt="img">
+            </div>
+            <button id="closeBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z" />
+                </svg>
+            </button>
         </div>
     </div>
 
@@ -649,10 +654,11 @@
     <script src="feature-cards.js"></script>
     <script src="add-ons.js"></script>
     <script src="questions.js"></script>
-    <script src="form.js"></script>
     <script src="plans.js"></script>
     <script src="card.js"></script>
     <script src="open-tb-row.js"></script>
+    <script src="input.js"></script>
+    <script src="form.js"></script>
 </body>
 
 </html>
