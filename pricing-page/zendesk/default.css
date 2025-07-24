@@ -124,3 +124,7 @@ input.touched:invalid+.wn-mess {
     color: red;
     text-align: start;
 }
+
+button:active {
+    background-color: #ccc;
+}

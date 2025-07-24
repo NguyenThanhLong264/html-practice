@@ -847,3 +847,7 @@ thead tr:hover {
     text-transform: uppercase;
     vertical-align: middle;
 }
+
+.mobile {
+    display: none;
+}

@@ -1,4 +1,12 @@
-@media (max-width: 428px) {
+@media (max-width: 850px) {
+    .mobile {
+        display: block;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
     .hero-content {
         flex-direction: column;
         gap: 12px;
@@ -19,6 +27,12 @@
         width: 90%;
     }
 
+    .card-flex>* {
+        width: 100%;
+        scroll-snap-align: start;
+        position: relative;
+    }
+
     .add-on-item {
         flex: 1;
         max-width: 100%;
@@ -26,5 +40,56 @@
 
     .faq-wrapper>.text {
         width: 100%;
+    }
+
+    .card-wrapper {
+        width: 100%;
+    }
+
+    .card-wrapper .card-flex {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        justify-content: unset;
+        padding-top: 32px;
+        scroll-behavior: smooth;
+    }
+
+    .card-flex::-webkit-scrollbar {
+        display: none;
+    }
+
+    .pagination.mobile {
+        margin-top: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .chevron {
+        display: inline-flex;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 0;
+        border-radius: 99px;
+    }
+
+    .dots {
+        display: flex;
+        gap: 8px;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #ccc;
+        cursor: pointer;
+    }
+
+    .dot.active {
+        background-color: #333;
     }
 }
