@@ -136,7 +136,7 @@
                     <h2>Compare plans</h2>
                 </div>
                 <table class="com-table">
-                    <thead>
+                    <thead class="laptop">
                         <tr>
                             <th></th>
                             <th>
@@ -152,20 +152,26 @@
                             </th>
                         </tr>
                     </thead>
-                    <!-- <thead class="mobile">
+                    <thead class="mobile">
                         <tr>
                             <th colspan="2">
                                 <div class="mobile-thead">
                                     <h3>Plans</h3>
-                                    <select name="plans" id="plans">
-                                        <option value="1">Call center</option>
-                                        <option value="2">Contact center</option>
-                                        <option value="3">Smart dialer</option>
-                                    </select>
+                                    <div class="custom-select" id="customSelect">
+                                        <div class="select-trigger">
+                                            <span class="selected">Call center</span>
+                                            <span class="arrow">▾</span>
+                                        </div>
+                                        <div class="options">
+                                            <div class="option" data-value="1">Call center</div>
+                                            <div class="option" data-value="2">Contact center</div>
+                                            <div class="option" data-value="3">Smart dialer</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </th>
                         </tr>
-                    </thead> -->
+                    </thead>
                     <tbody>
                     </tbody>
                 </table>
@@ -363,17 +369,17 @@
         </div>
     </div>
 
-    <script src="table-pop.js"></script>
     <script src="feature-cards.js"></script>
     <script src="pagination.js"></script>
     <script src="add-ons.js"></script>
     <script src="plans.js"></script>
+    <script src="table-pop.js"></script>
     <script src="questions.js"></script>
     <script src="card.js"></script>
     <script src="open-tb-row.js"></script>
-    <script src="mobile.js"></script>
     <script src="input.js"></script>
     <script src="form.js"></script>
+    <script src="select.js"></script>
 </body>
 
 </html>

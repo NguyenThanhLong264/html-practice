@@ -49,7 +49,7 @@ function createFlatRows(withoutTitle) {
 function createExpandableRows(withTitle) {
     return withTitle.map(item =>
         `<tr class="parent-row">
-            <td colspan="4">
+            <td colspan="${item.rows[0].length}">
                 <div class="row-btn">
                     <button class="row-btn">
                         ${item.title}
@@ -100,12 +100,36 @@ function renderCell(cell) {
 }
 
 if (window.innerWidth <= 768) {
-    const select = document.getElementById('plans');
+    const select = document.getElementById('customSelect');
+    const selectedText = select.querySelector('.selected');
+    const options = select.querySelectorAll('.option');
+
+    if (!select.dataset.value && options.length > 0) {
+        const defaultOption = options[0];
+        select.dataset.value = defaultOption.dataset.value;
+        selectedText.textContent = defaultOption.textContent;
+    }
+
+    options.forEach(option => {
+        option.addEventListener('click', () => {
+            const value = option.dataset.value;
+            const text = option.textContent;
+
+            // Cập nhật giá trị đã chọn
+            select.dataset.value = value;
+            selectedText.textContent = text;
+            select.classList.remove('open');
+
+            // Gọi lại hàm xử lý
+            updateMobilePlans();
+        });
+    });
 
     function updateMobilePlans() {
-        const currentValue = select.value;
-        const mobile_plans = filterPlanData(currentValue);
+        const currentValue = select.dataset.value;
+        console.log('Đã chọn:', currentValue);
 
+        const mobile_plans = filterPlanData(currentValue);
         const withoutTitle = mobile_plans.filter(item => item.title === null);
         const withTitle = mobile_plans.filter(item => item.title !== null);
 
@@ -116,9 +140,8 @@ if (window.innerWidth <= 768) {
     }
 
     updateMobilePlans();
-
-    select.addEventListener('change', updateMobilePlans);
 }
+
 
 function filterPlanData(indexStr) {
     const index = parseInt(indexStr);
