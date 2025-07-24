@@ -78,6 +78,16 @@ body.no-scroll {
     overflow: hidden;
 }
 
+select {
+    padding: 0 12px;
+    border-radius: 12px;
+    height: 48px;
+    font-size: 16px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    background-color: var(--color-bg-secondary);
+}
+
 textarea {
     padding: 12px;
     border-radius: 12px;
