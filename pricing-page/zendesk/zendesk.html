@@ -455,6 +455,9 @@
                         </tr> -->
                     </tbody>
                 </table>
+                <div class="note">
+                    <p>* We support 24/7 and 8x5</p>
+                </div>
             </div>
             <div class="customer">
                 <div class="text">
@@ -593,10 +596,60 @@
         </div>
     </section>
 
+
+    <div class="form">
+        <div id="overlay" class="overlay hidden">
+            <div id="modal">
+                <button id="closeBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z" />
+                    </svg>
+                </button>
+                <form id="myForm">
+                    <div class="title text">
+                        <h3>Get Expert Advice Today</h3>
+                        <p>Please leave your information and our team will get in touch with you shortly to assist.</p>
+                    </div>
+                    <div class="inputs">
+                        <div class="input">
+                            <label for="name" class="label-text">Name</label>
+                            <input id="name" type="text" placeholder="Nhập gì đó..." required />
+                            <span class="wn-mess">*Warning message</span>
+                        </div>
+                        <div class="input">
+                            <label for="email" class="label-text">Email</label>
+                            <input id="email" type="text" placeholder="Nhập gì đó..." required />
+                        </div>
+                        <div class="input w-50">
+                            <label for="phone" class="label-text">Phone</label>
+                            <input id="phone" type="tel" placeholder="Nhập gì đó..." required />
+                        </div>
+                        <div class="input">
+                            <label for="note" class="label-text">Note</label>
+                            <textarea id="note" type="text" class="text-area" placeholder="Nhập gì đó..."
+                                required></textarea>
+                        </div>
+                    </div>
+                    <div class="submit-btn">
+                        <div class="button-wrapper">
+                            <button class="magic-btn" type="submit">
+                                <span class="text current">Submit</span>
+                                <span class="text hover">Submit</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div id="statusMessage"></div>
+            </div>
+        </div>
+    </div>
+
     <script src="table-pop.js"></script>
     <script src="feature-cards.js"></script>
     <script src="add-ons.js"></script>
     <script src="questions.js"></script>
+    <script src="form.js"></script>
     <script src="plans.js"></script>
     <script src="card.js"></script>
     <script src="open-tb-row.js"></script>

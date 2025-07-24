@@ -72,3 +72,54 @@ img {
     object-fit: contain;
     display: block;
 }
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+textarea {
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 16px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    background-color: var(--color-bg-secondary);
+    min-height: 100px;
+    max-height: 350px;
+    resize: vertical;
+}
+
+input {
+    padding: 0 12px;
+    border-radius: 12px;
+    height: 48px;
+    font-size: 16px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    background-color: var(--color-bg-secondary);
+}
+
+input:focus {
+    outline: 2px solid black;
+}
+
+input:hover {
+    border-color: black;
+    background-color: var(--color-bg-main);
+}
+
+input.touched:invalid {
+    border-color: #dc3545;
+    outline-color: #dc3545;
+    background-color: #f1d0d3;
+}
+
+input.touched:invalid+.wn-mess {
+    display: block;
+}
+
+.wn-mess {
+    display: none;
+    color: red;
+    text-align: start;
+}

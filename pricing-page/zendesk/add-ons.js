@@ -17,16 +17,16 @@ const add_on_data = [
     },
     {
         isNew: false,
-        name: 'Voice Bot',
+        name: 'Voice Chat',
         price: '70.000 VNĐ per user/month',
-        description: `Voice bot supports interactive voice responses using AI-driven conversation trees. 
+        description: `Voice chat supports interactive voice responses using AI-driven conversation trees. 
                       It can automate inbound call flows and reduce agent workload.`,
         features: [
             'Call deflection',
             'Speech-to-text',
             'Voice sentiment analysis'
         ],
-        bottomText: 'Try voice bot now'
+        bottomText: 'Try voice chat now'
     },
     {
         isNew: true,
@@ -63,7 +63,7 @@ container.innerHTML = add_on_data.map(item => `
             <div class="description">${item.bottomText}</div>
             <div class="add-on-btn">
                 <div class="button-wrapper color-none">
-                    <button class="magic-btn">
+                    <button class="magic-btn openBtn" >
                         <span class="text current">Learn More</span>
                         <span class="text hover">Learn More</span>
                     </button>
