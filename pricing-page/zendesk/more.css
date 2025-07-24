@@ -56,19 +56,6 @@
     justify-content: space-around;
 }
 
-.new p {
-    display: inline-block;
-    /* margin-left: 8px; */
-    padding: 4px 8px;
-    font-size: 12px;
-    font-weight: 700;
-    color: black;
-    background-color: rgb(212, 244, 121);
-    border-radius: 4px;
-    text-transform: uppercase;
-    vertical-align: middle;
-}
-
 .underline-link {
     position: relative;
     display: inline-block;
@@ -305,53 +292,52 @@
 
 .list-features li {
     display: flex;
-    align-items: center;
-    margin-bottom: 12px;
+    gap: 16px;
+    align-items: flex-start;
+    list-style: none;
+    margin: 0 0 12px;
+    padding: 0;
+    font-size: 16px;
+    color: #16140c;
+    line-height: 1.5;
     cursor: pointer;
-    height: auto;
-    max-height: 24px;
 }
 
-.list-features li span {
-    text-decoration: underline dashed;
-    text-underline-offset: 6px;
+.list-features .icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4px;
+}
+
+li svg {
+    font-size: 14px;
+}
+
+.key-text {
+    flex: 1;
+}
+
+.key-text svg {
+    opacity: 0;
     transition: all 0.2s;
 }
 
-.list-features li::before {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background-color: currentColor;
-    -webkit-mask-image: url('assets/icons/tick.svg');
-    mask-image: url('assets/icons/tick.svg');
-    -webkit-mask-size: contain;
-    mask-size: contain;
-    margin-right: 6px;
+.key-label {
+    text-decoration: underline dotted;
+    text-underline-offset: 4px;
+    font-size: 16px;
+    transition: all 0.2s;
 }
 
-.list-features li::after {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background-color: currentColor;
-    -webkit-mask-image: url('assets/icons/search.svg');
-    mask-image: url('assets/icons/search.svg');
-    -webkit-mask-size: contain;
-    mask-size: contain;
-    margin-left: 4px;
-    opacity: 0;
-    transition: all 0.3s;
+.list-features li:hover .key-label,
+.list-features li:hover .key-text svg {
+    opacity: 0.6;
 }
 
-.list-features li:hover span {
-    color: #ccc;
-}
-
-.list-features li:hover::after {
-    opacity: 1;
+.no-dec {
+    text-decoration: none;
 }
 
 .see-all-btn {
@@ -628,9 +614,8 @@ thead tr:hover {
     width: 25%;
     object-fit: contain;
     background-color: transparent;
-    padding: 0 8px;
-    margin-right: 8px;
-    animation: slide 5s linear infinite;
+    padding: 0 12px;
+    animation: slide 8s linear infinite;
 }
 
 @keyframes slide {
@@ -846,4 +831,16 @@ thead tr:hover {
 .key-points img {
     margin-top: 32px;
     background-color: white;
+}
+
+.new p {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
+    background-color: rgb(212, 244, 121);
+    border-radius: 4px;
+    text-transform: uppercase;
+    vertical-align: middle;
 }
