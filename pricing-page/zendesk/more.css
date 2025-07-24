@@ -129,7 +129,7 @@
 }
 
 .hero-item .underline-link {
-    color: rgb(22, 20, 12);
+    color: var(--text-color);
     font-weight: 500;
     text-decoration: none;
     font-stretch: expanded;
@@ -148,7 +148,7 @@
 .card-flex>* {
     width: 30%;
     flex-shrink: 0;
-    background-color: rgb(254, 250, 242);
+    background-color: var(--color-bg-main);
     padding: 32px 22px;
     border-bottom: 1px solid black;
     min-height: 512px;
@@ -204,7 +204,6 @@
 }
 
 .button-wrapper {
-    /* margin: 24px 0; */
     height: 50px;
     width: 100%;
 }
@@ -213,8 +212,8 @@
     position: relative;
     width: 100%;
     height: 100%;
-    background-color: #9a4497;
-    color: white;
+    background-color: var(--btn-bg-default);
+    color: var(--btn-text-default);
     border: none;
     cursor: pointer;
     font-size: 18px;
@@ -256,8 +255,15 @@
     opacity: 1;
 }
 
-.magic-btn:hover {
-    background-color: #000 !important;
+.button-wrapper.color-none .magic-btn {
+    border: 1px solid var(--btn-border-transbg);
+    background-color: transparent;
+}
+
+.magic-btn:hover,
+.button-wrapper.color-none .magic-btn:hover {
+    color: var(--btn-text-hover);
+    background-color: var(--btn-bg-hover);
     transform: scale(1.05);
 }
 
@@ -267,8 +273,8 @@
     width: 100%;
     left: 0;
     top: -32px;
-    background: #000;
-    color: white;
+    background: var(--pop-bg);
+    color: var(--pop-text);
     text-align: center;
     line-height: 32px;
     font-size: 12px;
@@ -299,7 +305,7 @@
     margin: 0 0 12px;
     padding: 0;
     font-size: 16px;
-    color: #16140c;
+    color: var(--text-color);
     line-height: 1.5;
     cursor: pointer;
 }
@@ -371,13 +377,8 @@ li svg {
     flex: 2;
 }
 
-.button-wrapper.color-none .magic-btn {
-    border: 1px solid black;
-    background-color: transparent;
-}
-
 .button-wrapper.color-none .current {
-    color: black;
+    color: var(--text-color);
 }
 
 .banner-content {
@@ -472,6 +473,9 @@ li svg {
     border-collapse: collapse;
     table-layout: fixed;
     background-color: var(--color-bg-main);
+}
+
+.table-wrapper>table {
     border-bottom: 5px solid var(--color-table-hightlight);
 }
 
@@ -687,7 +691,7 @@ thead tr:hover {
 
 .qt.open .question {
     border-width: 3px;
-    border-color: black;
+    border-color: var(--text-color);
 }
 
 .qt.open .icon {
@@ -729,7 +733,7 @@ thead tr:hover {
     max-height: 90%;
     max-width: 99%;
     background: var(--color-bg-main);
-    color: black;
+    color: var(--text-color);
     padding: 32px;
     overflow-y: auto;
     z-index: 1201;
@@ -758,8 +762,8 @@ thead tr:hover {
 }
 
 #closeBtn:hover {
-    background-color: black;
-    color: white;
+    background-color: var(--btn-bg-default);
+    color: var(--btn-text-default);
 }
 
 #myForm {
@@ -842,8 +846,8 @@ thead tr:hover {
     padding: 4px 8px;
     font-size: 12px;
     font-weight: 700;
-    color: black;
-    background-color: rgb(212, 244, 121);
+    color: var(--text-color);
+    background-color: var(--tag-color);
     border-radius: 4px;
     text-transform: uppercase;
     vertical-align: middle;
