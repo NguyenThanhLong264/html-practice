@@ -722,8 +722,6 @@ thead tr:hover {
     z-index: 1200;
 }
 
-
-
 #modal {
     position: absolute;
     top: 50%;
@@ -731,7 +729,7 @@ thead tr:hover {
     transform: translate(-50%, -50%);
     height: auto;
     max-height: 90%;
-    width: 90%;
+    max-width: 90%;
     background: var(--color-bg-main);
     color: var(--text-color);
     padding: 32px;
@@ -864,6 +862,7 @@ thead tr:hover {
     align-items: end;
     gap: 12px;
     max-width: 100%;
+    z-index: 1000;
 }
 
 .chat-icon {
@@ -874,7 +873,6 @@ thead tr:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
     border-radius: 999px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     cursor: pointer;
