@@ -178,12 +178,17 @@
 
 .text .subtitle {
     height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card-main .text .money {
     height: 40px;
-    font-size: 32px;
+    font-size: clamp(14px, 3vw, 32px);
     font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .text .tiny-tag {
