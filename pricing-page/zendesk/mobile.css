@@ -179,3 +179,9 @@
     }
 
 }
+
+@media (min-width:450px) {
+    .add-on-li ul {
+        columns: 1;
+    }
+}

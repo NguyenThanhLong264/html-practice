@@ -6,15 +6,11 @@ const form = document.getElementById('myForm');
 const statusMessage = document.getElementById('statusMessage');
 
 const formContent = document.getElementById('formContent');
-const featuresContent = document.getElementById('features'); // Dành cho phần mở rộng
-
-let formState = 'normal';
+const featuresContent = document.getElementById('features');
 
 function hideAllContent() {
     document.querySelectorAll('.modal-section').forEach(el => el.classList.remove('active'));
 }
-
-// console.log("q", openBtns);
 
 openBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -25,15 +21,20 @@ openBtns.forEach(btn => {
 
         if (btn.classList.contains('openBtn-form')) {
             formContent.classList.add('active');
-            formState = 'normal';
         }
         if (btn.classList.contains('openBtn-keys')) {
             featuresContent.classList.add('active')
+            if (btn.classList.contains('li-card')) {
+                const li_id = btn.id;
+                const [, itemindex, liindex] = li_id.split('-');
+                const data = features[itemindex].keys[liindex]
+                createKeyById(data.title, data.description, data?.imgUrl)
+                console.log('w', data);
+            }
         }
     });
 });
 
-// Click nền overlay để đóng
 overlay.addEventListener('click', (e) => {
     if (e.target === overlay) {
         overlay.classList.add('hidden');
@@ -42,21 +43,15 @@ overlay.addEventListener('click', (e) => {
     }
 });
 
-// Click nút đóng
 closeBtn.addEventListener('click', () => {
     overlay.classList.add('hidden');
     document.body.classList.remove('no-scroll');
     hideAllContent();
 });
 
-// Gửi form
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    formState = 'loading';
-    statusMessage.textContent = 'Đang gửi...';
-
     setTimeout(() => {
-        formState = 'submitted';
-        statusMessage.textContent = 'Gửi thành công!';
+        console.log("Send Complete");
     }, 2000);
 });

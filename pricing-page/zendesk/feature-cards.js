@@ -8,7 +8,7 @@ const features = [
         buy_btn_text: 'Buy now',
         key_feature: 'Key feature',
         keys: [
-            { title: 'Ticket - Case management', description: 'Nothing' },
+            { title: 'Ticket - Case management', description: 'Nothing', imgUrl: 'assets/imgs/gg-logo.png' },
             { title: 'Tính năng Email', description: 'Nothing', tag: 'New', },
             { title: 'Tính năng SMS', description: 'Nothing' },
             { title: 'Tính năng tổng đài', description: 'Nothing' },
@@ -60,7 +60,7 @@ const features = [
 
 const card_area = document.getElementById('feature-cards')
 
-features.forEach(item => {
+features.forEach((item, itemIdx) => {
     const card_item = document.createElement('div')
     card_area.appendChild(card_item);
     card_item.id = toKebabCase(item.title)
@@ -87,9 +87,9 @@ features.forEach(item => {
                             </div>
                         </div>`)
 
-    const listItems = item.keys.map(key => {
+    const listItems = item.keys.map((key, li_idx) => {
         return `
-    <li class='openBtn-keys'>
+    <li class='openBtn-keys li-card' id='card_key-${itemIdx}-${li_idx}'>
       <div class="icon">
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 21 16" fill="currentColor">
           <path d="M21.053 1.758 19.295 0 6.771 12.52 1.764 7.513 0 9.277 6.771 16z"></path>

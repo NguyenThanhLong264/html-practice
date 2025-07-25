@@ -326,23 +326,24 @@
                         </p>
                     </div>
                     <div class="inputs">
-                        <div class="input">
+                        <div class="input w-50">
                             <label for="name" class="label-text">Name</label>
                             <input id="name" type="text" placeholder="Nhập gì đó..." required />
-                            <span class="wn-mess">*Warning message</span>
-                        </div>
-                        <div class="input">
-                            <label for="email" class="label-text">Email</label>
-                            <input id="email" type="text" placeholder="Nhập gì đó..." required />
+                            <span class="wn-mess">*Please do not leave this empty</span>
                         </div>
                         <div class="input w-50">
                             <label for="phone" class="label-text">Phone</label>
                             <input id="phone" type="tel" placeholder="Nhập gì đó..." required />
+                            <span class="wn-mess">*Please do not leave this empty</span>
+                        </div>
+                        <div class="input">
+                            <label for="email" class="label-text">Email</label>
+                            <input id="email" type="email" placeholder="Nhập gì đó..." required />
+                            <span class="wn-mess">*Please do not leave this empty</span>
                         </div>
                         <div class="input">
                             <label for="note" class="label-text">Note</label>
-                            <textarea id="note" type="text" class="text-area" placeholder="Nhập gì đó..."
-                                required></textarea>
+                            <textarea id="note" type="text" class="text-area" placeholder="Nhập gì đó..."></textarea>
                         </div>
                     </div>
                     <div class="submit-btn">
@@ -356,9 +357,9 @@
                 </form>
             </div>
             <div id="features" class="modal-section key-points text">
-                <h1>Title</h1>
-                <p>description</p>
-                <img src="assets/imgs/fb-logo.png" alt="img">
+                <!-- <h1>Title</h1> -->
+                <!-- <p>description</p> -->
+                <!-- <img src="assets/imgs/fb-logo.png" alt="img"> -->
             </div>
             <button id="closeBtn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -380,6 +381,7 @@
     <script src="input.js"></script>
     <script src="form.js"></script>
     <script src="select.js"></script>
+    <script src="keys.js"></script>
 </body>
 
 </html>
