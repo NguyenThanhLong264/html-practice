@@ -854,12 +854,21 @@ thead tr:hover {
     vertical-align: middle;
 }
 
-.chat-box {
+.chat-wrapper {
     position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 12px;
+}
+
+.chat-icon {
+    /* position: absolute; */
     width: 70px;
     height: 70px;
-    right: 28px;
-    bottom: 32px;
     color: var(--btn-text-default);
     background-color: var(--btn-bg-default);
     display: flex;
@@ -872,9 +881,98 @@ thead tr:hover {
     transition: all 0.3s;
 }
 
-.chat-box:hover {
+.chat-icon:hover {
     background-color: var(--btn-bg-hover);
     color: var(--btn-text-hover);
+}
+
+.chat-box {
+    display: none;
+    height: 450px;
+    width: 300px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.chat-box.open {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-box-header {
+    height: 64px;
+    background-color: var(--color-table-hightlight);
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.chat-box-label {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.chat-box-label img {
+    width: 48px;
+    color: white;
+}
+
+.header-btns {
+    display: inline-flex;
+}
+
+.header-btns>* {
+    border-radius: 999px;
+    padding: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header-btns>*:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.chat-box-content {
+    flex: 1;
+}
+
+.chat-box-input {
+    height: 72px;
+    display: flex;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin: 8px;
+    margin-top: 4px;
+    background-color: var(--color-bg-main);
+}
+
+.chat-box-input textarea {
+    flex: 1;
+    margin: 0;
+    min-height: 0;
+    resize: none;
+    background-color: transparent;
+    border: none;
+}
+
+.chat-box-input textarea:focus {
+    outline: none;
+}
+
+.input-btns {
+    padding: 8px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.input-btns .icon:hover {
+    cursor: pointer;
+    color: var(--btn-bg-default);
 }
 
 .mobile {
