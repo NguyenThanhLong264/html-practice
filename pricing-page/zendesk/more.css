@@ -622,15 +622,15 @@ thead tr:hover {
     aspect-ratio: 3/2;
     object-fit: contain;
     background-color: transparent;
-    padding: 0 12px;
-    animation: slide 8s linear infinite;
+    padding-right: 12px;
+    /* animation: slide 8s linear infinite; */
 }
 
-@keyframes slide {
+/* @keyframes slide {
     to {
         transform: translateX(-400%);
     }
-}
+} */
 
 .faq-wrapper {
     display: flex;
