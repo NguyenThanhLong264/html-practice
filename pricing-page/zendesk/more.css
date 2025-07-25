@@ -731,7 +731,7 @@ thead tr:hover {
     transform: translate(-50%, -50%);
     height: auto;
     max-height: 90%;
-    max-width: 99%;
+    width: 90%;
     background: var(--color-bg-main);
     color: var(--text-color);
     padding: 32px;
@@ -820,10 +820,11 @@ thead tr:hover {
 
 .survey-form {
     width: 600px;
+    max-width: 100%;
 }
 
 .key-points {
-    width: 950px;
+    width: 100%;
     text-align: center;
     padding: 0 32px;
 }

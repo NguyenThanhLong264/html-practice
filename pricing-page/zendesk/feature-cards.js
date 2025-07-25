@@ -8,7 +8,7 @@ const features = [
         buy_btn_text: 'Buy now',
         key_feature: 'Key feature',
         keys: [
-            { title: 'Ticket - Case management', description: 'Nothing', imgUrl: 'assets/imgs/gg-logo.png' },
+            { title: 'Ticket - Case management', description: 'Các ticket được tạo từ các nguồn sẽ được tự động chia việc cho nhân viên. Các agent, phòng ban có thể luân chuyển ticket cho nhau để cùng xử lý 1 công việc.Báo cáo chi tiết ticket: thời gian phản hồi lần đầu, thời gian xử lý trung bình, báo cáo chi tiết theo nội dung', imgUrl: 'assets/imgs/gg-logo.png' },
             { title: 'Tính năng Email', description: 'Nothing', tag: 'New', },
             { title: 'Tính năng SMS', description: 'Nothing' },
             { title: 'Tính năng tổng đài', description: 'Nothing' },

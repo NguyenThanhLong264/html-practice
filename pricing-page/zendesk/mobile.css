@@ -178,6 +178,13 @@
         display: block;
     }
 
+    .inputs .w-50 {
+        width: 100%;
+    }
+
+    .key-points h1 {
+        font-size: 32px;
+    }
 }
 
 @media (min-width:450px) {
