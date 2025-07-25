@@ -854,6 +854,29 @@ thead tr:hover {
     vertical-align: middle;
 }
 
+.chat-box {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    right: 28px;
+    bottom: 32px;
+    color: var(--btn-text-default);
+    background-color: var(--btn-bg-default);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    border-radius: 999px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.chat-box:hover {
+    background-color: var(--btn-bg-hover);
+    color: var(--btn-text-hover);
+}
+
 .mobile {
     display: none;
 }

@@ -15,7 +15,6 @@ options.forEach(option => {
     });
 });
 
-// Close when clicking outside
 document.addEventListener('click', (e) => {
     if (!customSelect.contains(e.target)) {
         customSelect.classList.remove('open');

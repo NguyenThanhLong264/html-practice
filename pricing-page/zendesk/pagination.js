@@ -12,6 +12,10 @@ const scrollToIndex = (index) => {
         left: cardWidth * index,
         behavior: 'smooth'
     });
+    cardContainer.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });
     updateDots(index);
     currentIndex = index;
 };
