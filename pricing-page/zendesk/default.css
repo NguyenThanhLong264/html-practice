@@ -184,13 +184,13 @@ input:hover {
     background-color: var(--color-bg-main);
 }
 
-input.touched:invalid {
+input.touched:invalid:not(:placeholder-shown) {
     border-color: #dc3545;
     outline-color: #dc3545;
     background-color: #f1d0d3;
 }
 
-input.touched:invalid+.wn-mess {
+input.touched:invalid:not(:placeholder-shown)+.wn-mess {
     display: block;
 }
 
