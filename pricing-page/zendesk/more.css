@@ -732,9 +732,8 @@ thead tr:hover {
     max-width: 90%;
     background: var(--color-bg-main);
     color: var(--text-color);
-    padding: 32px;
-    overflow-y: auto;
     z-index: 1201;
+    overflow-y: auto;
 }
 
 ::-webkit-scrollbar {
@@ -805,7 +804,9 @@ thead tr:hover {
 }
 
 .modal-section {
-    display: none;
+    opacity: 0;
+    max-height: 0;
+    overflow-y: hidden;
 }
 
 .hidden {
@@ -813,7 +814,9 @@ thead tr:hover {
 }
 
 .modal-section.active {
-    display: block;
+    opacity: 1;
+    padding: 32px;
+    max-height: 100%;
 }
 
 .survey-form {
@@ -822,7 +825,8 @@ thead tr:hover {
 }
 
 .key-points {
-    width: 100%;
+    width: 850px;
+    max-width: 100%;
     text-align: center;
     padding: 0 32px;
 }
