@@ -653,7 +653,6 @@ thead tr:hover {
 
 .each-topic .topic {
     padding: 4px 0;
-    /* margin-bottom: 8px; */
 }
 
 .question {
@@ -720,6 +719,12 @@ thead tr:hover {
     height: 100%;
     overflow: hidden;
     z-index: 1200;
+    transition: opacity 0.3s ease;
+}
+
+#overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
 }
 
 #modal {
@@ -728,6 +733,7 @@ thead tr:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     height: auto;
+    width: auto;
     max-height: 90%;
     max-width: 90%;
     background: var(--color-bg-main);
@@ -806,17 +812,16 @@ thead tr:hover {
 .modal-section {
     opacity: 0;
     max-height: 0;
+    max-width: 0;
     overflow-y: hidden;
-}
-
-.hidden {
-    display: none;
+    transition: opacity 0.5s;
 }
 
 .modal-section.active {
     opacity: 1;
     padding: 32px;
     max-height: 100%;
+    max-width: 100%;
 }
 
 .survey-form {
@@ -826,7 +831,6 @@ thead tr:hover {
 
 .key-points {
     width: 850px;
-    max-width: 100%;
     text-align: center;
     padding: 0 32px;
 }
