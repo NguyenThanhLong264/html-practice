@@ -1,16 +1,16 @@
 const card_area = document.getElementById('feature-cards')
 
 features.forEach((item, itemIdx) => {
-    const card_item = document.createElement('div')
-    card_area.appendChild(card_item);
-    card_item.id = toKebabCase(item.title)
-    card_item.classList.add('card-item')
+  const card_item = document.createElement('div')
+  card_area.appendChild(card_item);
+  card_item.id = toKebabCase(item.title)
+  card_item.classList.add('card-item')
 
-    if (item.marked) {
-        card_item.classList.add('marked')
-    }
+  if (item.marked) {
+    card_item.classList.add('marked')
+  }
 
-    const card_main = createElementFromHTML(`<div class="card-main">
+  const card_main = createElementFromHTML(`<div class="card-main">
                             <div class="text">
                                 <h4>${item.title}</h4>
                                 <p class="subtitle">${item.description}</p>
@@ -27,16 +27,16 @@ features.forEach((item, itemIdx) => {
                             </div>
                         </div>`)
 
-    const listItems = item.keys.map((key, li_idx) => {
-        return `
-    <li class='openBtn-keys li-card' id='card_key-${itemIdx}-${li_idx}'>
+  const listItems = item.keys.map((key, li_idx) => {
+    return `
+    <li>
       <div class="icon">
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 21 16" fill="currentColor">
           <path d="M21.053 1.758 19.295 0 6.771 12.52 1.764 7.513 0 9.277 6.771 16z"></path>
         </svg>
       </div>
       <div class="key-text">
-          <span>
+          <span class='openBtn-keys li-card' id='card_key-${itemIdx}-${li_idx}'>
             <span class='key-label'>${key.title}</span>
             ${key.tag ? `
               <span class="new">
@@ -49,10 +49,10 @@ features.forEach((item, itemIdx) => {
       </div>
     </li>
   `;
-    }).join('');
+  }).join('');
 
 
-    const card_features = createElementFromHTML(`<div class="card-features">
+  const card_features = createElementFromHTML(`<div class="card-features">
                             <p class="title-med">${item.key_feature}</p>
                             <div class="list-features">
                             <ul>
@@ -61,23 +61,23 @@ features.forEach((item, itemIdx) => {
                             </div>
                             </div>`)
 
-    card_item.appendChild(card_main);
-    card_item.appendChild(card_features);
+  card_item.appendChild(card_main);
+  card_item.appendChild(card_features);
 })
 
 function toKebabCase(str) {
-    return str
-        .toLowerCase()
-        .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, '')
-        .replace(/\s+/g, '-')
-        .replace(/[^a-z0-9\-]/g, '')
-        .replace(/\-+/g, '-')
-        .replace(/^\-+|\-+$/g, '');
+  return str
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/[^a-z0-9\-]/g, '')
+    .replace(/\-+/g, '-')
+    .replace(/^\-+|\-+$/g, '');
 }
 
 function createElementFromHTML(htmlString) {
-    const wrapper = document.createElement('div');
-    wrapper.innerHTML = htmlString.trim();
-    return wrapper.firstElementChild;
+  const wrapper = document.createElement('div');
+  wrapper.innerHTML = htmlString.trim();
+  return wrapper.firstElementChild;
 }
