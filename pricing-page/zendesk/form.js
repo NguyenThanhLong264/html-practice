@@ -24,13 +24,16 @@ openBtns.forEach(btn => {
         }
         if (btn.classList.contains('openBtn-keys')) {
             featuresContent.classList.add('active')
+            let data
+            const li_id = btn.id;
+            const [, itemindex, liindex] = li_id.split('-');
             if (btn.classList.contains('li-card')) {
-                const li_id = btn.id;
-                const [, itemindex, liindex] = li_id.split('-');
-                const data = features[itemindex].keys[liindex]
-                createKeyById(data.title, data.description, data?.imgUrl)
-                console.log('w', data);
+                data = features[itemindex].keys[liindex]
+            } else if (btn.classList.contains('li-addons')) {
+                data = add_on_data[itemindex].features[liindex]
             }
+            createKeyById(data.title, data.description, data?.imgUrl)
+            console.log('w', data);
         }
     });
 });
