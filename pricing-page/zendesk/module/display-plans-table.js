@@ -4,14 +4,15 @@ const withoutTitle = plans.filter(item => item.title === null);
 const withTitle = plans.filter(item => item.title !== null);
 
 let currentMode = window.innerWidth <= 850 ? 'mobile' : 'desktop';
+rerenderBasedOnMode();
+
 window.addEventListener('resize', () => {
     const newMode = window.innerWidth <= 850 ? 'mobile' : 'desktop';
     if (newMode !== currentMode) {
         currentMode = newMode;
-        rerenderBasedOnMode();
+        location.reload();
     }
 });
-rerenderBasedOnMode();
 
 function rerenderBasedOnMode() {
     if (currentMode === 'mobile') {

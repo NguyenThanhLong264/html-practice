@@ -35,6 +35,8 @@
         width: 100%;
         scroll-snap-align: start;
         position: relative;
+        border-right: 1px solid #ccc;
+        border-left: 1px solid #ccc;
     }
 
     .add-on-item {
@@ -184,6 +186,14 @@
 
     .key-points h1 {
         font-size: 32px;
+    }
+
+    * {
+        /* -webkit-tap-highlight-color: transparent; */
+    }
+
+    section {
+        padding: 24px 12px;
     }
 }
 
