@@ -1,0 +1,152 @@
+.color-panel {
+    position: fixed;
+    width: 250px;
+    aspect-ratio: 2/3;
+    background-color: white;
+    z-index: 1300;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    pointer-events: auto;
+}
+
+.panel-head {
+    background-color: var(--btn-bg-default);
+    color: var(--btn-text-default);
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.panel-head .btns {
+    display: inline-flex;
+}
+
+.panel-head .text {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    flex: 1;
+    padding: 0 12px;
+}
+
+.panel-content {
+    padding: 2px;
+    padding-top: 12px;
+}
+
+.color-input {
+    width: 100%;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 8px;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.color-input .name {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name .icon {
+    opacity: 0;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.color-input .color {
+    width: 24px;
+    height: 24px;
+    background-color: var(--btn-bg-default);
+    border-radius: 99%;
+}
+
+.panel-content .color-input:hover {
+    background-color: antiquewhite;
+}
+
+.color-input:hover .name .icon {
+    opacity: 1;
+}
+
+.color-picker {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+    background: none;
+    box-shadow: 0 0 0 1px #ccc;
+}
+
+.color-picker::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 50%;
+}
+
+.color-picker::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+}
+
+.color-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    min-height: 70px;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+}
+
+.color-modal .title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.hex-input {
+    width: 100%;
+    min-height: 40px;
+    max-height: 42px;
+    background-color: #f5f5f5;
+    color: #242424;
+    border-radius: 4px;
+    line-height: 1.15;
+    box-shadow: 0px 10px 20px -18px;
+}
+
+.hex-input:focus {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #5b5fc7;
+    border-radius: 4px 4px 2px 2px;
+}
+
+.hex-input:hover {
+    outline: 1px solid lightgrey;
+}
+
+.color-input-2 {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}

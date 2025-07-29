@@ -13,6 +13,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="default.css">
     <link rel="stylesheet" href="more.css">
+    <link rel="stylesheet" href="color-panel.css">
     <link rel="stylesheet" href="mobile.css">
 </head>
 
@@ -363,8 +364,10 @@
         <div class="chat-box">
             <div class="chat-box-header">
                 <div class="chat-box-label">
-                    <img src="assets/icons/cslogo.svg" alt="cs logo">
-                    <h4>Consulting and solution support</h4>
+                    <div class="user-icon">
+                        <img src="assets/icons/cslogo.svg" alt="cs logo">
+                    </div>
+                    <h4>Tư vấn hỗ trợ giải pháp</h4>
                 </div>
                 <div class="header-btns">
                     <div class="icon closeChat">
@@ -375,19 +378,81 @@
                     </div>
                 </div>
             </div>
-            <div class="chat-box-content">
-                1
+            <div class="chat-box-content" id="chat-box-content">
+                <div class="message-section recive">
+                    <div class="avatar">
+                        <div class="user-icon">
+                            <img src="assets/icons/cslogo.svg" alt="cs logo">
+                        </div>
+                    </div>
+                    <div class="mess-wraps">
+                        <div class="message-one">
+                            <div class="text">
+                                Xin chào, chúng tôi có thể giúp gì được cho bạn?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="message-section sender">
+                    <div class="avatar">
+                        <div class="user-icon">
+                            <img src="assets/icons/cslogo.svg" alt="cs logo">
+                        </div>
+                    </div>
+                    <div class="mess-wraps">
+                        <div class="message-one">
+                            Hello
+                        </div>
+                        <div class="message-one">
+                            <div class="text">
+                                Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn
+                                trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành
+                                công nghiệp in ấn từ những năm 1500, khi một họa sĩ vô danh ghép nhiều đoạn văn bản với
+                                nhau để tạo thành một bản mẫu văn bản. Đoạn văn bản này không những đã tồn tại năm thế
+                                kỉ, mà khi được áp dụng vào tin học văn phòng, nội dung của nó vẫn không hề bị thay đổi.
+                                Nó đã được phổ biến trong những năm 1960 nhờ việc bán những bản giấy Letraset in những
+                                đoạn Lorem Ipsum, và gần đây hơn, được sử dụng trong các ứng dụng dàn trang, như Aldus
+                                PageMaker. </div>
+                        </div>
+                        <div class="message-one">
+                            Hello
+                        </div>
+                    </div>
+                </div> -->
+                <div class="mess-section sender btns">
+                    <div class="mess-wraps">
+                        <div class="message-one" id="buy">
+                            <div class="text">
+                                Mua hàng
+                            </div>
+                        </div>
+                        <div class="message-one" id="tu-van">
+                            <div class="text">
+                                Tư vấn dịch vụ
+                            </div>
+                        </div>
+                        <div class="message-one" id="color-change">
+                            <div class="text">
+                                Đổi màu
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="chat-box-input">
-                <textarea type="text"></textarea>
-                <div class="input-btns">
-                    <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path fill="currentColor" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round"
-                                stroke-linejoin="round" stroke-width="1.5"
-                                d="m14.628 18.165l-.017-.006l-.015.02l-.84 1.201l-.073.097c-1.474 1.949-2.293 3.033-3.297 3.033l.01-.01c-.13 0-.26-.02-.39-.05c-1.27-.34-1.27-1.72-1.27-4.47v-1.85l-.58-.2c-4.21-1.46-6.3-2.19-6.41-4c-.1-1.825 1.91-2.775 5.91-4.666h0l.03-.014l7.32-3.46c3.3-1.57 4.96-2.35 6.3-1.36s1.04 2.78.44 6.34l-.96 5.7l-.007.038c-.396 2.296-.61 3.536-1.703 4.172c-.38.22-.76.32-1.2.32l-.01-.01c-.83 0-1.832-.343-3.238-.825m-4.392-1.517v1.332c0 1.38 0 2.8.21 3.06c.26-.1 1.2-1.34 2.1-2.54l.597-.848zM8.316 8.6c-3.09 1.46-5.12 2.42-5.08 3.24c.05.81 2.17 1.55 5.38 2.66l.409.141l7.43-7.431c.29-.29.77-.29 1.06 0s.29.77 0 1.06l-6.914 6.915l4.415 1.525c1.94.67 2.81.95 3.29.67c.47-.28.64-1.16.98-3.13l.96-5.71l.012-.072c.443-2.67.732-4.412.138-4.848c-.606-.447-2.149.28-4.706 1.485l-.054.025l-7.32 3.46z" />
-                        </svg>
-                    </div>
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48">
+                        <path fill="currentColor"
+                            d="M17.5 22a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5M33 19.5a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0M18.452 34.681A11.7 11.7 0 0 0 24 36a11.72 11.72 0 0 0 9.816-5.1a1.249 1.249 0 1 0-2.13-1.307A9.21 9.21 0 0 1 24 33.5a9.22 9.22 0 0 1-7.687-3.907a1.248 1.248 0 1 0-2.13 1.307a11.7 11.7 0 0 0 4.269 3.781M24 4C12.954 4 4 12.954 4 24s8.954 20 20 20s20-8.954 20-20S35.046 4 24 4M6.5 24c0-9.665 7.835-17.5 17.5-17.5S41.5 14.335 41.5 24S33.665 41.5 24 41.5S6.5 33.665 6.5 24" />
+                    </svg>
+                </div>
+                <textarea type="text" id="chat-box-input"></textarea>
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="m5 12l-.604-5.437C4.223 5.007 5.825 3.864 7.24 4.535l11.944 5.658c1.525.722 1.525 2.892 0 3.614L7.24 19.466c-1.415.67-3.017-.472-2.844-2.028zm0 0h7" />
+                    </svg>
                 </div>
             </div>
         </div>
@@ -402,6 +467,72 @@
                         d="M925.2 338.4c-22.6-53.7-55-101.9-96.3-143.3a444.4 444.4 0 0 0-143.3-96.3C630.6 75.7 572.2 64 512 64h-2c-60.6.3-119.3 12.3-174.5 35.9a445.4 445.4 0 0 0-142 96.5c-40.9 41.3-73 89.3-95.2 142.8c-23 55.4-34.6 114.3-34.3 174.9A449.4 449.4 0 0 0 112 714v152a46 46 0 0 0 46 46h152.1A449.4 449.4 0 0 0 510 960h2.1c59.9 0 118-11.6 172.7-34.3a444.5 444.5 0 0 0 142.8-95.2c41.3-40.9 73.8-88.7 96.5-142c23.6-55.2 35.6-113.9 35.9-174.5c.3-60.9-11.5-120-34.8-175.6m-151.1 438C704 845.8 611 884 512 884h-1.7c-60.3-.3-120.2-15.3-173.1-43.5l-8.4-4.5H188V695.2l-4.5-8.4C155.3 633.9 140.3 574 140 513.7c-.4-99.7 37.7-193.3 107.6-263.8c69.8-70.5 163.1-109.5 262.8-109.9h1.7c50 0 98.5 9.7 144.2 28.9c44.6 18.7 84.6 45.6 119 80c34.3 34.3 61.3 74.4 80 119c19.4 46.2 29.1 95.2 28.9 145.8c-.6 99.6-39.7 192.9-110.1 262.7" />
                     <path fill="currentColor" d="M464 512a48 48 0 1 0 96 0a48 48 0 1 0-96 0" />
                 </svg>
+            </div>
+        </div>
+
+        <div class="color-panel">
+            <div class="panel-head">
+                <div class="text">
+                    Color Panel
+                </div>
+                <div class="btns">
+                    <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M7 21q-.425 0-.712-.288T6 20t.288-.712T7 19h10q.425 0 .713.288T18 20t-.288.713T17 21z" />
+                        </svg></div>
+                    <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z" />
+                        </svg></div>
+                </div>
+            </div>
+            <div class="panel-content">
+                <div class="color-input">
+                    <div class="color"></div>
+                    <div class="name">
+                        Main Color
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M10.83 5a3.001 3.001 0 0 0-5.66 0H4a1 1 0 1 0 0 2h1.17a3.001 3.001 0 0 0 5.66 0H20a1 1 0 1 0 0-2zM4 11h9.17a3.001 3.001 0 0 1 5.66 0H20a1 1 0 1 1 0 2h-1.17a3.001 3.001 0 0 1-5.66 0H4a1 1 0 1 1 0-2m1.17 6H4a1 1 0 1 0 0 2h1.17a3.001 3.001 0 0 0 5.66 0H20a1 1 0 1 0 0-2h-9.17a3.001 3.001 0 0 0-5.66 0" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="color-input">
+                    <div class="color"></div>
+                    <div class="name">
+                        Main Color
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M10.83 5a3.001 3.001 0 0 0-5.66 0H4a1 1 0 1 0 0 2h1.17a3.001 3.001 0 0 0 5.66 0H20a1 1 0 1 0 0-2zM4 11h9.17a3.001 3.001 0 0 1 5.66 0H20a1 1 0 1 1 0 2h-1.17a3.001 3.001 0 0 1-5.66 0H4a1 1 0 1 1 0-2m1.17 6H4a1 1 0 1 0 0 2h1.17a3.001 3.001 0 0 0 5.66 0H20a1 1 0 1 0 0-2h-9.17a3.001 3.001 0 0 0-5.66 0" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="color-input">
+                    <div class="color"></div>
+                    <div class="name">
+                        Main Color
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M10.83 5a3.001 3.001 0 0 0-5.66 0H4a1 1 0 1 0 0 2h1.17a3.001 3.001 0 0 0 5.66 0H20a1 1 0 1 0 0-2zM4 11h9.17a3.001 3.001 0 0 1 5.66 0H20a1 1 0 1 1 0 2h-1.17a3.001 3.001 0 0 1-5.66 0H4a1 1 0 1 1 0-2m1.17 6H4a1 1 0 1 0 0 2h1.17a3.001 3.001 0 0 0 5.66 0H20a1 1 0 1 0 0-2h-9.17a3.001 3.001 0 0 0-5.66 0" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="color-modal">
+                <div class="title text">Main color</div>
+                <div class="color-input-2">
+                    <input type="color" name="color" id="main-color" class="color-picker">
+                    <input type="text" name="color" id="main-color-text" placeholder="Input HEX value"
+                        class="hex-input">
+                </div>
             </div>
         </div>
     </div>
@@ -421,6 +552,7 @@
     <script src="module/overlay.js"></script>
     <script src="module/form-open.js"></script>
     <script src="module/li-detail-open.js"></script>
+    <script src="module/color-change.js"></script>
 </body>
 
 </html>
