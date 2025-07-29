@@ -34,8 +34,8 @@ container.innerHTML = add_ons.map((item, addonIdx) => `
             <div class="add-on-btn">
                 <div class="button-wrapper color-none">
                     <button class="magic-btn openBtn-form" >
-                        <span class="text current">Learn More</span>
-                        <span class="text hover">Learn More</span>
+                        <span class="text current">${item.btnText}</span>
+                        <span class="text hover">${item.btnText}</span>
                     </button>
                 </div>
             </div>
