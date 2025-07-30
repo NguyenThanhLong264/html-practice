@@ -439,6 +439,11 @@ li svg {
     gap: 12px;
 }
 
+.item-content .text h4 {
+    text-align: start;
+    height: auto;
+}
+
 .add-on-content {
     display: flex;
     flex-direction: column;
