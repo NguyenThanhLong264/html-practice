@@ -291,37 +291,58 @@ const plans = [{
 
 const questions = [
     {
-        topic: 'Purchase',
+        topic: 'Dịch vụ',
         questions: [
             {
-                ques: "How can I purchase the product?",
-                ans: "After clicking “Buy now”, you will create a Zendesk account and immediately be able to purchase your software. You can easily pay by credit card or Paypal. Customers who prefer to purchase through our sales representatives can opt to pay via invoice."
+                ques: "Chi phí dịch vụ đã bao gồm những gì?",
+                ans: "Giá đã bao gồm hạ tầng cloud, bảo trì hệ thống và các tính năng cốt lõi. Bạn không cần đầu tư phần cứng hay tổng đài vật lý."
             },
             {
-                ques: "How can I purchase the product?",
-                ans: "After clicking “Buy now”, you will create a Zendesk account and immediately be able to purchase your software. You can easily pay by credit card or Paypal. Customers who prefer to purchase through our sales representatives can opt to pay via invoice."
+                ques: "Tôi có thể nâng cấp hoặc hạ cấp gói bất cứ lúc nào không?",
+                ans: "Hoàn toàn được. Bạn có thể thay đổi gói dịch vụ bất kỳ lúc nào. Hệ thống sẽ tự động điều chỉnh chi phí theo chu kỳ sử dụng."
             },
             {
-                ques: "How can I purchase the product?",
-                ans: "After clicking “Buy now”, you will create a Zendesk account and immediately be able to purchase your software. You can easily pay by credit card or Paypal. Customers who prefer to purchase through our sales representatives can opt to pay via invoice."
+                ques: "Có phát sinh chi phí khởi tạo hoặc triển khai không?",
+                ans: "Có. Mỗi khách hàng sẽ cần thanh toán một khoản phí triển khai một lần ban đầu để đội ngũ Caresoft tiến hành cấu hình hệ thống, tích hợp và đào tạo sử dụng. Mức phí cụ thể sẽ được báo giá tùy theo quy mô và yêu cầu của doanh nghiệp."
             }
         ]
     },
     {
-        topic: 'System',
+        topic: 'Kỹ thuật',
         questions: [
             {
-                ques: "How can I purchase the product?",
-                ans: "After clicking “Buy now”, you will create a Zendesk account and immediately be able to purchase your software. You can easily pay by credit card or Paypal. Customers who prefer to purchase through our sales representatives can opt to pay via invoice."
+                ques: "Tôi có cần cài đặt phần mềm hay thiết bị gì không?",
+                ans: "Không cần. Caresoft hoạt động hoàn toàn trên nền tảng đám mây. Bạn chỉ cần trình duyệt và kết nối Internet để sử dụng."
             },
             {
-                ques: "How can I purchase the product?",
-                ans: "After clicking “Buy now”, you will create a Zendesk account and immediately be able to purchase your software. You can easily pay by credit card or Paypal. Customers who prefer to purchase through our sales representatives can opt to pay via invoice."
+                ques: "Caresoft hỗ trợ những kênh tương tác nào?",
+                ans: "Hệ thống hỗ trợ gọi điện (Call Center), live chat, email, Facebook, Zalo, SMS và nhiều kênh khác – tích hợp trên một nền tảng duy nhất."
             },
             {
-                ques: "How can I purchase the product?",
-                ans: "After clicking “Buy now”, you will create a Zendesk account and immediately be able to purchase your software. You can easily pay by credit card or Paypal. Customers who prefer to purchase through our sales representatives can opt to pay via invoice."
+                ques: "Có thể tích hợp Caresoft với CRM/ERP không?",
+                ans: "Có. Caresoft hỗ trợ tích hợp linh hoạt qua API, cũng như các kết nối sẵn với nhiều hệ thống CRM, ERP, eCommerce phổ biến."
             }
         ]
     },
-]
+    {
+        topic: 'Hỗ trợ',
+        questions: [
+            {
+                ques: "Caresoft có hỗ trợ kỹ thuật trong quá trình sử dụng không?",
+                ans: "Có. Chúng tôi cung cấp hỗ trợ kỹ thuật 24/7 qua hotline, email và live chat. Các gói nâng cao có CSKH riêng đồng hành cùng doanh nghiệp."
+            },
+            {
+                ques: "Nếu tôi ngừng sử dụng thì dữ liệu có bị mất không?",
+                ans: "Không. Dữ liệu của bạn sẽ được lưu trữ an toàn trong vòng 30 ngày sau khi hủy dịch vụ, và bạn có thể xuất hoặc khôi phục trong thời gian đó."
+            },
+            {
+                ques: "Hệ thống có đảm bảo ổn định không?",
+                ans: "Có. Caresoft cam kết uptime 99%, có hệ thống giám sát và sao lưu liên tục để đảm bảo hoạt động không gián đoạn."
+            },
+            {
+                ques: 'Bạn có câu hỏi?',
+                ans: "Hãy liên hệ chúng tôi ngay!"
+            }
+        ]
+    }
+];
