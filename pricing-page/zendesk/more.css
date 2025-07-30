@@ -172,6 +172,7 @@
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
+    height: 48px;
 }
 
 .card-main .text p {
@@ -179,8 +180,8 @@
 }
 
 .text .subtitle {
-    /* height: 100px; */
-    height: auto;
+    height: 200px;
+    /* height: auto; */
     overflow: hidden;
     text-overflow: ellipsis;
 }
