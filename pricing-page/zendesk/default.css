@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-/* :root {
+:root {
     --color-bg-main: rgb(254, 250, 242);
     --color-bg-secondary: rgb(246, 240, 230);
     --color-table-hightlight: rgb(222, 215, 202);
@@ -23,9 +23,9 @@
     --pop-text: white;
 
     --tag-color: rgb(212, 244, 121);
-} */
+}
 
-:root {
+/* :root {
     --color-bg-main: #f0fdf4;
     --color-bg-secondary: #dcfce7;
     --color-table-hightlight: #bbf7d0;
@@ -43,7 +43,7 @@
     --pop-text: white;
 
     --tag-color: #86efac;
-}
+} */
 
 /* :root {
     --color-bg-main: #f5f3ff;
