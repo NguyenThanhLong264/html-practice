@@ -1,4 +1,4 @@
-const imageNames = generateImageNames('logo-', 1, 50, ['jpg', 'png']);
+const imageNames = generateImageNames('logo-', 1, 24, ['png']);
 const slider = document.getElementById('logo-slider');
 const imgList = [];
 
@@ -10,7 +10,7 @@ imageNames.forEach(name => {
     img.alt = name;
 
     img.onload = () => {
-        imgList.push(img.cloneNode()); // lưu vào mảng, không gắn DOM vội
+        imgList.push(img.cloneNode());
         loadedCount++;
         checkDone();
     };
@@ -61,7 +61,7 @@ function generateImageNames(prefix, start, end, extensions) {
     const result = [];
     for (let i = start; i <= end; i++) {
         extensions.forEach(ext => {
-            result.push(`${prefix}${i}.${ext}`);
+            result.push(`${prefix} (${i}).${ext}`);
         });
     }
     return result;
