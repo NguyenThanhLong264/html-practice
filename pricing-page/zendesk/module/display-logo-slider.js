@@ -1,4 +1,4 @@
-const imageNames = generateImageNames('logo-', 1, 24, ['png']);
+const imageNames = generateImageNames('logo', 1, 24, ['png']);
 const slider = document.getElementById('logo-slider');
 const imgList = [];
 
