@@ -36,3 +36,9 @@ a {
 .mt-40 {
     margin-top: 40px;
 }
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
