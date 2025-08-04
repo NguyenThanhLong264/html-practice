@@ -897,7 +897,7 @@ img {
     width: 16.67%;
 }
 
-th+.popular {
+th.popular {
     border-top: 1px solid rgb(22, 20, 12);
     border-left: 1px solid rgb(22, 20, 12);
     border-right: 1px solid rgb(22, 20, 12);
@@ -1182,4 +1182,9 @@ table svg,
 
 .ques-sec-wrapper:not(:first-of-type) {
     margin-top: 64px;
+}
+
+.main-td.popular {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
