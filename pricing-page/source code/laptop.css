@@ -21,4 +21,16 @@
     .col-sub-title {
         font-size: 14px;
     }
+
+    .price {
+        font-size: 32px;
+    }
+
+    .tag-text {
+        font-size: 14px;
+    }
+
+    .note-text {
+        font-size: 14px;
+    }
 }

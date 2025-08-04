@@ -34,4 +34,32 @@
         margin-bottom: 16px;
     }
 
+    .price {
+        font-size: 24px;
+    }
+
+    .btns-wrapper {
+        margin-bottom: 16px;
+        align-self: inherit;
+        -webkit-box-align: baseline;
+        align-items: baseline;
+        flex-direction: row;
+    }
+
+    .normal-text {
+        margin-bottom: 16px;
+    }
+
+    .head-text {
+        margin-bottom: 16px;
+    }
+
+    .open-text {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .note-text {
+        margin-bottom: 16px;
+    }
 }
