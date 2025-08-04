@@ -1,6 +1,7 @@
 @media (min-width:1600px) {
     section {
         padding-bottom: 104px;
+        padding-top: 104px;
     }
 
     .container {

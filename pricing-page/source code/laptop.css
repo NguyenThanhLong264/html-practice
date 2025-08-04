@@ -1,0 +1,24 @@
+@media (min-width:1120px) {
+    section {
+        padding-bottom: 88px;
+        padding-top: 88px;
+    }
+
+    .container {
+        padding-right: 24px;
+        padding-left: 24px;
+        max-width: 1120px;
+    }
+
+    .main-title {
+        font-size: 48px;
+    }
+
+    .col-title {
+        font-size: 24px;
+    }
+
+    .col-sub-title {
+        font-size: 14px;
+    }
+}
