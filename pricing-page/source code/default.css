@@ -47,3 +47,13 @@ button {
     border: none;
     cursor: pointer;
 }
+
+@media (min-width:0px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .sub-hero-title {
+        margin-top: 12px;
+    }
+}
