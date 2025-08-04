@@ -83,23 +83,21 @@
     margin-bottom: 12px;
     font-size: 18px;
     font-weight: 500;
+    line-height: calc(1em + 8px);
 }
 
 .click-link {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+    display: inline;
     margin: 0px;
+    padding: 0px;
     border: 0px solid transparent;
     border-radius: 4px;
     cursor: pointer;
+    width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
-    box-sizing: border-box;
-    padding: 0px;
     outline-color: transparent;
     background-color: transparent;
-    -webkit-font-smoothing: antialiased;
     color: rgb(22, 20, 12);
     font-weight: 500;
     text-decoration: none;
@@ -107,8 +105,9 @@
     line-height: calc(1.25em + 6px);
     min-height: calc(1.25em + 8px);
     transition: 600ms cubic-bezier(0.7, 0, 0.3, 1);
-    font-size: 18px;
-    font-family: "ABC Social", Arial, 'Inter', sans-serif;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
 .click-link-text {
@@ -118,6 +117,7 @@
     border-radius: 4px;
     cursor: pointer;
     overflow: hidden;
+    text-align: center;
     text-overflow: ellipsis;
     box-sizing: border-box;
     padding: 0px;
@@ -131,7 +131,7 @@
     line-height: calc(1.25em + 6px);
     min-height: calc(1.25em + 8px);
     transition: 600ms cubic-bezier(0.7, 0, 0.3, 1);
-    font-size: 18px;
+    font-size: 16px;
     font-family: "ABC Social", Arial, 'Inter', sans-serif;
     font-weight: 500;
     font-stretch: expanded;

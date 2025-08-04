@@ -62,4 +62,9 @@
     .note-text {
         margin-bottom: 16px;
     }
+
+    .cta-title {
+        font-size: 24px;
+    }
+
 }
