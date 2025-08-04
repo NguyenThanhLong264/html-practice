@@ -66,4 +66,8 @@
         font-size: 24px;
     }
 
+    .add-ons .feature-li {
+        columns: 1;
+    }
+
 }
