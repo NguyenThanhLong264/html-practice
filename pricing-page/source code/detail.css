@@ -54,7 +54,7 @@
     box-sizing: inherit;
     color: rgb(22, 20, 12);
     margin: 0px 0px 24px;
-    font-family: Feature, 'Playfair Display', Times, serif;
+    font-family: Feature, Times, 'Playfair Display', serif;
     font-weight: 700;
     line-height: calc(1em + 8px);
     letter-spacing: 0.75px;
@@ -237,12 +237,12 @@
     -webkit-box-pack: justify;
     justify-content: space-between;
     margin-bottom: 24px;
-    min-height: 310px;
+    min-height: 270px;
 }
 
 .col-title {
     color: rgb(22, 20, 12);
-    font-family: Feature, 'Playfair Display', Times, serif;
+    font-family: Feature, Times, 'Playfair Display', serif;
     font-weight: 500;
     line-height: calc(1em + 8px);
     letter-spacing: 0.75px;
@@ -273,11 +273,8 @@
     font-family: "ABC Social", 'Inter', Arial, sans-serif;
 }
 
-.price-tag {
-    font-family: "ABC Social", 'Inter', Arial, sans-serif;
-    font-weight: 400;
-    line-height: 18px;
-    font-size: 14px;
+.col-sub-title.price-tag {
+    min-height: auto;
     margin: 0px 0px 4px;
 }
 
@@ -763,12 +760,12 @@
     max-width: 100%;
     padding-right: 12px;
     padding-left: 12px;
+    max-width: 1120px;
 }
 
 .cta-content {
     margin: 0px auto;
     width: 100%;
-    max-width: 1120px;
     background-color: rgb(254, 250, 242);
     display: flex;
     align-items: center;
@@ -821,7 +818,7 @@ img {
 .cta-title {
     color: rgb(22, 20, 12);
     margin: 0px 0px 24px;
-    font-family: Feature, 'Playfair Display', Times, serif;
+    font-family: Feature, Times, 'Playfair Display', serif;
     font-weight: 500;
     line-height: calc(1em + 8px);
     letter-spacing: 0.75px;

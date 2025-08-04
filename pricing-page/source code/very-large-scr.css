@@ -1,0 +1,89 @@
+@media (min-width:1600px) {
+    section {
+        padding-bottom: 104px;
+    }
+
+    .container {
+        padding-right: 40px;
+        padding-left: 40px;
+        max-width: 1600px;
+    }
+
+    .small-title {
+        font-size: 16px;
+    }
+
+    .main-title {
+        font-size: 64px;
+    }
+
+    .head-text {
+        font-size: 20px;
+    }
+
+    .sticker {
+        font-size: 24px;
+    }
+
+    .col-content {
+        min-height: 310px;
+    }
+
+    .col-title {
+        font-size: 30px;
+    }
+
+    .col-sub-title {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .price {
+        font-size: 48px;
+    }
+
+    .li-a {
+        font-size: 20px;
+    }
+
+    .tag {
+        font-size: 20px;
+    }
+
+    .tag-text {
+        font-size: 16px;
+    }
+
+    .part-wrapper {
+        margin-top: 72px;
+    }
+
+    .normal-text {
+        font-size: 20px;
+    }
+
+    .cta-wrapper {
+        max-width: 1600px;
+    }
+
+    .cta-title {
+        font-size: 48px;
+    }
+
+    .cta-content {
+        padding: 48px 80px;
+    }
+
+    .marker-text {
+        font-size: 16px;
+    }
+
+    .open-text {
+        font-size: 24px;
+    }
+
+    .note-text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
