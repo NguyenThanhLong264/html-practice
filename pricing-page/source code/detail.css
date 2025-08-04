@@ -1,5 +1,18 @@
-.hero {
+/* .hero {
     background-color: rgb(254, 250, 242);
+} */
+.hero,
+.customer,
+.faq-section {
+    background-color: rgb(254, 250, 242);
+}
+
+.plans {
+    background-color: rgb(246, 240, 230);
+}
+
+.test {
+    background-color: rgb(246, 240, 230);
 }
 
 .hero-content-wrapper {
@@ -8,6 +21,7 @@
     align-items: center;
     margin-right: -12px;
     margin-left: -12px;
+    box-sizing: border-box;
 }
 
 .main-hero-title {
@@ -173,10 +187,6 @@
     padding: 0;
     position: relative;
     vertical-align: middle;
-}
-
-.plans {
-    background-color: rgb(246, 240, 230);
 }
 
 .plan-content-wrapper {
@@ -585,6 +595,7 @@
     margin-right: -12px;
     margin-left: -12px;
     margin-top: 64px;
+    box-sizing: border-box;
 }
 
 .cta-plan-plus-wrapper {
@@ -600,6 +611,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 .cta-plan-plus-flex>* {
@@ -993,6 +1005,7 @@ table svg,
 
 .tr-header {
     display: flex;
+    box-sizing: border-box;
     align-items: center;
     font-size: 16px;
     column-gap: 12px;
@@ -1058,11 +1071,6 @@ table svg,
     font-size: 13px;
     line-height: 18px;
     margin: 0px 0px 16px;
-}
-
-.customer,
-.faq-section {
-    background-color: rgb(254, 250, 242);
 }
 
 .no-pad {
