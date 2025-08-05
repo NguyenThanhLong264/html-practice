@@ -7,22 +7,28 @@ headRow.classList.add('header-row')
 
 const mainBody = document.getElementById('mainBody');
 
-const noOpenRow = document.getElementById('noOpenRow')
-const noOpenRowTable = noOpenRow.querySelector('tbody');
-
 function laptopTable() {
+    mainBody.innerHTML = '';
     headRow.innerHTML = '';
     mainTableRows.forEach(text => {
         const th = document.createElement('th');
         th.innerHTML = `<p class="head-text">${text}</p>`
         headRow.appendChild(th);
     });
-    console.log('tableHead', headRow);
 
     tableHead.appendChild(headRow);
     mainTable.insertBefore(tableHead, mainTable.firstChild);
 
     const nonOpen = plans.filter(plan => plan.title === null);
+    const noOpenRow = document.createElement('tr')
+    noOpenRow.classList.add('main-tr', 'no-ex');
+    noOpenRow.innerHTML = ` 
+    <td class="no-ex-td">
+        <table class="compare-table">
+            <tbody class="main-body"></tbody>
+        </table>
+    </td>`;
+    const noOpenRowTable = noOpenRow.querySelector('tbody');
     nonOpen.forEach((item) => {
         item.rows.forEach((row) => {
             const tds = row.map(cell => `
@@ -37,6 +43,7 @@ function laptopTable() {
             noOpenRowTable.appendChild(tr);
         });
     });
+    mainBody.appendChild(noOpenRow);
 
     const openPlans = plans.filter(plan => plan.title !== null);
     openPlans.forEach((plan) => {

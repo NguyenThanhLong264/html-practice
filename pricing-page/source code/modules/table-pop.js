@@ -1,9 +1,9 @@
-const tables = Array.from(document.querySelectorAll('table.compare-table'))
-    .filter(table => table.id !== 'main');
+
 
 function highlightPopularColumn(index) {
     const tables = Array.from(document.querySelectorAll('table.compare-table'))
         .filter(table => table.id !== 'main');
+    console.log('tables', tables.length);
 
     tables.forEach(table => {
         const rows = table.querySelectorAll('tbody tr');
