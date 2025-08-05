@@ -200,4 +200,89 @@
     .cta-btn .primary-btn {
         width: 100%;
     }
+
+    .mobile-thead {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        gap: 8px;
+    }
+
+    thead th {
+        vertical-align: middle;
+        padding: 12px;
+    }
+
+    thead th:not(:first-child),
+    tbody td:not(:first-child) {
+        width: 50%;
+    }
+
+    .custom-select {
+        position: relative;
+        width: 100%;
+        /* max-width: 320px; */
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 16px;
+        user-select: none;
+    }
+
+    .select-trigger {
+        padding: 0 12px;
+        padding-right: 40px;
+        height: 48px;
+        border: 1px solid #ccc;
+        border-radius: 12px;
+        background-color: var(--color-bg-secondary);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .arrow {
+        position: absolute;
+        right: 16px;
+        pointer-events: none;
+        font-size: 16px;
+        color: #555;
+    }
+
+    .options {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        border-radius: 12px;
+        border: 1px solid #ccc;
+        margin-top: 4px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        display: none;
+        z-index: 10;
+        overflow: hidden;
+    }
+
+    .option {
+        padding: 12px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    .option:hover {
+        background-color: #f2f2f2;
+    }
+
+    .custom-select.open .options {
+        display: block;
+    }
+
+    .header-row th {
+        width: 100%;
+    }
+
+    .main-td {
+        flex: 0 0 50%;
+    }
 }
