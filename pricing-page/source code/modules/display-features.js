@@ -107,7 +107,7 @@ function renderMobileLayout() {
         </div>
         <div class="slide-nav">
             <nav class="slide-nav-wrapper">
-                <button class="nav-btn">
+                <button class="nav-btn" id='left-nav'>
                     <div class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             fill="currentColor" viewBox="0 0 24 24">
@@ -117,7 +117,7 @@ function renderMobileLayout() {
                         </svg>
                     </div>
                 </button>
-                <button class="nav-btn">
+                <button class="nav-btn" id='right-nav'>
                     <div class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             fill="currentColor" viewBox="0 0 24 24">
@@ -137,6 +137,10 @@ function renderMobileLayout() {
     const featureLi = document.querySelector('.feature-m-li');
 
     const liContents = [];
+    const navArea = document.querySelector('.slide-nav-wrapper')
+    const navButtons = navArea.querySelectorAll('.nav-btn');
+    const firstNavBtn = navButtons[1];
+
     features.forEach((fea, index) => {
         const cardContent = `
             <div class="feature-m-col" id=${fea.title.replace(' ', '-').toLowerCase()}>
@@ -180,16 +184,12 @@ function renderMobileLayout() {
             </div>
         `;
         card.insertAdjacentHTML('beforeend', cardContent);
-        const navArea = document.querySelector('.slide-nav-wrapper')
-        const navButtons = navArea.querySelectorAll('.nav-btn');
-        const firstNavBtn = navButtons[1];
 
         const dot = document.createElement('button');
         dot.className = 'small-nav-btn';
         dot.dataset.index = index;
         firstNavBtn.insertAdjacentElement('beforebegin', dot);
 
-        const featureLi = document.querySelector('.feature-m-li')
         liContents.push(`
             <div class="slick-list">
                 <div class="li-wrapper card">
@@ -218,21 +218,64 @@ function renderMobileLayout() {
             </div>
             `);
     });
-    featureLi.innerHTML = liContents[0];
+
+    let currentIndex = 0;
+    let isAutoScrolling = false;
+
     const slickList = document.querySelector('.slick-list');
     const dots = document.querySelectorAll('.small-nav-btn');
-    const items = document.querySelectorAll('.feature-m-col');
+
+    const updateView = (index) => {
+        currentIndex = index;
+        isAutoScrolling = true;
+        slickList.scrollTo({
+            left: index * slickList.clientWidth,
+            behavior: 'smooth'
+        });
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('choosen', i === index);
+        });
+        featureLi.innerHTML = liContents[index];
+
+        // Đặt lại sau một khoảng delay nhỏ để tránh loop scroll
+        setTimeout(() => {
+            isAutoScrolling = false;
+        }, 500); // hoặc bằng duration của smooth scroll (tuỳ chỉnh)
+    };
+
+    updateView(currentIndex);
+
+    dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => {
+            updateView(i);
+        });
+    });
+
+    document.getElementById('left-nav').addEventListener('click', () => {
+        if (currentIndex > 0) {
+            updateView(currentIndex - 1);
+        }
+    });
+
+    document.getElementById('right-nav').addEventListener('click', () => {
+        if (currentIndex < features.length - 1) {
+            updateView(currentIndex + 1);
+        }
+    });
 
     slickList.addEventListener('scroll', () => {
+        if (isAutoScrolling) return; // ⛔ Không xử lý scroll khi đang auto scroll
+
         const scrollLeft = slickList.scrollLeft;
         const containerWidth = slickList.clientWidth;
         const index = Math.round(scrollLeft / containerWidth);
 
-        dots.forEach((dot, i) => {
-            dot.classList.toggle('choosen', i === index);
-        });
-
-        featureLi.innerHTML = liContents[index]; // Cập nhật phần mô tả tương ứng
+        if (index !== currentIndex) {
+            currentIndex = index;
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('choosen', i === index);
+            });
+            featureLi.innerHTML = liContents[index];
+        }
     });
-
 }
