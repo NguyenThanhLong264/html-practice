@@ -1,7 +1,9 @@
 const mainTableRows = ['Suite', 'Suite plans', 'Suit']
 const mainTable = document.getElementById('main')
+
 const tableHead = document.createElement('thead');
 tableHead.classList.add('table-header');
+
 const headRow = document.createElement('tr');
 headRow.classList.add('header-row')
 
@@ -10,6 +12,7 @@ const mainBody = document.getElementById('mainBody');
 function laptopTable() {
     mainBody.innerHTML = '';
     headRow.innerHTML = '';
+    tableHead.classList.remove('mobile');
     mainTableRows.forEach(text => {
         const th = document.createElement('th');
         th.innerHTML = `<p class="head-text">${text}</p>`
@@ -99,5 +102,61 @@ function laptopTable() {
         tr.appendChild(td);
         mainBody.appendChild(tr);
     });
+}
 
+function mobileTable() {
+    mainBody.innerHTML = '';
+    headRow.innerHTML = '';
+
+    let currentPlanIdx = 0
+    tableHead.classList.add('mobile');
+    const th = document.createElement('th');
+    const selectedText = mainTableRows[currentPlanIdx] ?? 'Chọn gói'; // fallback nếu rỗng
+    th.innerHTML = `
+    <div class="mobile-thead">
+      <h3>Plans</h3>
+      <div class="custom-select" id="customSelect">
+        <div class="select-trigger">
+          <span class="selected">${selectedText}</span>
+          <span class="arrow">▾</span>
+        </div>
+      </div>
+    </div>
+  `;
+    const selectBox = th.querySelector('.custom-select');
+    const optionsDiv = document.createElement('div');
+    optionsDiv.className = 'options';
+    mainTableRows.forEach((text, index) => {
+        const option = document.createElement('div');
+        option.className = 'option';
+        option.dataset.value = index;
+        option.textContent = text;
+        optionsDiv.appendChild(option);
+    });
+    selectBox.appendChild(optionsDiv);
+    headRow.appendChild(th);
+    tableHead.appendChild(headRow);
+    mainTable.insertBefore(tableHead, mainTable.firstChild);
+
+    const selected = selectBox.querySelector('.selected');
+    const selectTrigger = selectBox.querySelector('.select-trigger');
+
+    optionsDiv.addEventListener('click', (e) => {
+        if (e.target.classList.contains('option')) {
+            const index = Number(e.target.dataset.value);
+            currentPlanIdx = index;
+            selected.textContent = e.target.textContent;
+            optionsDiv.style.display = 'none';
+        }
+    });
+
+    selectTrigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = optionsDiv.style.display === 'block';
+        optionsDiv.style.display = isOpen ? 'none' : 'block';
+    });
+
+    document.addEventListener('click', () => {
+        optionsDiv.style.display = 'none';
+    });
 }
