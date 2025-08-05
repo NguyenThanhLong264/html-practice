@@ -102,6 +102,8 @@ function laptopTable() {
         tr.appendChild(td);
         mainBody.appendChild(tr);
     });
+
+    changeWidthByCols();
 }
 
 function mobileTable() {
@@ -249,5 +251,22 @@ function renderTableByIndex(index) {
 
         tr.appendChild(td);
         mainBody.appendChild(tr);
+    });
+}
+
+function changeWidthByCols() {
+    const colWidth = `${65 / mainTableRows.length}%`;
+    const ths = headRow.querySelectorAll(':scope > th'); // chỉ th con trực tiếp
+    const tds = document.querySelectorAll('.main-td')
+
+    tds.forEach(td => {
+        const currentFlexGrow = parseFloat(getComputedStyle(td).flexGrow);
+        if (currentFlexGrow !== 1) {
+            td.style.flex = `0 0 ${colWidth}`;
+        }
+    });
+
+    ths.forEach(th => {
+        th.style.width = colWidth;
     });
 }
