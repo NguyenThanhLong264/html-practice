@@ -285,4 +285,8 @@
     .main-td {
         flex: 0 0 50%;
     }
+
+    .ques-content {
+        padding: 0 16px;
+    }
 }
