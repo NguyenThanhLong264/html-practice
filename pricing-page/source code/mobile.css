@@ -20,6 +20,14 @@
 }
 
 @media (max-width: 767.98px) {
+    .table-header {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
     .feature-content {
         margin: 0px -24px;
         width: calc(100% + 48px);
@@ -297,5 +305,9 @@
 
     .ques-content {
         padding: 0 16px;
+    }
+
+    .part-wrapper.add-ons>*:not(:first-child) {
+        margin-top: 48px;
     }
 }

@@ -9,6 +9,7 @@
 
 .plans {
     background-color: rgb(246, 240, 230);
+    overflow-x: hidden;
 }
 
 .test {
@@ -1182,4 +1183,8 @@ table svg,
 .main-td.popular {
     border-left: 1px solid black;
     border-right: 1px solid black;
+}
+
+.mobile {
+    display: none;
 }
