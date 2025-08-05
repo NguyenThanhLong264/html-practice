@@ -8,12 +8,21 @@
         padding-right: 16px;
         padding-left: 16px;
     }
+
+    .part-wrapper {
+        margin-top: 56px;
+    }
+
+    .cta-wrapper {
+        padding-right: 8px;
+        padding-left: 8px;
+    }
 }
 
 @media (max-width: 767.98px) {
     .feature-content {
-        margin: 0px -24px;
-        width: calc(100% + 48px);
+        margin: 0px -12px;
+        /* width: calc(100% + 48px); */
     }
 
     .feature-m-content {
@@ -22,6 +31,7 @@
         margin-right: auto;
         margin-left: auto;
         width: 100%;
+        overflow: hidden;
     }
 
     .main-card {
@@ -42,7 +52,7 @@
     }
 
     .slick-track {
-        width: 1512px;
+        width: 400%;
         opacity: 1;
         display: flex;
         align-items: stretch;
@@ -52,7 +62,7 @@
     .feature-m-col {
         padding: 0;
         margin: 0;
-        width: 378px;
+        width: 100%;
         min-height: 100%;
     }
 
@@ -170,5 +180,24 @@
 
     .add-ons .feature-li {
         columns: 1;
+    }
+
+    .cta-content {
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 32px 24px;
+    }
+
+    .cta-title {
+        font-size: 22px;
+    }
+
+    .cta-btn {
+        width: 100%;
+        padding: 0;
+    }
+
+    .cta-btn .primary-btn {
+        width: 100%;
     }
 }

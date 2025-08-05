@@ -37,4 +37,13 @@
     .cta-title {
         font-size: 32px;
     }
+
+    .part-wrapper {
+        margin-top: 64px;
+    }
+
+    .cta-wrapper {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
 }

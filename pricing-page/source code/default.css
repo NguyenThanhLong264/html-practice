@@ -77,5 +77,13 @@ button {
         padding-right: 8px;
         padding-left: 8px;
     }
-}
 
+    .part-wrapper {
+        margin-top: 48px;
+    }
+
+    .cta-wrapper {
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+}

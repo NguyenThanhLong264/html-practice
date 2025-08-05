@@ -64,7 +64,8 @@
     }
 
     .cta-wrapper {
-        max-width: 1600px;
+        padding-right: 16px;
+        padding-left: 16px;
     }
 
     .cta-title {
@@ -86,5 +87,9 @@
     .note-text {
         font-size: 16px;
         line-height: 22px;
+    }
+
+    .part-wrapper {
+        margin-top: 72px;
     }
 }

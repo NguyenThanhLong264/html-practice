@@ -584,7 +584,6 @@
     flex-wrap: wrap;
     margin-right: -12px;
     margin-left: -12px;
-    margin-top: 64px;
     box-sizing: border-box;
 }
 
@@ -757,9 +756,6 @@
     flex-basis: 0px;
     flex-grow: 1;
     max-width: 100%;
-    padding-right: 12px;
-    padding-left: 12px;
-    max-width: 1120px;
 }
 
 .cta-content {
