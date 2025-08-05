@@ -21,8 +21,8 @@
 
 @media (max-width: 767.98px) {
     .feature-content {
-        margin: 0px -12px;
-        /* width: calc(100% + 48px); */
+        margin: 0px -24px;
+        width: calc(100% + 48px);
     }
 
     .feature-m-content {
@@ -45,14 +45,14 @@
     .slick-list {
         position: relative;
         display: block;
-        overflow: hidden;
         margin: 0px;
         padding: 0px 32px;
         overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
     }
 
     .slick-track {
-        width: 400%;
         opacity: 1;
         display: flex;
         align-items: stretch;
@@ -64,6 +64,15 @@
         margin: 0;
         width: 100%;
         min-height: 100%;
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+        /* flex: 0 0 100%; */
+    }
+
+    .slick-track:last-child {}
+
+    .feature-m-col>div {
+        height: 100%;
     }
 
     .tab {
@@ -283,7 +292,7 @@
     }
 
     .main-td {
-        flex: 0 0 50%;
+        /* flex: 0 0 50%; */
     }
 
     .ques-content {

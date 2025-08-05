@@ -9,6 +9,10 @@
 ::after {
     box-sizing: inherit;
 } */
+html,
+body {
+    overflow-x: hidden;
+}
 
 body {
     -webkit-font-smoothing: antialiased;
