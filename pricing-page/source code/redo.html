@@ -356,7 +356,7 @@
                 <div class="table-wrapper">
                     <h2 class="main-title">Compare plans</h2>
                     <table class="compare-table" id="main">
-                        <thead class="table-header">
+                        <!-- <thead class="table-header">
                             <tr class="header-row">
                                 <th>
                                     <p class="head-text">Suite Team</p>
@@ -391,13 +391,13 @@
                                     </div>
                                 </th>
                             </tr>
-                        </thead>
-                        <tbody class="main-body">
-                            <tr class="main-tr no-ex">
+                        </thead> -->
+                        <tbody class="main-body" id="mainBody">
+                            <tr class="main-tr no-ex" id="noOpenRow">
                                 <td class="no-ex-td">
                                     <table class="compare-table">
                                         <tbody class="main-body">
-                                            <tr class="sub-tr">
+                                            <!-- <tr class="sub-tr">
                                                 <td class="main-td">
                                                     <p class="normal-text">Annual Subscription Term (per agent per
                                                         month)</p>
@@ -439,12 +439,12 @@
                                                 <td class="main-td">
                                                     <p class="normal-text">$55</p>
                                                 </td>
-                                            </tr>
+                                            </tr> -->
                                         </tbody>
                                     </table>
                                 </td>
                             </tr>
-                            <tr class="main-tr">
+                            <!-- <tr class="main-tr">
                                 <td class="open-td">
                                     <div class="td-open-content">
                                         <div class="tr-header">
@@ -726,7 +726,7 @@
                                         </div>
                                     </div>
                                 </td>
-                            </tr>
+                            </tr> -->
                         </tbody>
                     </table>
                     <p class="note-text">*24/7 support in English only. 8x5 customer's local business hours for
@@ -928,10 +928,11 @@
     </main>
 
     <script src="modules/data.js"></script>
-    <script src="modules/toggle-table.js"></script>
-    <script src="modules/table-pop.js"></script>
     <script src="modules/display-features.js"></script>
+    <script src="modules/display-table.js"></script>
+    <script src="modules/table-pop.js"></script>
     <script src="modules/mobile-layout.js"></script>
+    <script src="modules/toggle-table.js"></script>
 </body>
 
 </html>

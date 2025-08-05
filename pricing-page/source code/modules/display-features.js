@@ -1,6 +1,6 @@
 const featuresArea = document.querySelector('.plan-content-wrapper')
 
-function renderLaptopLayout(features) {
+function renderLaptopLayout() {
     featuresArea.innerHTML = ``;
     const featureContent = document.createElement('div');
     featureContent.className = 'feature-content card';

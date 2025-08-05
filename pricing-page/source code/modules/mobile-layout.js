@@ -3,9 +3,13 @@ function applyResponsiveLayout() {
     console.log(width);
 
     if (width < 768) {
-        renderMobileLayout(features);
+        renderMobileLayout();
     } else {
-        renderLaptopLayout(features)
+        renderLaptopLayout()
+        laptopTable()
+        highlightMainHeader(2)
+        highlightPopularColumn(3)
+        toggleTable();
     }
 }
 

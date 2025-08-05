@@ -1030,7 +1030,7 @@ table svg,
 
 .main-tr.open .tr-content {
     grid-template-rows: 0;
-    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .open .tr-header svg,

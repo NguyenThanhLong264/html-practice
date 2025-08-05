@@ -129,7 +129,8 @@ const plans = [{
     ]
 },
 {
-    title: 'Tính năng nâng cao của kênh chat',
+    // title: 'Tính năng nâng cao của kênh chat',
+    title: null,
     rows: [
         ['Chat bot', true, true, '-'],
         ['Trợ lý ảo tự động trả lời khách hàng', true, true, '-'],

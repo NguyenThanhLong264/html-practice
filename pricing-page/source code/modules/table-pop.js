@@ -24,6 +24,7 @@ function highlightMainHeader(index) {
     const th = headerRow.children[index];
     if (!th) return;
     th.classList.add('popular');
+    console.log('pop', th);
 
     const marker = document.createElement('span');
     marker.className = 'marker';
@@ -36,8 +37,4 @@ function highlightMainHeader(index) {
 
     th.appendChild(marker);
 }
-
-highlightMainHeader(2)
-highlightPopularColumn(3)
-
 {/* < span class="marker" ><span class="marker-text">Most popular</span></span > */ }
