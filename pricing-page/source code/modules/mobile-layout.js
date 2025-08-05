@@ -5,6 +5,7 @@ function applyResponsiveLayout() {
     if (width < 768) {
         renderMobileLayout();
         mobileTable();
+        toggleTable();
     } else {
         renderLaptopLayout()
         laptopTable()

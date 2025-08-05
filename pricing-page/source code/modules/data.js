@@ -116,7 +116,7 @@ const add_ons = [
 const plans = [{
     title: 'Tích hợp các kênh tương tác với khách hàng (customer engagement)',
     rows: [
-        ['Kênh thoại (voice call)', true, true, true],
+        ['Kênh thoại (voice call)', 1, 2, 3],
         ['Kênh Email', true, true, true],
         ['Kênh SMS (text message)', true, true, true],
         ['Ticket form', true, true, true],
