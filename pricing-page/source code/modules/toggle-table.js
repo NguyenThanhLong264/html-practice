@@ -3,7 +3,7 @@ function toggleOpen() {
 
     tableToggles.forEach(row => {
         row.addEventListener('click', () => {
-            const parentRow = row.closest('.main-tr');
+            const parentRow = row.closest('.open-td');
             if (parentRow) {
                 parentRow.classList.toggle('open');
             }

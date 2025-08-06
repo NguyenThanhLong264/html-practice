@@ -838,7 +838,7 @@ img {
     border-collapse: collapse;
     border-spacing: 0px;
     line-height: 20px;
-    color: rgb(23, 73, 77);
+    color: rgb(22, 20, 12);
     font-size: 16px;
     align-items: stretch;
     display: flex;
@@ -1024,7 +1024,7 @@ table svg,
     transition: all 100ms linear;
 }
 
-.main-tr.open .tr-content {
+.open-td.open .tr-content {
     grid-template-rows: 0;
     padding-bottom: 0;
 }
