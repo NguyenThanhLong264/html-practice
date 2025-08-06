@@ -68,7 +68,7 @@ const features = [
 
 const add_ons = [
     {
-        isNew: true,
+        isNew: 'Add-on',
         name: 'Chat bot',
         price: '10.000.000/ 1 lần triển khai',
         description: `Tự động tiếp nhận và phản hồi khách hàng 24x7 trên các kênh chat (Facebook, Istagram, Zalo, Livechat), tối ưu nguồn lực và nâng cao trải nghiệm khách hàng.`,
@@ -84,7 +84,7 @@ const add_ons = [
         btnText: 'Thử ngay',
     },
     {
-        isNew: true,
+        isNew: 'Add-on',
         name: 'AI',
         price: 'Contact us',
         description: `Ứng dụng AI ở tất cả các giai đoạn, từ phản hồi khách hàng tự động, hỗ trợ chuyên viên đến đánh giá mức độ tiềm năng của khách hàng, đánh giá chất lượng dịch vụ chuyên viên và nhiều ứng dụng khác`,
@@ -98,7 +98,7 @@ const add_ons = [
         btnText: 'Liên hệ',
     },
     {
-        isNew: true,
+        isNew: 'Add-on',
         name: 'Smart Dialer',
         price: 'Contact us',
         description: `Ứng dụng AI ở tất cả các giai đoạn, từ phản hồi khách hàng tự động, hỗ trợ chuyên viên đến đánh giá mức độ tiềm năng của khách hàng, đánh giá chất lượng dịch vụ chuyên viên và nhiều ứng dụng khác`,

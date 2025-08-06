@@ -11,7 +11,8 @@ function applyResponsiveLayout() {
         highlightMainHeader(1)
         highlightPopularColumn(2)
     }
-    replaceIcon()
+    displayAddOns();
+    replaceIcon();
     toggleOpen();
 }
 
