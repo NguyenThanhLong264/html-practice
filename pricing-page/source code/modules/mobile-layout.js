@@ -17,6 +17,7 @@ function applyResponsiveLayout() {
 window.addEventListener('load', () => {
     applyResponsiveLayout();
     displayAddOns();
+    logo();
     displayFaq();
     toggleOpen();
 });

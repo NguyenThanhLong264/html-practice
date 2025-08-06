@@ -4,23 +4,24 @@ const imgList = [];
 
 let loadedCount = 0;
 
-imageNames.forEach(name => {
-    const img = new Image();
-    img.src = `assets/imgs/logos/${name}`;
-    img.alt = name;
+function logo() {
+    imageNames.forEach(name => {
+        const img = new Image();
+        img.src = `img/logos/${name}`;
+        img.alt = name;
 
-    img.onload = () => {
-        imgList.push(img.cloneNode());
-        loadedCount++;
-        checkDone();
-    };
+        img.onload = () => {
+            imgList.push(img.cloneNode());
+            loadedCount++;
+            checkDone();
+        };
 
-    img.onerror = () => {
-        loadedCount++;
-        checkDone();
-    };
-});
-
+        img.onerror = () => {
+            loadedCount++;
+            checkDone();
+        };
+    });
+}
 function checkDone() {
     if (loadedCount === imageNames.length) {
         finalizeSlider();
@@ -29,19 +30,16 @@ function checkDone() {
 }
 
 function finalizeSlider() {
-    // Thêm ảnh lần 1
     imgList.forEach(img => {
         slider.appendChild(img.cloneNode());
     });
-
-    // Thêm ảnh lần 2 để tạo vòng lặp
     imgList.forEach(img => {
         slider.appendChild(img.cloneNode());
     });
 
     const imgCount = imgList.length * 2;
-    const totalShiftPercent = imgCount * 100;
-    const duration = imgList.length * 1; // mỗi ảnh 2s
+    const totalShiftPercent = (imgCount) * 100;
+    const duration = imgList.length * 2; // mỗi ảnh 2s
 
     const style = document.createElement('style');
     style.innerHTML = `
