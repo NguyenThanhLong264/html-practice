@@ -21,7 +21,7 @@ const features = [
         marked: false
     },
     {
-        title: 'OMNI-CHANNEL CONTACT CENTER',
+        title: 'Contact Center',
         description: 'Giải pháp tối ưu cho doanh nghiệp muốn xây dựng trung tâm chăm sóc khách hàng chuyên nghiệp trên nhiều kênh liên lạc. Tập trung vào khả năng tiếp nhận – phản hồi tự động - phân phối – giám sát – phân tích các tương tác khách hàng giúp nâng cao trải nghiệm người dùng và hiệu quả vận hành của đội ngũ CSKH.',
         price: '800.000 VNĐ',
         price_tag: '/ user/ tháng',
