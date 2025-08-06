@@ -1,6 +1,7 @@
-const formWrapper = document.createElement('div')
-formWrapper.classList.add('form-wrapper')
-formWrapper.innerHTML = `
+function displayForm() {
+    const formWrapper = document.createElement('div')
+    formWrapper.classList.add('form-wrapper')
+    formWrapper.innerHTML = `
                 <div class="form-content">
                     <form action="contact">
                         <div class="form-title">
@@ -36,9 +37,9 @@ formWrapper.innerHTML = `
                             </div>
                             <div class="input-wrapper full">
                                 <div class="input-content">
-                                    <label class="input-label" for="email">Message</label>
+                                    <label class="input-label" for="message">Message</label>
                                     <div class="input-detail">
-                                        <input type="text" id="email" name="email" required>
+                                        <input type="text" id="message" name="message" required>
                                         <div class="input-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" viewBox="0 0 16 16">
@@ -61,9 +62,9 @@ formWrapper.innerHTML = `
                             </div>
                             <div class="input-wrapper lap-50">
                                 <div class="input-content">
-                                    <label class="input-label" for="email">First name</label>
+                                    <label class="input-label" for="name">First name</label>
                                     <div class="input-detail">
-                                        <input type="text" id="email" name="email" required>
+                                        <input type="text" id="name" name="name" required>
                                         <div class="input-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" viewBox="0 0 16 16">
@@ -86,9 +87,9 @@ formWrapper.innerHTML = `
                             </div>
                             <div class="input-wrapper lap-50">
                                 <div class="input-content">
-                                    <label class="input-label" for="email">Last name</label>
+                                    <label class="input-label" for="company">Company</label>
                                     <div class="input-detail">
-                                        <input type="text" id="email" name="email" required>
+                                        <input type="text" id="company" name="company" required>
                                         <div class="input-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" viewBox="0 0 16 16">
@@ -111,9 +112,9 @@ formWrapper.innerHTML = `
                             </div>
                             <div class="input-wrapper full">
                                 <div class="input-content">
-                                    <label class="input-label" for="email">Phone number</label>
+                                    <label class="input-label" for="phone">Phone number</label>
                                     <div class="input-detail">
-                                        <input type="text" id="email" name="email" required>
+                                        <input type="text" id="phone" name="phone" required>
                                         <div class="input-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" viewBox="0 0 16 16">
@@ -137,7 +138,7 @@ formWrapper.innerHTML = `
                             <div class="input-wrapper full">
                                 <div class="input-content">
                                     <div class="check-box-wrapper">
-                                        <input type="checkbox" name="agree" id="">
+                                        <input type="checkbox" name="agree" id="agree">
                                         <label class='normal-text' for="agree">Yes, I would like to receive marketing-related communications
                                             about Zendesk products, services, and events. I understand I may unsubscribe
                                             at any time.</label>
@@ -166,37 +167,38 @@ formWrapper.innerHTML = `
                     </form>
                 </div>
 `
-function displayForm() {
     document.querySelectorAll('.openForm').forEach(button => {
         button.addEventListener('click', () => {
             toggleOverlay();
-            overlay.appendChild(formWrapper)
-        })
-    })
 
-    document.querySelectorAll('.input-detail input').forEach(input => {
-        const wrapper = input.closest('.input-content');
-        const warning = wrapper?.querySelector('.input-warning');
-        const icon = wrapper?.querySelector('.input-icon');
+            // Chỉ thêm nếu chưa tồn tại
+            const existing = overlay.querySelector('.form-wrapper');
+            if (!existing) {
+                overlay.appendChild(formWrapper);
 
-        // Khi blur: kiểm tra valid/invalid
-        input.addEventListener('blur', () => {
-            if (!input.checkValidity()) {
-                if (warning) warning.style.display = 'block';
-                if (icon) icon.style.display = 'flex';
-            } else {
-                if (warning) warning.style.display = 'none';
-                if (icon) icon.style.display = 'none';
-            }
-        });
+                formWrapper.querySelectorAll('.input-detail input').forEach(input => {
+                    const wrapper = input.closest('.input-content');
+                    const warning = wrapper?.querySelector('.input-warning');
+                    const icon = wrapper?.querySelector('.input-icon');
 
-        // Khi đang gõ: nếu valid thì ẩn cảnh báo
-        input.addEventListener('input', () => {
-            if (input.checkValidity()) {
-                if (warning) warning.style.display = 'none';
-                if (icon) icon.style.display = 'none';
+                    input.addEventListener('blur', () => {
+                        if (!input.checkValidity()) {
+                            if (warning) warning.style.display = 'block';
+                            if (icon) icon.style.display = 'flex';
+                        } else {
+                            if (warning) warning.style.display = 'none';
+                            if (icon) icon.style.display = 'none';
+                        }
+                    });
+
+                    input.addEventListener('input', () => {
+                        if (input.checkValidity()) {
+                            if (warning) warning.style.display = 'none';
+                            if (icon) icon.style.display = 'none';
+                        }
+                    });
+                });
             }
         });
     });
-
 }
