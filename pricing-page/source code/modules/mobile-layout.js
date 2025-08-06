@@ -1,5 +1,5 @@
 function applyResponsiveLayout() {
-    const width = document.documentElement.clientWidth;
+    const width = window.innerWidth;
     console.log(width);
 
     if (width < 768) {
@@ -11,11 +11,13 @@ function applyResponsiveLayout() {
         highlightMainHeader(1)
         highlightPopularColumn(2)
     }
-    displayAddOns();
-    displayFaq();
     replaceIcon();
-    toggleOpen();
 }
 
-window.addEventListener('load', applyResponsiveLayout);
+window.addEventListener('load', () => {
+    applyResponsiveLayout();
+    displayAddOns();
+    displayFaq();
+    toggleOpen();
+});
 window.addEventListener('resize', applyResponsiveLayout);

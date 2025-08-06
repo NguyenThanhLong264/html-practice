@@ -17,6 +17,10 @@
         padding-right: 8px;
         padding-left: 8px;
     }
+
+    .add-ons .feature-li {
+        columns: 2;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -193,10 +197,6 @@
     .add-on-wrapper {
         flex: 0 0 100%;
         max-width: 100%;
-    }
-
-    .add-ons .feature-li {
-        columns: 1;
     }
 
     .cta-content {
