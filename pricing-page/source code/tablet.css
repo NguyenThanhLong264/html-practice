@@ -94,4 +94,9 @@
     .form-input .lap-50 {
         grid-column: span 1;
     }
+
+    .li-text {
+        text-underline-offset: 4px;
+        border-bottom: 1px dotted rgb(22, 20, 12);
+    }
 }

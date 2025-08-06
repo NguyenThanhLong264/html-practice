@@ -1,7 +1,7 @@
 const features = [
     {
         title: 'Call Center',
-        description: 'Giải pháp nền tảng tổng đài chuyên nghiệp với các tính năng thiết yếu để vận hành trung tâm chăm sóc khách hàng và Telesales với các kênh liên lạc truyền thống là hotline và email.',
+        description: 'Giải pháp nền tảng tổng đài chuyên nghiệp với đầy đủ tính năng thiết yếu để vận hành trung tâm chăm sóc khách hàng và Telesales, hỗ trợ các kênh liên lạc truyền thống như hotline và email.',
         price: '500.000 VND',
         price_tag: '/ user/ tháng',
         buy_btn_link: '/',
@@ -22,7 +22,7 @@ const features = [
     },
     {
         title: 'Contact Center',
-        description: 'Giải pháp tối ưu cho doanh nghiệp muốn xây dựng trung tâm chăm sóc khách hàng chuyên nghiệp trên nhiều kênh liên lạc. Tập trung vào khả năng tiếp nhận – phản hồi tự động - phân phối – giám sát – phân tích các tương tác khách hàng giúp nâng cao trải nghiệm người dùng và hiệu quả vận hành của đội ngũ CSKH.',
+        description: 'Giải pháp đa kênh tối ưu cho doanh nghiệp xây dựng trung tâm chăm sóc khách hàng chuyên nghiệp, tập trung vào tiếp nhận, phản hồi tự động, phân phối, giám sát và phân tích tương tác để nâng cao trải nghiệm và hiệu quả vận hành.',
         price: '800.000 VNĐ',
         price_tag: '/ user/ tháng',
         buy_btn_link: '/',
@@ -42,7 +42,7 @@ const features = [
         marked: true
     }, {
         title: 'OMNI-Channel CRM',
-        description: 'Giải pháp tích hợp toàn diện các kênh liên lạc và công cụ quản lý – thực thi - giám sát - tự động hóa và tối ưu hóa hoạt động marketing, bán hàng và chăm sóc khách hàng.',
+        description: 'Giải pháp tích hợp toàn diện các kênh liên lạc và công cụ quản lý, thực thi, giám sát, tự động hóa và tối ưu hoạt động marketing, bán hàng và chăm sóc khách hàng trên cùng một nền tảng thống nhất.',
         price: '1.000.000 VNĐ',
         price_tag: '/ user/ tháng',
         buy_btn_link: '/',

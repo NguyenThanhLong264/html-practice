@@ -23,7 +23,7 @@ function renderLaptopLayout() {
                         <h4 class="col-title">${fea.title}</h4>
                         <p class="col-sub-title">${fea.description}</p>
                         <div>
-                            <p class="price"><span>$${fea.price}</span></p>
+                            <p class="price"><span>${fea.price}</span></p>
                             <p class="price-tag col-sub-title">${fea.price_tag}</p>
                         </div>
                     </div>
@@ -72,6 +72,19 @@ function renderLaptopLayout() {
             </div>
         `;
         contentFlex.appendChild(featureCol);
+    });
+    const subTitles = contentFlex.querySelectorAll('.col-sub-title');
+    let maxHeight = 0;
+    subTitles.forEach(el => {
+        const height = el.offsetHeight;
+        if (height > maxHeight) {
+            maxHeight = height;
+        }
+    });
+    subTitles.forEach(el => {
+        if (!el.classList.contains('price-tag')) {
+            el.style.minHeight = `${maxHeight}px`;
+        }
     });
 }
 

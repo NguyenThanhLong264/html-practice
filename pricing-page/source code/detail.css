@@ -479,11 +479,6 @@
     text-underline-offset: 4px;
 }
 
-.li-text {
-    text-underline-offset: 4px;
-    border-bottom: 1px dotted rgb(22, 20, 12);
-}
-
 .search-icon-li {
     margin: 4px 0px 0px 6px;
     position: absolute;
