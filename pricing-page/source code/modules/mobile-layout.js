@@ -5,14 +5,13 @@ function applyResponsiveLayout() {
     if (width < 768) {
         renderMobileLayout();
         mobileTable();
-        toggleTable();
     } else {
         renderLaptopLayout()
         laptopTable()
         highlightMainHeader(2)
         highlightPopularColumn(3)
-        toggleTable();
     }
+    toggleTable();
 }
 
 window.addEventListener('load', applyResponsiveLayout);
