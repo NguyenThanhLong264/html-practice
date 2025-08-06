@@ -1185,6 +1185,10 @@ table svg,
     border-right: 1px solid black;
 }
 
+.main-td.popular-bottom {
+    border-bottom: 1px solid black;
+}
+
 .mobile {
     display: none;
 }

@@ -8,9 +8,10 @@ function applyResponsiveLayout() {
     } else {
         renderLaptopLayout()
         laptopTable()
-        highlightMainHeader(2)
-        highlightPopularColumn(3)
+        highlightMainHeader(1)
+        highlightPopularColumn(2)
     }
+    replaceIcon()
     toggleOpen();
 }
 

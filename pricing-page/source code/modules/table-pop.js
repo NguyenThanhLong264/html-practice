@@ -5,12 +5,16 @@ function highlightPopularColumn(index) {
         .filter(table => table.id !== 'main');
     console.log('tables', tables.length);
 
+    const lastTable = tables[tables.length - 1];
     tables.forEach(table => {
         const rows = table.querySelectorAll('tbody tr');
-        rows.forEach(tr => {
+        rows.forEach((tr, rowIndex) => {
             const cells = tr.children;
             if (cells[index]) {
                 cells[index].classList.add('popular');
+                if (table === lastTable && rowIndex === rows.length - 1) {
+                    cells[index].classList.add('popular-bottom');
+                }
             }
         });
     });

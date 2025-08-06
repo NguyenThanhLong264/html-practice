@@ -254,6 +254,36 @@ function renderTableByIndex(index) {
     });
 }
 
+function replaceIcon() {
+    const iconCheck = `
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="16"
+                                                viewBox="0 0 21 16" fill="currentColor">
+                                                <path
+                                                    d="M21.053 1.758 19.295 0 6.771 12.52 1.764 7.513 0 9.277 6.771 16z">
+                                                </path>
+                                            </svg>`;
+
+    const iconCross = `
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" viewBox="0 0 16 16">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                                                    d="m2 13.964 12.021-12.02" vector-effect="non-scaling-stroke">
+                                                </path>
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                                                    d="m2.098 1.998 12.02 12.021" vector-effect="non-scaling-stroke">
+                                                </path>
+                                            </svg>`;
+    document.querySelectorAll('.main-td .normal-text').forEach(p => {
+        const text = p.textContent.trim().toLowerCase();
+
+        if (text === 'true') {
+            p.innerHTML = iconCheck;
+        } else if (text === 'false') {
+            p.innerHTML = iconCross;
+        }
+    });
+}
+
 function changeWidthByCols() {
     const colWidth = `${65 / mainTableRows.length}%`;
     const ths = headRow.querySelectorAll(':scope > th'); // chỉ th con trực tiếp

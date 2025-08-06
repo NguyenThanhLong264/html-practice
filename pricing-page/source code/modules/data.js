@@ -116,11 +116,11 @@ const add_ons = [
 const plans = [{
     title: 'Tích hợp các kênh tương tác với khách hàng (customer engagement)',
     rows: [
-        ['Kênh thoại (voice call)', 1, 2, 3],
+        ['Kênh thoại (voice call)', true, true, true],
         ['Kênh Email', true, true, true],
         ['Kênh SMS (text message)', true, true, true],
         ['Ticket form', true, true, true],
-        ['Kênh Facebook & Instagram (chat, comment, call)', true, true, '-'],
+        ['Kênh Facebook & Instagram (chat, comment, call)', true, true, false],
         ['Kênh Zalo OA (chat, video call, voice call)', true, true, '-'],
         ['Kênh Zalo cá nhân (chat)', true, true, '-'],
         ['Kênh Live chat (chat)', true, true, '-'],
@@ -129,8 +129,8 @@ const plans = [{
     ]
 },
 {
-    // title: 'Tính năng nâng cao của kênh chat',
-    title: null,
+    // title: null,
+    title: 'Tính năng nâng cao của kênh chat',
     rows: [
         ['Chat bot', true, true, '-'],
         ['Trợ lý ảo tự động trả lời khách hàng', true, true, '-'],
