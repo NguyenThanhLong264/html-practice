@@ -41,7 +41,7 @@ const features = [
         ],
         marked: true
     }, {
-        title: 'OMNI-CHANNEL CRM',
+        title: 'OMNI-Channel CRM',
         description: 'Giải pháp tích hợp toàn diện các kênh liên lạc và công cụ quản lý – thực thi - giám sát - tự động hóa và tối ưu hóa hoạt động marketing, bán hàng và chăm sóc khách hàng.',
         price: '1.000.000 VNĐ',
         price_tag: '/ user/ tháng',
