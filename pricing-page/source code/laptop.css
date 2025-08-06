@@ -14,6 +14,11 @@
         font-size: 48px;
     }
 
+    .text-wrapper .main-title {
+        flex: 0 0 66.6667%;
+        max-width: 66.6667%;
+    }
+
     .col-title {
         font-size: 24px;
     }

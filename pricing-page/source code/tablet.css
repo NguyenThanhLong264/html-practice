@@ -17,6 +17,11 @@
         font-size: 40px;
     }
 
+    .text-wrapper .main-title {
+        flex: 0 0 66.6667%;
+        max-width: 66.6667%;
+    }
+
     .head-text {
         margin-bottom: 16px;
     }
