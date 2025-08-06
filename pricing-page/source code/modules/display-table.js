@@ -76,8 +76,6 @@ function laptopTable() {
         tr.className = 'main-tr';
 
         const td = document.createElement('td');
-        td.className = 'open-td';
-
         td.innerHTML = `
         <div class="td-open-content">
             <div class="tr-header">
@@ -94,6 +92,7 @@ function laptopTable() {
             <div class="tr-content"></div>
         </div>
     `;
+        console.log(td);
 
         // Thêm smallTable vào div.tr-content
         const trContent = td.querySelector('.tr-content');
@@ -229,7 +228,7 @@ function renderTableByIndex(index) {
         tr.className = 'main-tr';
 
         const td = document.createElement('td');
-        td.className = 'open-td';
+        td.className = 'open-td open';
 
         td.innerHTML = `
         <div class="td-open-content">
