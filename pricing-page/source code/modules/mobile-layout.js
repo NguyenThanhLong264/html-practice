@@ -12,6 +12,7 @@ function applyResponsiveLayout() {
         highlightPopularColumn(2)
     }
     displayAddOns();
+    displayFaq();
     replaceIcon();
     toggleOpen();
 }
