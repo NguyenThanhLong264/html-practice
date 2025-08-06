@@ -49,7 +49,7 @@ function displayAddOns() {
             `).join('')}
         </ul>
         <p class="normal-text">${addOn.bottomText}</p>
-        <button class="secondary-btn">
+        <button class="secondary-btn openForm">
             <span class="btn-text-bg">
                 <span class="btn-span">
                     <span class="i-text">${addOn.btnText}</span>

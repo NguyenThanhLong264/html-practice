@@ -132,8 +132,6 @@
     font-family: "ABC Social", 'Noto Sans', Arial, 'Inter', sans-serif;
     font-weight: 500;
     font-stretch: expanded;
-    transform: scaleX(1.2);
-    display: inline-block;
     background-image: linear-gradient(90deg, rgba(22, 20, 12, 0.7) 0%, rgba(22, 20, 12, 0.7) 40%, transparent 40%, transparent 60%, rgb(22, 20, 12) 60%, rgb(22, 20, 12) 100%);
     background-position: 100% 100%;
     background-repeat: no-repeat;
@@ -1229,4 +1227,33 @@ table svg,
 
 .mobile {
     display: none;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: 0.15s ease-in 0s 1 normal none running lbWRkT;
+}
+
+.overlay.open {
+    z-index: 1001;
+    overflow: hidden;
+}
+
+@keyframes lbWRkT {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
