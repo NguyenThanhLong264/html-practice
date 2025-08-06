@@ -11,7 +11,7 @@ function applyResponsiveLayout() {
         highlightMainHeader(1)
         highlightPopularColumn(2)
     }
-    replaceIcon();
+    toggleTable();
 }
 
 window.addEventListener('load', () => {
@@ -21,6 +21,6 @@ window.addEventListener('load', () => {
     displayFaq();
     displayForm();
     setupOverlay();
-    toggleFaq()
+    toggleFaq();
 });
 window.addEventListener('resize', applyResponsiveLayout);

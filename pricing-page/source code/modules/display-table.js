@@ -149,7 +149,8 @@ function mobileTable() {
             currentPlanIdx = index;
             selected.textContent = e.target.textContent;
             optionsDiv.style.display = 'none';
-            renderTableByIndex(currentPlanIdx + 1)
+            renderTableByIndex(currentPlanIdx + 1);
+            toggleTable();
         }
     });
 
@@ -162,11 +163,10 @@ function mobileTable() {
     document.addEventListener('click', () => {
         optionsDiv.style.display = 'none';
     });
-    toggleTable()
+    replaceIcon();
 }
 
 function renderTableByIndex(index) {
-    console.log('index', index);
     mainBody.innerHTML = '';
     const nonOpen = plans.filter(plan => plan.title === null);
     const noOpenRow = document.createElement('tr')
@@ -251,6 +251,7 @@ function renderTableByIndex(index) {
 
         tr.appendChild(td);
         mainBody.appendChild(tr);
+        replaceIcon();
     });
 }
 
@@ -282,6 +283,7 @@ function replaceIcon() {
             p.innerHTML = iconCross;
         }
     });
+    // toggleTable();
 }
 
 function changeWidthByCols() {
