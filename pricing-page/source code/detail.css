@@ -149,7 +149,6 @@
     cursor: pointer;
     color: rgb(22, 20, 12);
     font-weight: 500;
-    font-stretch: expanded;
     line-height: calc(1.25em + 6px);
     font-size: 18px;
     font-family: "ABC Social", 'Noto Sans', Arial, 'Inter', sans-serif;
@@ -158,20 +157,19 @@
     bottom: 0.1em;
     display: inline-block;
     min-width: 16px;
-    position: relative;
     margin: 0px 8px;
     max-width: 24px;
     max-height: 24px;
+    vertical-align: middle;
 }
 
 .icon svg {
+    display: block;
     fill: currentcolor;
     box-sizing: inherit;
     height: 100%;
     width: 100%;
     padding: 0;
-    position: relative;
-    vertical-align: middle;
 }
 
 .plan-content-wrapper {
@@ -977,6 +975,7 @@ table svg,
 .open-text {
     font-size: 18px;
     font-family: "ABC Social", 'Noto Sans', Arial, 'Inter', sans-serif;
+    color: rgb(22, 20, 12);
     font-weight: 500;
     line-height: calc(1em + 8px);
     letter-spacing: 0px;
