@@ -73,7 +73,13 @@ function displayAddOns() {
                 partWrapper.appendChild(addOnsArray[index + 1]);
             }
 
-            planContainer.appendChild(partWrapper);
+            const lastChild = planContainer.lastElementChild;
+
+            if (lastChild && lastChild.classList.contains('part-wrapper') && lastChild.classList.contains('cta')) {
+                planContainer.insertBefore(partWrapper, lastChild);
+            } else {
+                planContainer.appendChild(partWrapper);
+            }
         }
     });
     console.log('plans :', addOnsArray);
