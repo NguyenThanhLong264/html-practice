@@ -11,7 +11,7 @@ function applyResponsiveLayout() {
         highlightMainHeader(2)
         highlightPopularColumn(3)
     }
-    toggleTable();
+    toggleOpen();
 }
 
 window.addEventListener('load', applyResponsiveLayout);

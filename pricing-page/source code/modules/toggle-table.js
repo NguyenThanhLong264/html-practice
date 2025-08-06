@@ -1,4 +1,4 @@
-function toggleTable() {
+function toggleOpen() {
     const tableToggles = document.querySelectorAll('.tr-header');
 
     tableToggles.forEach(row => {
