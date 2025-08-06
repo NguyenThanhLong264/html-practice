@@ -160,6 +160,8 @@
     min-width: 16px;
     position: relative;
     margin: 0px 8px;
+    max-width: 24px;
+    max-height: 24px;
 }
 
 .icon svg {
