@@ -19,8 +19,8 @@ window.addEventListener('load', () => {
     displayAddOns();
     logo();
     displayFaq();
-    toggleOpen();
     displayForm();
     setupOverlay();
+    toggleFaq()
 });
 window.addEventListener('resize', applyResponsiveLayout);

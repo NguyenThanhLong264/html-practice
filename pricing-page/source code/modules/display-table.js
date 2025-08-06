@@ -163,6 +163,7 @@ function mobileTable() {
     document.addEventListener('click', () => {
         optionsDiv.style.display = 'none';
     });
+    toggleTable()
 }
 
 function renderTableByIndex(index) {

@@ -1025,8 +1025,8 @@ table svg,
 }
 
 .open-td.open .tr-content {
-    grid-template-rows: 0;
-    padding-bottom: 0;
+    grid-template-rows: 1fr;
+    padding: 8px 0;
 }
 
 .open .tr-header svg,
@@ -1036,12 +1036,13 @@ table svg,
 
 .tr-content {
     display: grid;
-    grid-template-rows: 1fr;
     transition: padding 0.25s ease-in-out, grid-template-rows 0.25s ease-in-out;
-    padding: 8px 0;
     overflow: hidden;
-    /* transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1) */
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    grid-template-rows: 0;
+    padding: 8px 0;
+    padding-bottom: 0;
 }
 
 .main-td.notes {

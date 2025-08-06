@@ -1,6 +1,5 @@
-function toggleOpen() {
+function toggleTable() {
     const tableToggles = document.querySelectorAll('.tr-header');
-
     tableToggles.forEach(row => {
         row.addEventListener('click', () => {
             const parentRow = row.closest('.open-td');
@@ -9,8 +8,9 @@ function toggleOpen() {
             }
         });
     });
+};
+function toggleFaq() {
     const faqToggles = document.querySelectorAll('.ques-heading');
-
     faqToggles.forEach(row => {
         row.addEventListener('click', () => {
             const parentRow = row.closest('.ques-li');
