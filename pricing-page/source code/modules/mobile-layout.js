@@ -20,6 +20,7 @@ window.addEventListener('load', () => {
     logo();
     displayFaq();
     toggleOpen();
+    displayForm();
     setupOverlay();
 });
 window.addEventListener('resize', applyResponsiveLayout);
