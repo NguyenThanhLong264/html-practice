@@ -1270,3 +1270,158 @@ table svg,
     max-height: calc(100% - 64px);
     max-width: calc(100% - 16px);
 }
+
+.form-content {
+    display: block;
+    padding: 32px;
+    margin: 0px auto;
+    width: 100%;
+    height: 100%;
+    line-height: 1.25;
+    color: rgb(22, 20, 12);
+    font-size: 16px;
+}
+
+.form-title>* {
+    text-align: center;
+}
+
+.form-title-text {
+    color: rgb(22, 20, 12);
+    margin: 0px 0px 24px;
+    font-family: Feature, Times, serif;
+    font-weight: 500;
+    font-size: 22px;
+    font-size: 32px;
+    line-height: calc(1em + 8px);
+    letter-spacing: 0.75px;
+}
+
+.form-input {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.form-input .full {
+    grid-column: span 2;
+}
+
+.form-input .lap-50 {
+    grid-column: span 1;
+}
+
+.input-content {
+    position: relative;
+    direction: ltr;
+}
+
+.input-label {
+    color: rgb(22, 20, 12);
+    font-family: "ABC Social", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(1em + 8px);
+    letter-spacing: 0px;
+    display: block;
+    margin: 0px;
+    margin-bottom: 16px;
+}
+
+.input-detail {
+    margin-top: 8px;
+    position: relative;
+}
+
+.input-detail input {
+    background: rgb(246, 240, 230);
+    border-radius: 12px;
+    border: none;
+    box-shadow: rgb(143, 136, 122) 0px 0px 0px 1px inset;
+    font-size: 16px;
+    line-height: 24px;
+    min-height: 48px;
+    padding: 12px;
+    color: rgb(22, 20, 12);
+    width: 100%;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.input-detail input:invalid[data-touched="true"]:not(:focus) {
+    box-shadow: 0 0 0 2px inset rgb(184, 66, 66);
+}
+
+.input-detail input:focus {
+    background: rgb(254, 250, 242);
+    color: rgb(22, 20, 12);
+    box-shadow: rgb(22, 20, 12) 0px 0px 0px 2px inset;
+    outline: rgb(143, 136, 122) solid 2px;
+    outline-offset: 3px;
+}
+
+.input-detail input:hover {
+    background: rgb(254, 250, 242);
+}
+
+.input-icon {
+    display: none;
+    gap: 12px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(184, 66, 66);
+    /* right: 12px;
+    bottom: 5px;
+    top: unset; */
+}
+
+.input-warning {
+    display: none;
+    padding: 0;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 12px;
+    color: rgb(175, 44, 44);
+    position: relative;
+    line-height: 1.14286;
+}
+
+.input-warning svg {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    height: 20px;
+    margin-left: 0.25rem;
+    width: 20px;
+}
+
+.check-box-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.check-box-wrapper input {
+    margin: 0px;
+    top: 2px;
+    border: 1px solid rgb(143, 136, 122);
+    height: 20px;
+    width: 20px;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+}
+
+.check-box-wrapper label {
+    margin-left: 6px;
+    width: fit-content;
+}
+
+.form-submit .primary-btn {
+    width: 100%;
+}
+
+.form-content .normal-text:not(:last-child) {
+    margin-bottom: 0;
+}
