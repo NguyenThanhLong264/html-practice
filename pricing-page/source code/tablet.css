@@ -90,4 +90,8 @@
         margin-left: 8.33333%;
         max-width: 33.3333%;
     }
+
+    .form-input .lap-50 {
+        grid-column: span 1;
+    }
 }
