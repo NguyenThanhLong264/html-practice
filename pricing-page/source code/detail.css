@@ -813,8 +813,8 @@ img {
 
 .cta .primary-btn,
 .cta .secondary-btn,
-.nav-btn .primary-btn,
-.nav-btn .secondary-btn {
+.nav-btn-h .primary-btn,
+.nav-btn-h .secondary-btn {
     font-size: 16px;
     line-height: 24px;
 }
@@ -1596,7 +1596,7 @@ table svg,
     width: 100%;
 }
 
-.nav-btn {
+.nav-btn-h {
     display: flex;
     gap: 16px;
 }
@@ -1613,7 +1613,7 @@ table svg,
 }
 
 @media (max-width: 1119.98px) {
-    .nav-btn {
+    .nav-btn-h {
         margin-left: auto;
         padding: 10px 0px;
     }
