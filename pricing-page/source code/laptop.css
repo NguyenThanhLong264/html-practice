@@ -59,4 +59,8 @@
     .desktop-header {
         display: block;
     }
+
+    .mobile-header {
+        display: none;
+    }
 }

@@ -813,8 +813,8 @@ img {
 
 .cta .primary-btn,
 .cta .secondary-btn,
-.primary-nav .primary-btn,
-.primary-nav .secondary-btn {
+.nav-btn .primary-btn,
+.nav-btn .secondary-btn {
     font-size: 16px;
     line-height: 24px;
 }
@@ -1599,4 +1599,49 @@ table svg,
 .nav-btn {
     display: flex;
     gap: 16px;
+}
+
+.mobile-header {
+    display: block;
+    background: rgb(254, 250, 242);
+    border-bottom: 1px solid rgba(222, 215, 202, 0.85);
+    position: sticky;
+    top: -1px;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    z-index: 10;
+}
+
+@media (max-width: 1119.98px) {
+    .nav-btn {
+        margin-left: auto;
+        padding: 10px 0px;
+    }
+}
+
+.m-nav-toggle-menu {
+    background: none;
+    border: none;
+    color: rgb(22, 20, 12);
+    cursor: pointer;
+    height: 44px;
+    margin: -10px;
+    outline: none;
+    padding: 10px;
+    width: 44px;
+}
+
+.mobile-header .nav-logo {
+    flex: 0 0 auto;
+    padding: 0;
+    align-items: center;
+}
+
+.mobile-header .nav-logo img {
+    aspect-ratio: 0;
+    height: auto;
+}
+
+.mobile-header .nav-logo a {
+    width: 150px;
 }
