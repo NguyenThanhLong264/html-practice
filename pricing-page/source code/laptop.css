@@ -55,4 +55,8 @@
     .add-ons .feature-li {
         columns: 2;
     }
+
+    .desktop-header {
+        display: block;
+    }
 }
