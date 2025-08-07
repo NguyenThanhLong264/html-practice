@@ -228,7 +228,7 @@ function renderTableByIndex(index) {
         tr.className = 'main-tr';
 
         const td = document.createElement('td');
-        td.className = 'open-td open';
+        td.className = 'open-td';
 
         td.innerHTML = `
         <div class="td-open-content">

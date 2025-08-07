@@ -87,4 +87,9 @@ button {
         padding-right: 8px;
         padding-left: 8px;
     }
+
+    .cta-btn {
+        flex-direction: column;
+        padding: 0;
+    }
 }

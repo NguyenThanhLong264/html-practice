@@ -63,4 +63,8 @@
     .mobile-header {
         display: none;
     }
+
+    .cta-btn {
+        flex-direction: row;
+    }
 }
