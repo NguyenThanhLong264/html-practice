@@ -1,3 +1,20 @@
+:root {
+    --main-bg-color: rgb(254, 250, 242);
+    --sec-bg-color: rgb(246, 240, 230);
+    --bg-hight-light-color: rgb(235, 227, 214);
+    /* rgb(143, 136, 122) */
+    /* rgb(222, 215, 202) */
+    --text-color: rgb(22, 20, 12);
+    --border-color: rgb(22, 20, 12);
+    --primary-btn-initial-color: rgb(154, 68, 151);
+    --primary-btn-after-color: rgb(22, 20, 12);
+    --secondary-btn-initial-color: ;
+    --secondary-btn-after-color: rgb(22, 20, 12);
+    --secondary-btn-text-color: rgb(255, 255, 255);
+    --sticker-color: rgb(212, 244, 121);
+}
+
+
 * {
     margin: 0;
     padding: 0;
