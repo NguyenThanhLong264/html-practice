@@ -73,6 +73,7 @@ function renderLaptopLayout() {
         `;
         contentFlex.appendChild(featureCol);
     });
+
     const subTitles = contentFlex.querySelectorAll('.col-sub-title');
     let maxHeight = 0;
     subTitles.forEach(el => {
@@ -86,6 +87,18 @@ function renderLaptopLayout() {
             el.style.minHeight = `${maxHeight}px`;
         }
     });
+
+    featuresArea.innerHTML += `
+<div class="feature-btn">
+                    <a href="#table-plans" class="primary-btn">
+                        <span class="btn-text-bg">
+                            <span class="btn-span">
+                                <span class="i-text">Chi tiết tính năng</span>
+                                <span class="af-text">Chi tiết tính năng</span>
+                            </span>
+                        </span>
+                    </a>
+                </div>`
 }
 
 function renderMobileLayout() {
@@ -97,11 +110,11 @@ function renderMobileLayout() {
                     </div>
                 </div>
                 <div class="feature-btn">
-                    <a href="" class="primary-btn">
+                    <a href="#table-plans" class="primary-btn">
                         <span class="btn-text-bg">
                             <span class="btn-span">
-                                <span class="i-text">See more feature</span>
-                                <span class="af-text">See more feature</span>
+                                <span class="i-text">Chi tiết tính năng</span>
+                                <span class="af-text">Chi tiết tính năng</span>
                             </span>
                         </span>
                     </a>

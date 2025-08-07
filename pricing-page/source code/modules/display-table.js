@@ -76,6 +76,7 @@ function laptopTable() {
         tr.className = 'main-tr';
 
         const td = document.createElement('td');
+        td.classList.add('open-td', 'open');
         td.innerHTML = `
         <div class="td-open-content">
             <div class="tr-header">
@@ -94,7 +95,6 @@ function laptopTable() {
     `;
         console.log(td);
 
-        // Thêm smallTable vào div.tr-content
         const trContent = td.querySelector('.tr-content');
         trContent.appendChild(smallTable);
 
