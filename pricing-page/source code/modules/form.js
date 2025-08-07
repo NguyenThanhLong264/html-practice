@@ -2,11 +2,14 @@ function displayForm() {
     const formWrapper = document.createElement('div')
     formWrapper.classList.add('form-wrapper')
     formWrapper.innerHTML = `
+    <button class='close-btn' onclick='toggleOverlay()'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" d="M3 13L13 3m0 10L3 3"></path></svg>
+                </button>
                 <div class="form-content">
                     <form action="contact">
                         <div class="form-title">
-                            <h3 class="form-title-text">Let’s talk this out</h3>
-                            <p class="normal-text">We’ll help you choose the features that work best for your business.
+                            <h3 class="form-title-text">Tư vấn ngay</h3>
+                            <p class="normal-text">Chúng tôi sẵn sàng tư vấn giải pháp phù hợp nhất với mô hình hoạt động của doanh nghiệp bạn.
                             </p>
                         </div>
                         <div class="form-input">
@@ -39,7 +42,7 @@ function displayForm() {
                                 <div class="input-content">
                                     <label class="input-label" for="message">Message</label>
                                     <div class="input-detail">
-                                        <input type="text" id="message" name="message" required>
+                                        <textarea type="text" id="message" name="message" required></textarea>
                                         <div class="input-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" viewBox="0 0 16 16">
@@ -139,17 +142,14 @@ function displayForm() {
                                 <div class="input-content">
                                     <div class="check-box-wrapper">
                                         <input type="checkbox" name="agree" id="agree">
-                                        <label class='normal-text' for="agree">Yes, I would like to receive marketing-related communications
-                                            about Zendesk products, services, and events. I understand I may unsubscribe
-                                            at any time.</label>
+                                        <label class='normal-text' for="agree">Tôi đồng ý nhận thông tin tiếp thị về sản phẩm, dịch vụ và sự kiện của CareSoft. Tôi có thể hủy đăng ký bất cứ lúc nào.</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="input-wrapper full">
                                 <div class="input-content">
                                     <div class="normal-text">
-                                        By submitting my personal data, I consent to Zendesk collecting, processing, and
-                                        storing my information in accordance with the Zendesk Privacy Notice.
+                                        Khi gửi thông tin cá nhân, tôi đồng ý để CareSoft thu thập, xử lý và lưu trữ dữ liệu của mình theo Chính sách quyền riêng tư của CareSoft.
                                     </div>
                                 </div>
                             </div>
@@ -177,6 +177,28 @@ function displayForm() {
                 overlay.appendChild(formWrapper);
 
                 formWrapper.querySelectorAll('.input-detail input').forEach(input => {
+                    const wrapper = input.closest('.input-content');
+                    const warning = wrapper?.querySelector('.input-warning');
+                    const icon = wrapper?.querySelector('.input-icon');
+
+                    input.addEventListener('blur', () => {
+                        if (!input.checkValidity()) {
+                            if (warning) warning.style.display = 'block';
+                            if (icon) icon.style.display = 'flex';
+                        } else {
+                            if (warning) warning.style.display = 'none';
+                            if (icon) icon.style.display = 'none';
+                        }
+                    });
+
+                    input.addEventListener('input', () => {
+                        if (input.checkValidity()) {
+                            if (warning) warning.style.display = 'none';
+                            if (icon) icon.style.display = 'none';
+                        }
+                    });
+                });
+                formWrapper.querySelectorAll('.input-detail textarea').forEach(input => {
                     const wrapper = input.closest('.input-content');
                     const warning = wrapper?.querySelector('.input-warning');
                     const icon = wrapper?.querySelector('.input-icon');

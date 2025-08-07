@@ -21,6 +21,10 @@
     .add-ons .feature-li {
         columns: 2;
     }
+
+    .form-content {
+        padding: 48px;
+    }
 }
 
 @media (max-width: 767.98px) {

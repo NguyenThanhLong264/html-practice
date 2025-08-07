@@ -14,6 +14,7 @@ function toggleOverlay() {
     if (overlay.classList.contains('open')) {
         document.body.classList.add('no-scroll');
     } else {
+        overlay.innerHTML = '';
         document.body.classList.remove('no-scroll');
     }
 }
