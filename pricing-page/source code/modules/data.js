@@ -46,7 +46,7 @@ const features = [
         price: '1.000.000 VNĐ',
         price_tag: '/ user/ tháng',
         buy_btn_link: '/',
-        buy_btn_text: 'Liên hệ',
+        buy_btn_text: 'Mua ngay',
         key_feature: 'Key feature',
         keys: [
             { title: 'Tích hợp các kênh tương tác với khách hàng (customer engagement)', description: 'Các ticket được tạo từ các nguồn sẽ được tự động chia việc cho nhân viên. Các agent, phòng ban có thể luân chuyển ticket cho nhau để cùng xử lý 1 công việc.Báo cáo chi tiết ticket: thời gian phản hồi lần đầu, thời gian xử lý trung bình, báo cáo chi tiết theo nội dung', imgUrl: 'assets/imgs/gg-logo.png' },
@@ -81,12 +81,12 @@ const add_ons = [
             { title: 'Cho phép tích hợp AI', description: 'Nothing', imgUrl: false },
         ],
         bottomText: 'Dùng chat bot ngay',
-        btnText: 'Thử ngay',
+        btnText: 'Liên hệ chuyên viên',
     },
     {
         isNew: 'Add-on',
         name: 'AI',
-        price: 'Contact us',
+        price: 'Liên hệ với chúng tôi để triển khai',
         description: `Ứng dụng AI ở tất cả các giai đoạn, từ phản hồi khách hàng tự động, hỗ trợ chuyên viên đến đánh giá mức độ tiềm năng của khách hàng, đánh giá chất lượng dịch vụ chuyên viên và nhiều ứng dụng khác`,
         features: [
             { title: 'AI chatbot - Tự động phản hồi khách hàng', description: 'Nothing', imgUrl: false },
@@ -94,22 +94,22 @@ const add_ons = [
             { title: 'AI Knowledge base - Kho tri thức', description: 'Nothing', imgUrl: false },
             { title: 'AI Lead scoreing - Đánh giá lead tiềm năng', description: 'Nothing', imgUrl: false },
         ],
-        bottomText: 'Liên hệ ngay với chúng tôi để dùng AI',
-        btnText: 'Liên hệ',
+        bottomText: 'Tích hợp AI ngay',
+        btnText: 'Liên hệ chuyên viên',
     },
     {
         isNew: 'Add-on',
         name: 'Smart Dialer',
-        price: 'Contact us',
+        price: 'Liên hệ với chúng tôi để triển khai',
         description: `Ứng dụng AI ở tất cả các giai đoạn, từ phản hồi khách hàng tự động, hỗ trợ chuyên viên đến đánh giá mức độ tiềm năng của khách hàng, đánh giá chất lượng dịch vụ chuyên viên và nhiều ứng dụng khác`,
         features: [
             { title: 'Tự động quay số (auto dialer)', description: 'Nothing', imgUrl: false },
-            { title: 'Tự động gọi (auto call)', description: 'Nothing', imgUrl: false },
             { title: 'Tạo danh sách theo bộ lọc, quản lý danh sách blacklist, tạo dữ liệu qua API ', description: 'Nothing', imgUrl: false },
+            { title: 'Tự động gọi (auto call)', description: 'Nothing', imgUrl: false },
             { title: 'Tự động đảo số, lựa chọn đầu số để tối ưu cước phí', description: 'Nothing', imgUrl: false },
         ],
-        bottomText: 'Liên hệ ngay với chúng tôi để sử dụng Smart Dialer',
-        btnText: 'Liên hệ',
+        bottomText: 'Dùng Smart Dialer ngay',
+        btnText: 'Liên hệ chuyên viên',
     },
 ];
 
@@ -121,20 +121,20 @@ const plans = [{
         ['Kênh SMS (text message)', true, true, true],
         ['Ticket form', true, true, true],
         ['Kênh Facebook & Instagram (chat, comment, call)', true, true, false],
-        ['Kênh Zalo OA (chat, video call, voice call)', true, true, '-'],
-        ['Kênh Zalo cá nhân (chat)', true, true, '-'],
-        ['Kênh Live chat (chat)', true, true, '-'],
-        ['Kênh Tiktok (lead form)', true, true, '-'],
-        ['Ladi page', true, true, '-'],
+        ['Kênh Zalo OA (chat, video call, voice call)', true, true, false],
+        ['Kênh Zalo cá nhân (chat)', true, true, false],
+        ['Kênh Live chat (chat)', true, true, false],
+        ['Kênh Tiktok (lead form)', true, true, false],
+        ['Ladi page', true, true, false],
     ]
 },
 {
     // title: null,
     title: 'Tính năng nâng cao của kênh chat',
     rows: [
-        ['Chat bot', true, true, '-'],
-        ['Trợ lý ảo tự động trả lời khách hàng', true, true, '-'],
-        ['Trợ lý hỗ trợ chuyên viên', true, true, '-'],
+        ['Chat bot', true, true, false],
+        ['Trợ lý ảo tự động trả lời khách hàng', true, true, false],
+        ['Trợ lý hỗ trợ chuyên viên', true, true, false],
     ]
 },
 {
@@ -150,7 +150,7 @@ const plans = [{
     rows: [
         ['Quản lý thông tin khách hàng cá nhân', true, true, true],
         ['Quản lý thông tin tổ chức', true, true, true],
-        ['Hiển thị thông tin 360° khách hàng', true, '-', '-'],
+        ['Hiển thị thông tin 360° khách hàng', true, false, false],
     ]
 },
 {
@@ -176,62 +176,62 @@ const plans = [{
     title: 'Khảo sát khách hàng',
     rows: [
         ['Khảo sát sự hài lòng của khách hàng (CSAT) sau cuộc gọi', true, true, true],
-        ['Khảo sát sự hài lòng của khách hàng (CSAT) sau khi kết thúc chat', true, true, '-'],
+        ['Khảo sát sự hài lòng của khách hàng (CSAT) sau khi kết thúc chat', true, true, false],
         ['Khảo sát sự hài lòng của khách hàng (CSAT) bằng email', true, true, true],
-        ['Khảo sát sự hài lòng của khách hàng (CSAT) bằng tin nhắn (Facebook, Zalo)', true, true, '-'],
+        ['Khảo sát sự hài lòng của khách hàng (CSAT) bằng tin nhắn (Facebook, Zalo)', true, true, false],
         ['Khảo sát lấy ý kiến khách hàng theo kịch bản gọi điện', true, true, true],
     ]
 },
 {
     title: 'Quản lý khách hàng tiềm năng',
     rows: [
-        ['Quản lý nguồn lead', true, '-', '-'],
-        ['Quản lý danh sách lead theo từng vai trò', true, '-', '-'],
-        ['Tính năng xử lý lead cho chuyên viên', true, '-', '-'],
-        ['Phân loại và thu thập thông tin lead', true, '-', '-'],
-        ['Phân loại và thu thập thông tin lead bằng AI', true, '-', '-'],
-        ['Chuyển giao thành cơ hội bán hàng', true, '-', '-'],
-        ['Quản lý kịch bản và quy trình nuôi dưỡng, tái khai thác lead tự động', true, '-', '-'],
-        ['Gợi ý kịch bản nuôi dưỡng lead bằng AI', true, '-', '-'],
+        ['Quản lý nguồn lead', true, false, false],
+        ['Quản lý danh sách lead theo từng vai trò', true, false, false],
+        ['Tính năng xử lý lead cho chuyên viên', true, false, false],
+        ['Phân loại và thu thập thông tin lead', true, false, false],
+        ['Phân loại và thu thập thông tin lead bằng AI', true, false, false],
+        ['Chuyển giao thành cơ hội bán hàng', true, false, false],
+        ['Quản lý kịch bản và quy trình nuôi dưỡng, tái khai thác lead tự động', true, false, false],
+        ['Gợi ý kịch bản nuôi dưỡng lead bằng AI', true, false, false],
     ]
 },
 {
     title: 'Quản lý cơ hội bán hàng',
     rows: [
-        ['Quản lý pipeline, phễu bán hàng', true, '-', '-'],
-        ['Quản lý danh sách sản phẩm, dịch vụ', true, '-', '-'],
-        ['Quản lý danh sách Deal theo từng vai trò', true, '-', '-'],
-        ['Tính năng xử lý Deal cho chuyên viên', true, '-', '-'],
-        ['Phân loại và thu thập thông tin Deal', true, '-', '-'],
-        ['Phân loại và thu thập thông tin Deal bằng AI', true, '-', '-'],
-        ['Quản lý kịch bản và quy trình bám đuổi tự động', true, '-', '-'],
-        ['Gợi ý kịch bản tư vấn bán hàng bằng AI', true, '-', '-'],
-        ['Tích hợp thông tin cơ hội bán hàng thành công sang các hệ thống liên quan', true, '-', '-'],
+        ['Quản lý pipeline, phễu bán hàng', true, false, false],
+        ['Quản lý danh sách sản phẩm, dịch vụ', true, false, false],
+        ['Quản lý danh sách Deal theo từng vai trò', true, false, false],
+        ['Tính năng xử lý Deal cho chuyên viên', true, false, false],
+        ['Phân loại và thu thập thông tin Deal', true, false, false],
+        ['Phân loại và thu thập thông tin Deal bằng AI', true, false, false],
+        ['Quản lý kịch bản và quy trình bám đuổi tự động', true, false, false],
+        ['Gợi ý kịch bản tư vấn bán hàng bằng AI', true, false, false],
+        ['Tích hợp thông tin cơ hội bán hàng thành công sang các hệ thống liên quan', true, false, false],
     ]
 },
 {
     title: 'Tính năng trợ lý ảo AI',
     rows: [
-        ['Hỗ trợ chuyên viên bằng AI', true, '-', '-'],
+        ['Hỗ trợ chuyên viên bằng AI', true, false, false],
     ]
 },
 {
     title: 'Đo lường và tối ưu hiệu quả quảng cáo',
     rows: [
-        ['Đo lường kết quả quảng cáo', true, '-', '-'],
-        ['Tối ưu hiệu quả quảng cáo bằng conversion API của Meta và Google', true, '-', '-'],
+        ['Đo lường kết quả quảng cáo', true, false, false],
+        ['Tối ưu hiệu quả quảng cáo bằng conversion API của Meta và Google', true, false, false],
     ]
 },
 {
     title: 'Tính năng Meta commerce (bán hàng trực tiếp qua Facebook)',
     rows: [
-        ['Quản lý sản phẩm', true, '-', '-'],
-        ['Đồng bộ danh mục sản phẩm lên meta catalog', true, '-', '-'],
-        ['Chat mua hàng (hỏi thông tin sản phẩm)', true, '-', '-'],
-        ['Giao diện đặt hàng online cho khách hàng', true, '-', '-'],
-        ['Quản lý đơn hàng ', true, '-', '-'],
-        ['Tích hợp tạo đơn hàng sang hệ thống liên quan', true, '-', '-'],
-        ['Tối ưu tỷ lệ chuyển đổi từ quảng cáo bằng conversion API của Meta', true, '-', '-'],
+        ['Quản lý sản phẩm', true, false, false],
+        ['Đồng bộ danh mục sản phẩm lên meta catalog', true, false, false],
+        ['Chat mua hàng (hỏi thông tin sản phẩm)', true, false, false],
+        ['Giao diện đặt hàng online cho khách hàng', true, false, false],
+        ['Quản lý đơn hàng ', true, false, false],
+        ['Tích hợp tạo đơn hàng sang hệ thống liên quan', true, false, false],
+        ['Tối ưu tỷ lệ chuyển đổi từ quảng cáo bằng conversion API của Meta', true, false, false],
     ]
 },
 {
@@ -259,18 +259,18 @@ const plans = [{
     title: 'Tính năng dashboard và báo cáo',
     rows: [
         ['Bộ báo cáo tổng hợp và chi tiết tương tác theo từng kênh liên lạc', true, true, true],
-        ['Báo cáo phễu bán hàng', true, '-', '-'],
+        ['Báo cáo phễu bán hàng', true, false, false],
         ['Bộ báo cáo tổng hợp và chi tiết phiếu ghi', true, true, true],
         ['Bộ báo cáo tổng hợp và chi tiết khách hàng', true, true, true],
-        ['Bộ báo cáo tổng hợp và chi tiết lead', true, '-', '-'],
-        ['Bộ báo cáo tổng hợp và chi tiết deal', true, '-', '-'],
+        ['Bộ báo cáo tổng hợp và chi tiết lead', true, false, false],
+        ['Bộ báo cáo tổng hợp và chi tiết deal', true, false, false],
         ['Dashboard tổng hợp các chỉ số nhanh về vận hành', true, true, true],
     ]
 },
 {
     title: 'Tính năng báo cáo nâng cao',
     rows: [
-        ['Tạo báo cáo đa chiều', true, '-', '-']
+        ['Tạo báo cáo đa chiều', true, false, false]
     ]
 },
 {

@@ -37,7 +37,7 @@ function renderLaptopLayout() {
                             </span>
                         </a>
                         <a href="#" class="click-link col-feature">
-                            <span class="click-link-text features">Buy now</span>
+                            <span class="click-link-text features">Tìm hiểu thêm</span>
                             <span class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                     fill="currentColor" viewBox="0 0 16 16" style="padding-left:6px">
@@ -192,7 +192,7 @@ function renderMobileLayout() {
                                         </span>
                                     </a>
                                     <a href="" class="click-link col-feature">
-                                        <span class="click-link-text features">Buy now</span>
+                                        <span class="click-link-text features">Tìm hiểu thêm</span>
                                         <span class="icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" viewBox="0 0 16 16" style="padding-left:6px">

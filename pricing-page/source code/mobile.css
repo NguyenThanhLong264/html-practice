@@ -210,11 +210,13 @@
     }
 
     .cta-btn {
+        flex-direction: column;
         width: 100%;
         padding: 0;
     }
 
-    .cta-btn .primary-btn {
+    .cta-btn .primary-btn,
+    .cta-btn .secondary-btn {
         width: 100%;
     }
 

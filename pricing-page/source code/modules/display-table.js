@@ -1,4 +1,4 @@
-const mainTableRows = ['Suite', 'Suite plans', 'Suit']
+const mainTableRows = ['Call Center', 'Contact Center', 'Omni-Channel CRM']
 const mainTable = document.getElementById('main')
 
 const tableHead = document.createElement('thead');
