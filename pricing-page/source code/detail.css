@@ -658,8 +658,8 @@
     min-height: 100%;
     padding: 40px;
     box-shadow: none;
-    border-bottom: 1px solid #16140C;
-    background-color: #FEFAF2;
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--main-bg-color);
 }
 
 .add-ons .tag {
