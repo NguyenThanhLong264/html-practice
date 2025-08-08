@@ -100,8 +100,8 @@ button {
 }
 
 ::-webkit-scrollbar {
-    width: 6px;
-    scrollbar-width: thin;
+    width: 8px;
+    scrollbar-width: auto;
 }
 
 ::-webkit-scrollbar-thumb {
