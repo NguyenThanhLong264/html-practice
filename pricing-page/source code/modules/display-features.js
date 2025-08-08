@@ -29,14 +29,14 @@ function renderLaptopLayout() {
                         </div>
                     </div>
                     <div class="btns-wrapper">
-                        <a class="primary-btn openForm">
+                        <button class="primary-btn openForm">
                             <span class="btn-text-bg">
                                 <span class="btn-span">
                                     <span class="i-text">${fea.buy_btn_text}</span>
                                     <span class="af-text">${fea.buy_btn_text}</span>
                                 </span>
                             </span>
-                        </a>
+                        </button>
                         <a href="#table-plans" class="click-link col-feature">
                             <span class="click-link-text features">Tìm hiểu thêm</span>
                             <span class="icon">
@@ -59,13 +59,13 @@ function renderLaptopLayout() {
                                 </svg>
                             </div>
                             <div class="li-content">
-                                <a class="li-a">
+                                <div class="li-a">
                                     <span class="li-text">${f.title}</span>
                                     ${f.tag ? `<span class="tag"><span class="tag-text">${f.tag}</span></span>` : ''}
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="search-icon-li">
                                         <path d="m0 14.098 1.509 1.509 3.771-3.772-1.508-1.508zM9.741 0a5.867 5.867 0 1 0 0 11.735A5.867 5.867 0 0 0 9.742 0m0 1.067c2.647 0 4.8 2.154 4.8 4.8s-2.153 4.8-4.8 4.8-4.8-2.154-4.8-4.8 2.153-4.8 4.8-4.8"></path>
                                     </svg>
-                                </a>
+                                </div>
                             </div>
                         </li>
                     `).join('')}
@@ -184,14 +184,14 @@ function renderMobileLayout() {
                                     </div>
                                 </div>
                                 <div class="btns-wrapper">
-                                    <a class="primary-btn openForm">
+                                    <div class="primary-btn openForm">
                                         <span class="btn-text-bg">
                                             <span class="btn-span">
                                                 <span class="i-text">${fea.buy_btn_text}</span>
                                                 <span class="af-text">${fea.buy_btn_text}</span>
                                             </span>
                                         </span>
-                                    </a>
+                                    </div>
                                     <a href="#table-plans" class="click-link col-feature">
                                         <span class="click-link-text features">Tìm hiểu thêm</span>
                                         <span class="icon">
