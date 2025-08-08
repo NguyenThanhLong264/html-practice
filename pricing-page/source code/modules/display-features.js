@@ -17,6 +17,7 @@ function renderLaptopLayout() {
         featureCol.className = 'feature-col';
 
         featureCol.innerHTML = `
+        ${fea.marked ? '<span class="marker" ><span class="marker-text">Most popular</span></span >' : ''}
             <div class="col-wrapper">
                 <div class="col-content">
                     <div>
