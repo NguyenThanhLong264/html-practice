@@ -102,6 +102,7 @@ button {
 ::-webkit-scrollbar {
     width: 8px;
     scrollbar-width: auto;
+    background-color: var(--sec-bg-color);
 }
 
 ::-webkit-scrollbar-thumb {

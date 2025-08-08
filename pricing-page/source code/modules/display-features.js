@@ -29,7 +29,7 @@ function renderLaptopLayout() {
                         </div>
                     </div>
                     <div class="btns-wrapper">
-                        <a href="#" class="primary-btn">
+                        <a class="primary-btn openForm">
                             <span class="btn-text-bg">
                                 <span class="btn-span">
                                     <span class="i-text">${fea.buy_btn_text}</span>
@@ -37,7 +37,7 @@ function renderLaptopLayout() {
                                 </span>
                             </span>
                         </a>
-                        <a href="#" class="click-link col-feature">
+                        <a href="#table-plans" class="click-link col-feature">
                             <span class="click-link-text features">Tìm hiểu thêm</span>
                             <span class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -59,7 +59,7 @@ function renderLaptopLayout() {
                                 </svg>
                             </div>
                             <div class="li-content">
-                                <a href="#" class="li-a">
+                                <a class="li-a">
                                     <span class="li-text">${f.title}</span>
                                     ${f.tag ? `<span class="tag"><span class="tag-text">${f.tag}</span></span>` : ''}
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="search-icon-li">
@@ -184,7 +184,7 @@ function renderMobileLayout() {
                                     </div>
                                 </div>
                                 <div class="btns-wrapper">
-                                    <a href="" class="primary-btn">
+                                    <a class="primary-btn openForm">
                                         <span class="btn-text-bg">
                                             <span class="btn-span">
                                                 <span class="i-text">${fea.buy_btn_text}</span>
@@ -192,7 +192,7 @@ function renderMobileLayout() {
                                             </span>
                                         </span>
                                     </a>
-                                    <a href="" class="click-link col-feature">
+                                    <a href="#table-plans" class="click-link col-feature">
                                         <span class="click-link-text features">Tìm hiểu thêm</span>
                                         <span class="icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -230,7 +230,7 @@ function renderMobileLayout() {
                                     </svg>
                                 </div>
                                 <div class="li-content">
-                                    <a href="#" class="li-a">
+                                    <a class="li-a">
                                         <span class="li-text">${f.title}</span>
                                         ${f.tag ? `<span class="tag"><span class="tag-text">${f.tag}</span></span>` : ''}
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="search-icon-li">
