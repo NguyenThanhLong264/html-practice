@@ -100,14 +100,15 @@ button {
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
-    scrollbar-width: auto;
-    background-color: var(--sec-bg-color);
+    height: .7rem;
+    width: .7rem;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--bg-hight-light-color);
-    border-radius: 99px;
+    border-radius: 6.1875rem;
+    background-clip: padding-box;
+    border: .125rem solid #0000;
 }
 
 @media (min-width:0px) {

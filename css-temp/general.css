@@ -8,6 +8,12 @@ body {
     padding: 24px 52px;
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
 .display-box {
     width: 25%;
     min-width: 300px;
