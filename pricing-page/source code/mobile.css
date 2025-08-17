@@ -26,7 +26,12 @@
         padding: 48px;
     }
 
-    .mobile-header .sec-nav-flex .nav-btn-h .secondary-btn {
+    .secondary-btn {
+        font-size: 18px;
+        padding: 10px 24px;
+    }
+
+    .mobile-header .sec-nav-flex .nav-btn-h>* {
         display: block;
     }
 }

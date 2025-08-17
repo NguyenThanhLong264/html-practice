@@ -110,6 +110,7 @@
     font-size: 16px;
     font-family: 'Inter';
     text-align: center;
+    align-items: center;
 }
 
 .click-link-text {
@@ -666,7 +667,7 @@
 
 .secondary-btn {
     min-height: calc(1.25em + 8px);
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 99px;
     cursor: pointer;
     display: inline-block;
@@ -675,7 +676,7 @@
     position: relative;
     text-decoration: none;
     line-height: 28px;
-    padding: 10px 24px;
+    padding: 10px 16px;
     width: fit-content;
     max-width: 100%;
     font-family: 'Inter';
@@ -1595,6 +1596,7 @@ table svg,
 .mobile-header .nav-logo {
     flex: 0 0 auto;
     padding: 0;
+    margin: 12px 0;
     align-items: center;
 }
 
@@ -1614,6 +1616,6 @@ table svg,
 
 }
 
-.mobile-header .sec-nav-flex .nav-btn-h .secondary-btn {
+.mobile-header .sec-nav-flex .nav-btn-h>* {
     display: none;
 }
