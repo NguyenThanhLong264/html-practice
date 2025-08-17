@@ -3,7 +3,6 @@
 function highlightPopularColumn(index) {
     const tables = Array.from(document.querySelectorAll('table.compare-table'))
         .filter(table => table.id !== 'main');
-    console.log('tables', tables.length);
 
     const lastTable = tables[tables.length - 1];
     tables.forEach(table => {
@@ -28,7 +27,6 @@ function highlightMainHeader(index) {
     const th = headerRow.children[index];
     if (!th) return;
     th.classList.add('popular');
-    console.log('pop', th);
 
     const marker = document.createElement('span');
     marker.className = 'marker';

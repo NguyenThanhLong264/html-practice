@@ -82,5 +82,4 @@ function displayAddOns() {
             }
         }
     });
-    console.log('plans :', addOnsArray);
 }

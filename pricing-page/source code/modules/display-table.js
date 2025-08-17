@@ -93,8 +93,6 @@ function laptopTable() {
             <div class="tr-content"></div>
         </div>
     `;
-        console.log(td);
-
         const trContent = td.querySelector('.tr-content');
         trContent.appendChild(smallTable);
 

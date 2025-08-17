@@ -24,7 +24,6 @@ imageNames.forEach(name => {
 function checkDone() {
     if (loadedCount === imageNames.length) {
         finalizeSlider();
-        console.log('q', imgList.length);
     }
 }
 

@@ -127,7 +127,6 @@ if (window.innerWidth <= 768) {
 
     function updateMobilePlans() {
         const currentValue = select.dataset.value;
-        console.log('Đã chọn:', currentValue);
 
         const mobile_plans = filterPlanData(currentValue);
         const withoutTitle = mobile_plans.filter(item => item.title === null);

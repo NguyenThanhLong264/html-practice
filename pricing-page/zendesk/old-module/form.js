@@ -33,7 +33,6 @@ openBtns.forEach(btn => {
                 data = add_on_data[itemindex].features[liindex]
             }
             createKeyById(data.title, data.description, data?.imgUrl)
-            console.log('w', data);
         }
     });
 });

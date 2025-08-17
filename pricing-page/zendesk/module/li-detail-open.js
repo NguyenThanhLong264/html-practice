@@ -18,7 +18,6 @@ openLiBtns.forEach(btn => {
             data = add_ons[itemindex].features[liindex]
         }
         createKeyById(data.title, data.description, data?.imgUrl)
-        console.log('w', data);
     });
 });
 
