@@ -25,6 +25,10 @@
     .form-content {
         padding: 48px;
     }
+
+    .mobile-header .sec-nav-flex .nav-btn-h .secondary-btn {
+        display: block;
+    }
 }
 
 @media (max-width: 767.98px) {

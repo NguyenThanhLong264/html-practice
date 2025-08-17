@@ -1607,10 +1607,6 @@ table svg,
     width: 150px;
 }
 
-.mobile-header .sec-nav-flex>* {
-    flex-shrink: 0;
-    white-space: nowrap;
-}
 
 .nav-btn-h {
     display: flex;
@@ -1618,8 +1614,6 @@ table svg,
 
 }
 
-.mobile-header .sec-nav-flex .nav-btn-h {
-    flex-shrink: 1;
-    min-width: 0;
-    overflow: hidden;
+.mobile-header .sec-nav-flex .nav-btn-h .secondary-btn {
+    display: none;
 }

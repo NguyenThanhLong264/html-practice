@@ -179,7 +179,7 @@ function renderMobileLayout() {
                                     <h4 class="col-title">${fea.title}</h4>
                                     <p class="col-sub-title">${fea.description}</p>
                                     <div>
-                                        <p class="price"><span>$${fea.price}</span></p>
+                                        <p class="price"><span>${fea.price}</span></p>
                                         <p class="price-tag col-sub-title">${fea.price_tag}</p>
                                     </div>
                                 </div>
