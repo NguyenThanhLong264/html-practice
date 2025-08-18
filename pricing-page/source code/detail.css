@@ -1228,8 +1228,9 @@ table svg,
 }
 
 .form-wrapper {
+    /* display: flex; */
+    display: none;
     width: 700px;
-    display: flex;
     position: fixed;
     flex-direction: column;
     background-color: var(--main-bg-color);
@@ -1333,7 +1334,8 @@ table svg,
     resize: none;
 }
 
-.input-detail input:invalid[data-touched="true"]:not(:focus),
+.input-detail input[data-input-stage='blank'],
+.input-detail input[data-input-stage='cons'],
 .input-detail textarea:invalid[data-touched="true"]:not(:focus) {
     box-shadow: 0 0 0 2px inset rgb(184, 66, 66);
 }
@@ -1358,7 +1360,8 @@ table svg,
     gap: 12px;
     position: absolute;
     right: 16px;
-    top: 50%;
+    /* top: 50%; */
+    top: 24px;
     transform: translateY(-50%);
     color: rgb(184, 66, 66);
     /* right: 12px;
@@ -1384,6 +1387,16 @@ table svg,
     height: 20px;
     margin-left: 0.25rem;
     width: 20px;
+}
+
+input[data-input-stage="blank"]~.input-warning,
+input[data-input-stage="cons"]~.input-warning {
+    display: block;
+}
+
+input[data-input-stage="blank"]~.input-icon,
+input[data-input-stage="cons"]~.input-icon {
+    display: flex;
 }
 
 .check-box-wrapper {
