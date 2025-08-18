@@ -998,25 +998,39 @@ table svg,
     transition: all 100ms linear;
 }
 
-.td-open-content.open .tr-content {
-    grid-template-rows: 1fr;
-    padding: 8px 0;
-}
-
 .open .tr-header svg,
 .open .ques-heading svg {
     transform: rotate(180deg);
 }
 
-.tr-content {
+/* .tr-content {
     display: grid;
-    transition: padding 0.25s ease-in-out, grid-template-rows 0.25s ease-in-out;
+    transition: all 0.2s cubic-bezier(0.7, 0, 0.3, 1);
     overflow: hidden;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
     grid-template-rows: 0;
     padding: 8px 0;
     padding-bottom: 0;
+}
+
+.td-open-content.open .tr-content {
+    grid-template-rows: 1fr;
+    padding: 8px 0;
+} */
+
+.tr-content {
+    display: grid;
+    transition: all 0.2s cubic-bezier(0.7, 0, 0.3, 1);
+    overflow: hidden;
+    padding: 8px 0;
+    padding-bottom: 0;
+    max-height: 0;
+    opacity: 0;
+}
+
+.td-open-content.open .tr-content {
+    opacity: 1;
+    max-height: 100%;
+    padding: 8px 0;
 }
 
 .main-td.notes {
