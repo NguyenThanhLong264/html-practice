@@ -84,12 +84,6 @@
         display: none;
     }
 
-    @supports (-webkit-touch-callout: none) {
-        .feature-m-col:last-child {
-            margin-right: 32px;
-        }
-    }
-
     .slick-track {
         opacity: 1;
         display: flex;
