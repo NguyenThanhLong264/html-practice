@@ -1632,7 +1632,16 @@ table svg,
     width: 100%;
 }
 
-.extend-header.open {
+.closed {
+    display: none;
+}
+
+#menu.open .m-nav-toggle-menu .opened {
+    display: none;
+}
+
+#menu.open .extend-header,
+#menu.open .m-nav-toggle-menu .closed {
     display: block;
 }
 
@@ -1663,6 +1672,7 @@ table svg,
 
 .las-item-wrapper {
     padding: 20px 16px;
+    gap: 8px;
 }
 
 .las-item-wrapper {
