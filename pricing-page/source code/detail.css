@@ -998,7 +998,7 @@ table svg,
     transition: all 100ms linear;
 }
 
-.open-td.open .tr-content {
+.td-open-content.open .tr-content {
     grid-template-rows: 1fr;
     padding: 8px 0;
 }

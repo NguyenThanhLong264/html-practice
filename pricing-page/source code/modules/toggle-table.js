@@ -2,7 +2,7 @@ function toggleTable() {
     const tableToggles = document.querySelectorAll('.tr-header');
     tableToggles.forEach(row => {
         row.addEventListener('click', () => {
-            const parentRow = row.closest('.open-td');
+            const parentRow = row.closest('.td-open-content');
             if (parentRow) {
                 parentRow.classList.toggle('open');
             }
