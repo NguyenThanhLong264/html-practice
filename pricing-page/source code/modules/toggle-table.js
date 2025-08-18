@@ -24,8 +24,16 @@ function toggleFaq() {
 
 function toggleMobileNav() {
     const toggleBtn = document.querySelector('.m-nav-toggle-menu');
+    const menu = document.getElementById('menu')
     toggleBtn.addEventListener('click', () => {
-        const menu = document.getElementById('menu')
         menu.classList.toggle('open')
     })
+
+    document.addEventListener('click', (e) => {
+        if (menu.classList.contains('open')
+            && !menu.contains(e.target)
+            && !toggleBtn.contains(e.target)) {
+            menu.classList.remove('open');
+        }
+    });
 }

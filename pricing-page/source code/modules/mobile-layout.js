@@ -13,7 +13,6 @@ function applyResponsiveLayout() {
         highlightPopularColumn(2);
     }
     toggleTable();
-    displayForm();
 }
 
 window.addEventListener('load', () => {
@@ -24,6 +23,7 @@ window.addEventListener('load', () => {
     setupOverlay();
     toggleFaq();
     toggleMobileNav();
+    displayForm();
 });
 
 window.addEventListener('resize', () => {
