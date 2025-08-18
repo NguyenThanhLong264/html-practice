@@ -72,8 +72,7 @@
         /* display: block; */
         margin: 0;
         /* padding: 0 32px; */
-        scroll-padding-left: 32px;
-        scroll-padding-right: 32px;
+        scroll-padding: 0 24px;
 
         overflow-x: auto;
         scroll-snap-type: x mandatory;
@@ -98,7 +97,7 @@
     .feature-m-col {
         padding: 0;
         margin: 0;
-        width: calc(100vw - 64px);
+        width: calc(100vw - 48px);
         min-height: 100%;
         scroll-snap-align: center;
         scroll-snap-stop: always;
