@@ -1,16 +1,24 @@
+let lastWidth = window.innerWidth;
+
 function applyResponsiveLayout() {
     const width = window.innerWidth;
+
+    if (width === lastWidth) {
+        return;
+    }
+    lastWidth = width;
 
     if (width < 768) {
         renderMobileLayout();
         mobileTable();
     } else {
-        renderLaptopLayout()
-        laptopTable()
+        renderLaptopLayout();
+        laptopTable();
         replaceIcon();
-        highlightMainHeader(1)
-        highlightPopularColumn(2)
+        highlightMainHeader(1);
+        highlightPopularColumn(2);
     }
+
     toggleTable();
     displayForm();
 }
