@@ -2,12 +2,6 @@ let lastWidth = window.innerWidth;
 
 function applyResponsiveLayout() {
     const width = window.innerWidth;
-
-    if (width === lastWidth) {
-        return;
-    }
-    lastWidth = width;
-
     if (width < 768) {
         renderMobileLayout();
         mobileTable();
@@ -18,7 +12,6 @@ function applyResponsiveLayout() {
         highlightMainHeader(1);
         highlightPopularColumn(2);
     }
-
     toggleTable();
     displayForm();
 }
@@ -33,4 +26,10 @@ window.addEventListener('load', () => {
     toggleMobileNav();
 });
 
-window.addEventListener('resize', applyResponsiveLayout);
+window.addEventListener('resize', () => {
+    const width = window.innerWidth;
+    if (width !== lastWidth) {
+        lastWidth = width;
+        applyResponsiveLayout();
+    }
+});
