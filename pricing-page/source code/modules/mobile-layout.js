@@ -11,6 +11,7 @@ function applyResponsiveLayout() {
         highlightMainHeader(1)
         highlightPopularColumn(2)
     }
+    displayForm();
     toggleTable();
 }
 
@@ -19,7 +20,6 @@ window.addEventListener('load', () => {
     displayAddOns();
     logo();
     displayFaq();
-    displayForm();
     setupOverlay();
     toggleFaq();
     toggleMobileNav();
