@@ -16,8 +16,8 @@ function applyResponsiveLayout(mode) {
 }
 
 window.addEventListener('load', () => {
-    applyResponsiveLayout(lastMode);
     displayAddOns();
+    applyResponsiveLayout(lastMode);
     logo();
     displayFaq();
     setupOverlay();

@@ -31,7 +31,7 @@ function displayAddOns() {
                     </svg>
                 </div>
                 <div class="li-content">
-                    <a href="#" class="li-a">
+                    <div class="li-a">
                         <span class="">
                             <span class="li-text">
                                 ${fea.title}
@@ -43,7 +43,7 @@ function displayAddOns() {
                                 </path>
                             </svg>
                         </span>
-                    </a>
+                    </div>
                 </div>
             </li>
             `).join('')}
