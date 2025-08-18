@@ -168,7 +168,7 @@ function displayForm() {
                 </div>
 `
     document.querySelectorAll('.openForm').forEach(button => {
-        button.addEventListener('click', () => {
+        button.onclick = () => {
             toggleOverlay();
 
             // Chỉ thêm nếu chưa tồn tại
@@ -221,6 +221,6 @@ function displayForm() {
                     });
                 });
             }
-        });
+        };
     });
 }
