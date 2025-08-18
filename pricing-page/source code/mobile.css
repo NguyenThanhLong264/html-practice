@@ -72,6 +72,7 @@
         display: block;
         margin: 0;
         padding: 0 32px;
+        scroll-padding: 0 32px;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
 
