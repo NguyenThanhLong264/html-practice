@@ -1569,12 +1569,15 @@ table svg,
 .mobile-header {
     display: block;
     background: var(--main-bg-color);
-    border-bottom: 1px solid rgba(222, 215, 202, 0.85);
     position: sticky;
     top: -1px;
     transition-property: transform;
     transition-duration: 0.5s;
     z-index: 10;
+}
+
+.mobile-nav {
+    border-bottom: 1px solid rgba(222, 215, 202, 0.85);
 }
 
 @media (max-width: 1119.98px) {
@@ -1621,4 +1624,59 @@ table svg,
 
 .mobile-header .sec-nav-flex .nav-btn-h>* {
     display: none;
+}
+
+.extend-header {
+    display: none;
+    position: absolute;
+    top: calc(100%);
+    background-color: var(--main-bg-color);
+    width: 100%;
+}
+
+.extend-header.open {
+    display: block;
+}
+
+.extend-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-link-item {
+    transition: all 0.3s;
+    border-bottom: 1px solid rgb(246, 240, 230);
+}
+
+.nav-link-item:last-of-type {
+    border-bottom: none;
+}
+
+.nav-link-item:hover {
+    cursor: pointer;
+    background-color: var(--sec-bg-color);
+}
+
+.nav-item-content {
+    padding: 20px 16px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.las-item-wrapper {
+    padding: 20px 16px;
+}
+
+.las-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.las-item-wrapper .primary-btn {
+    width: 100%;
+}
+
+.las-item-wrapper .click-link {
+    display: block;
 }

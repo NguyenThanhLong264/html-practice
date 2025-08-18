@@ -99,4 +99,8 @@
         text-underline-offset: 4px;
         border-bottom: 1px dotted rgb(22, 20, 12);
     }
+
+    .nav-item-content {
+        padding: 20px 24px;
+    }
 }

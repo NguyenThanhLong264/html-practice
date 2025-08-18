@@ -22,5 +22,6 @@ window.addEventListener('load', () => {
     displayForm();
     setupOverlay();
     toggleFaq();
+    toggleMobileNav();
 });
 window.addEventListener('resize', applyResponsiveLayout);

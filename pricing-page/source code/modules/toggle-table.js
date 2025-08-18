@@ -20,3 +20,11 @@ function toggleFaq() {
         });
     });
 }
+
+function toggleMobileNav() {
+    const toggleBtn = document.querySelector('.m-nav-toggle-menu');
+    toggleBtn.addEventListener('click', () => {
+        const menu = document.getElementById('menu')
+        menu.classList.toggle('open')
+    })
+}
