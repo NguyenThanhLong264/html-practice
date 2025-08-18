@@ -85,12 +85,8 @@
     }
 
     @supports (-webkit-touch-callout: none) {
-        .slick-list {
-            padding: 0 32px 0 32px;
-        }
-
         .feature-m-col:last-child {
-            padding-right: 32px;
+            margin-right: 32px;
         }
     }
 
