@@ -1024,11 +1024,9 @@ table svg,
     padding: 8px 0;
     padding-bottom: 0;
     max-height: 0;
-    opacity: 0;
 }
 
 .td-open-content.open .tr-content {
-    opacity: 1;
     max-height: 100%;
     padding: 8px 0;
 }

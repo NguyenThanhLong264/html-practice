@@ -12,7 +12,6 @@ function applyResponsiveLayout() {
         highlightPopularColumn(2)
     }
     displayForm();
-    toggleTable();
 }
 
 window.addEventListener('load', () => {
@@ -23,5 +22,6 @@ window.addEventListener('load', () => {
     setupOverlay();
     toggleFaq();
     toggleMobileNav();
+    toggleTable();
 });
 window.addEventListener('resize', applyResponsiveLayout);

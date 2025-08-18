@@ -9,6 +9,7 @@ function toggleTable() {
         });
     });
 };
+
 function toggleFaq() {
     const faqToggles = document.querySelectorAll('.ques-heading');
     faqToggles.forEach(row => {
