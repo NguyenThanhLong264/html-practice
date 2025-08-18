@@ -978,11 +978,13 @@ table svg,
 
 .tr-header:hover {
     cursor: pointer;
-    background: color-mix(in srgb, var(--bg-hight-light-color) 95%, black);
+    /* background: color-mix(in srgb, var(--bg-hight-light-color) 95%, black); */
+    background-color: #dfd8cb;
 }
 
 .tr-header:focus-within {
-    outline: color-mix(in srgb, var(--bg-hight-light-color) 90%, black) solid 2px;
+    /* outline: color-mix(in srgb, var(--bg-hight-light-color) 90%, black) solid 2px; */
+    outline: #d4ccc1 solid 2px;
     outline-offset: 3px;
     box-shadow: var(--bg-hight-light-color) 0px 0px 0px 2px inset;
 }
@@ -1003,9 +1005,9 @@ table svg,
     transform: rotate(180deg);
 }
 
-/* .tr-content {
+.tr-content {
     display: grid;
-    transition: all 0.2s cubic-bezier(0.7, 0, 0.3, 1);
+    transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1);
     overflow: hidden;
     grid-template-rows: 0;
     padding: 8px 0;
@@ -1014,20 +1016,6 @@ table svg,
 
 .td-open-content.open .tr-content {
     grid-template-rows: 1fr;
-    padding: 8px 0;
-} */
-
-.tr-content {
-    display: grid;
-    transition: all 0.2s cubic-bezier(0.7, 0, 0.3, 1);
-    overflow: hidden;
-    padding: 8px 0;
-    padding-bottom: 0;
-    max-height: 0;
-}
-
-.td-open-content.open .tr-content {
-    max-height: 100%;
     padding: 8px 0;
 }
 
