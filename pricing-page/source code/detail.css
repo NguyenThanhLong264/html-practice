@@ -729,8 +729,8 @@
 }
 
 .cta-img {
-    flex: 0 1 400px;
-    max-width: 168px;
+    flex: 0 1 250px;
+    /* max-width: 168px; */
     padding: 8px 0px;
 }
 
@@ -746,10 +746,8 @@
 }
 
 .img-span {
-    height: 144px;
     display: block;
     line-height: 0;
-    display: inline-block;
     overflow: hidden;
     position: relative;
     max-width: 100%;
