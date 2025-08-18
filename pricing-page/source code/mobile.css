@@ -70,11 +70,17 @@
     .slick-list {
         position: relative;
         display: block;
-        margin: 0px;
-        padding: 0px 32px;
+        margin: 0;
+        padding: 0 32px;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
+
         scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .slick-list::-webkit-scrollbar {
+        display: none;
     }
 
     .slick-track {
