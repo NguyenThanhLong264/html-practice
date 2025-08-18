@@ -233,6 +233,7 @@
         flex-direction: column;
         text-align: start;
         gap: 8px;
+        margin: 0;
     }
 
     thead th {
