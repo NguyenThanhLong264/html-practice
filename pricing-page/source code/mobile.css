@@ -72,7 +72,7 @@
         display: block;
         margin: 0;
         padding: 0 32px;
-        scroll-padding: 0 32px;
+        /* scroll-padding: 0 32px; */
         overflow-x: auto;
         scroll-snap-type: x mandatory;
 
@@ -82,6 +82,16 @@
 
     .slick-list::-webkit-scrollbar {
         display: none;
+    }
+
+    @supports (-webkit-touch-callout: none) {
+        .slick-list {
+            padding: 0 32px 0 32px;
+        }
+
+        .feature-m-col:last-child {
+            padding-right: 32px;
+        }
     }
 
     .slick-track {
