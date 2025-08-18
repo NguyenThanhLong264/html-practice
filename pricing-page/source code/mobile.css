@@ -100,7 +100,9 @@
         /* flex: 0 0 100%; */
     }
 
-    .slick-track:last-child {}
+    .slick-track:last-child {
+        margin: 0 32px;
+    }
 
     .feature-m-col>div {
         height: 100%;
