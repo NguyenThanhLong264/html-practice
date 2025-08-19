@@ -1324,8 +1324,7 @@ table svg,
 .input-detail input {
     background: var(--sec-bg-color);
     border-radius: 12px;
-    border: none;
-    box-shadow: var(--bg-hight-light-color) 0px 0px 0px 1px inset;
+    border: 1px solid #ccc;
     font-size: 16px;
     line-height: 24px;
     min-height: 48px;
@@ -1335,13 +1334,13 @@ table svg,
     width: 100%;
     box-sizing: border-box;
     vertical-align: middle;
+    transition: all 0.2s ease;
 }
 
 .input-detail textarea {
     background: var(--sec-bg-color);
     border-radius: 12px;
-    border: none;
-    box-shadow: var(--bg-hight-light-color) 0px 0px 0px 1px inset;
+    border: 1px solid #ccc;
     font-size: 16px;
     line-height: 24px;
     min-height: 48px;
@@ -1356,24 +1355,22 @@ table svg,
 .input-detail input[data-input-stage='blank'],
 .input-detail input[data-input-stage='cons'],
 .input-detail textarea:invalid[data-touched="true"]:not(:focus) {
-    /* box-shadow: 0 0 0 2px inset rgb(184, 66, 66); */
-    border: 2px solid rgb(184, 66, 66);
-}
-
-.input-detail input:focus,
-.input-detail textarea:focus {
-    background: var(--main-bg-color);
-    color: var(--text-color);
-    /* box-shadow: var(--text-color) 0px 0px 0px 2px inset; */
-    border: 2px solid var(--text-color);
-    /* outline: var(--bg-hight-light-color) solid 2px;
-    outline-offset: 3px; */
+    border: 1px solid rgb(184, 66, 66);
 }
 
 .input-detail input:hover,
 .input-detail textarea:hover {
     cursor: pointer;
     background: var(--main-bg-color);
+    border-color: #999;
+}
+
+.input-detail input:focus,
+.input-detail textarea:focus {
+    color: var(--text-color);
+    background: var(--main-bg-color);
+    border: 1px solid var(--bg-hight-light-color);
+    box-shadow: 0 0 0 3px var(--bg-hight-light-color);
 }
 
 .input-icon {
@@ -1385,9 +1382,6 @@ table svg,
     top: 24px;
     transform: translateY(-50%);
     color: rgb(184, 66, 66);
-    /* right: 12px;
-    bottom: 5px;
-    top: unset; */
 }
 
 .input-warning {
