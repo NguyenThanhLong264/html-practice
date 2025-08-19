@@ -216,6 +216,11 @@
         max-width: 100%;
     }
 
+    .cta-img {
+        flex: 0 0 auto;
+        max-width: 60%;
+    }
+
     .cta-content {
         flex-wrap: wrap;
         text-align: center;
