@@ -267,27 +267,7 @@ formElements.forEach((inp) => {
         if (inp.dataset.initial === 'true') {
             inp.dataset.initial = 'false'
         }
-
-        const regexPattern = inp.dataset.regex
-        const regex = new RegExp(regexPattern)
-
-        const warnEl = inp.parentElement.querySelector('.warn-text')
-        if (inp.value.length === 0) {
-            inp.dataset.inputStage = 'blank'
-            if (warnEl) warnEl.textContent = inp.dataset.blankMess
-        }
-        else if (!regex.test(inp.value)) {
-            inp.dataset.inputStage = 'cons'
-            if (warnEl) warnEl.textContent = inp.dataset.consMess
-        }
-        else {
-            inp.dataset.inputStage = 'normal'
-        }
-    })
-
-    inp.addEventListener('input', () => {
-        if (inp.dataset.initial !== 'true') {
-
+        if (inp.dataset.req !== 'false') {
             const regexPattern = inp.dataset.regex
             const regex = new RegExp(regexPattern)
 
@@ -296,12 +276,34 @@ formElements.forEach((inp) => {
                 inp.dataset.inputStage = 'blank'
                 if (warnEl) warnEl.textContent = inp.dataset.blankMess
             }
-            else if (!regex.test(inp.value)) {
+            else if (!regex.test(inp.value) && regexPattern !== 'none') {
                 inp.dataset.inputStage = 'cons'
                 if (warnEl) warnEl.textContent = inp.dataset.consMess
             }
             else {
                 inp.dataset.inputStage = 'normal'
+            }
+        }
+    })
+
+    inp.addEventListener('input', () => {
+        if (inp.dataset.initial !== 'true') {
+            if (inp.dataset.req !== 'false') {
+                const regexPattern = inp.dataset.regex
+                const regex = new RegExp(regexPattern)
+
+                const warnEl = inp.parentElement.querySelector('.warn-text')
+                if (inp.value.length === 0) {
+                    inp.dataset.inputStage = 'blank'
+                    if (warnEl) warnEl.textContent = inp.dataset.blankMess
+                }
+                else if (!regex.test(inp.value) && regexPattern !== 'none') {
+                    inp.dataset.inputStage = 'cons'
+                    if (warnEl) warnEl.textContent = inp.dataset.consMess
+                }
+                else {
+                    inp.dataset.inputStage = 'normal'
+                }
             }
         }
     })
