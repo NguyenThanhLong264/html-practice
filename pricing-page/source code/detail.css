@@ -1766,11 +1766,3 @@ input[data-input-stage="cons"]~.input-icon {
 .close-submited:hover {
     background: #16a34a;
 }
-
-@supports (-webkit-overflow-scrolling: touch) {
-
-    input,
-    textarea {
-        outline: none;
-    }
-}
