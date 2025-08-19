@@ -101,6 +101,8 @@ function laptopTable() {
     });
 
     changeWidthByCols();
+    replaceIcon()
+    toggleTable();
 }
 
 function mobileTable() {
@@ -162,6 +164,7 @@ function mobileTable() {
         optionsDiv.style.display = 'none';
     });
     replaceIcon();
+    toggleTable();
 }
 
 function renderTableByIndex(index) {
