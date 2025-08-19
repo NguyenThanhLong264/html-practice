@@ -70,7 +70,7 @@
         position: relative;
         margin: 0;
         padding: 0 24px;
-        /* scroll-padding: 0 24px; */
+        scroll-padding: 0 24px;
 
         overflow-x: auto;
         scroll-snap-type: x mandatory;
