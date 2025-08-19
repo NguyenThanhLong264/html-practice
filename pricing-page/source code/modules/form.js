@@ -308,3 +308,56 @@ formElements.forEach((inp) => {
         }
     })
 })
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    Array.from(formElements).forEach(inp => {
+        inp.dataset.initial = 'false';
+        if (inp.dataset.initial !== 'true') {
+            if (inp.dataset.req !== 'false') {
+                const regexPattern = inp.dataset.regex
+                const regex = new RegExp(regexPattern)
+
+                const warnEl = inp.parentElement.querySelector('.warn-text')
+                if (inp.value.length === 0) {
+                    inp.dataset.inputStage = 'blank'
+                    if (warnEl) warnEl.textContent = inp.dataset.blankMess
+                }
+                else if (!regex.test(inp.value) && regexPattern !== 'none') {
+                    inp.dataset.inputStage = 'cons'
+                    if (warnEl) warnEl.textContent = inp.dataset.consMess
+                }
+                else {
+                    inp.dataset.inputStage = 'normal'
+                }
+            }
+        }
+    });
+
+    const isValid = Array.from(formElements).every(item => item.dataset.inputStage === 'normal');
+    if (!isValid) {
+        console.warn("Form chưa hợp lệ!");
+
+        const firstInvalid = Array.from(formElements).find(inp =>
+            inp.dataset.inputStage === 'blank' || inp.dataset.inputStage === 'cons'
+        );
+
+        if (firstInvalid) {
+            firstInvalid.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            firstInvalid.focus({ preventScroll: true });
+        }
+
+        return;
+    }
+
+    const data = {
+        name: form.name.value.trim(),
+        company: form.company.value.trim(),
+        email: form.email.value.trim(),
+        phone: form.phone.value.trim(),
+        message: form.message.value.trim(),
+        agree: form.agree.checked
+    };
+    console.log(data);
+})
