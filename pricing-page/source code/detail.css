@@ -1080,7 +1080,8 @@ table svg,
 }
 
 .ques-li {
-    border-top: 1px solid color-mix(in srgb, var(--bg-hight-light-color) 95%, black);
+    /* border-top: 1px solid color-mix(in srgb, var(--bg-hight-light-color) 95%, black); */
+    border-top: 1px solid #dfd8cb;
 }
 
 .ques-heading {
