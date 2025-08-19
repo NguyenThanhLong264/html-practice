@@ -765,7 +765,7 @@ img {
 }
 
 .cta-img img {
-    min-height: 150px;
+    /* min-height: 150px; */
     aspect-ratio: 1/1;
 }
 
@@ -1364,7 +1364,7 @@ table svg,
     background: var(--main-bg-color);
     border-color: #999;
 }
-
+F
 .input-detail input:focus,
 .input-detail textarea:focus {
     color: var(--text-color);
