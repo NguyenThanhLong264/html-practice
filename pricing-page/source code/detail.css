@@ -1240,6 +1240,18 @@ table svg,
     max-width: calc(100% - 16px);
 }
 
+.form-submited-wrapper {
+    /* display: block; */
+    display: none;
+    width: 500px;
+    position: fixed;
+    background-color: var(--main-bg-color);
+    min-height: 60px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 50px 20px;
+    max-height: calc(100% - 64px);
+    max-width: calc(100% - 16px);
+}
+
 .form-content {
     display: block;
     padding: 32px;
@@ -1700,4 +1712,49 @@ input[data-input-stage="cons"]~.input-icon {
 
 .las-item-wrapper .click-link {
     display: block;
+}
+
+/* Khung modal */
+.submited-content {
+    padding: 32px 24px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    animation: fadeInUp 0.35s ease;
+}
+
+.submited-content .icon {
+    color: #22c55e;
+    margin-bottom: 16px;
+    max-width: 48px;
+    max-height: 48px;
+}
+
+.submited-text.title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #111;
+}
+
+.submited-text {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+.close-submited {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #22c55e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.close-submited:hover {
+    background: #16a34a;
 }

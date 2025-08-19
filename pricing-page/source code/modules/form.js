@@ -12,8 +12,8 @@ function displayForm() {
 }
 
 const form = document.getElementById('contact-form')
+const submitModal = document.querySelector('.form-submited-wrapper')
 const formElements = form.querySelectorAll('input, textarea, select');
-
 // 👉 gom validate vào 1 hàm chung
 function validateInput(inp) {
     if (inp.dataset.req !== 'false') {
@@ -75,6 +75,8 @@ form.addEventListener('submit', (e) => {
         return;
     }
 
+    overlay.querySelector('.form-wrapper').style.display = 'none';
+    submitModal.style.display = 'block'
     const data = {
         name: form.name.value.trim(),
         company: form.company.value.trim(),
