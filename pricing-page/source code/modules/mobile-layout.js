@@ -20,7 +20,6 @@ window.addEventListener('load', () => {
     applyResponsiveLayout(lastMode);
     logo();
     displayFaq();
-    setupOverlay();
     toggleFaq();
     toggleMobileNav();
 });

@@ -374,6 +374,221 @@
             </div>
         </section>
         <div class="overlay">
+            <div class="form-wrapper">
+                <button class="close-btn" onclick="toggleOverlay()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16"
+                        aria-hidden="true">
+                        <path stroke="currentColor" stroke-linecap="round" d="M3 13L13 3m0 10L3 3"></path>
+                    </svg>
+                </button>
+                <div class="form-content">
+                    <form id="contact-form">
+                        <div class="form-title">
+                            <h3 class="form-title-text">Đăng ký tư vấn ngay</h3>
+                            <p class="normal-text">Chúng tôi sẵn sàng tư vấn giải pháp phù hợp nhất với mô hình hoạt
+                                động của doanh nghiệp bạn.
+                            </p>
+                        </div>
+                        <div class="form-input">
+                            <div class="input-wrapper lap-50">
+                                <div class="input-content">
+                                    <label class="input-label" for="name">Họ Tên</label>
+                                    <div class="input-detail">
+                                        <input type="text" id="name" name="name" data-input-stage="normal"
+                                            data-regex="^[A-Za-zÀ-ỹ\s]+$" data-req="true"
+                                            data-blank-mess="Vui lòng nhập trường này"
+                                            data-cons-mess="Vui lòng nhập tên" data-initial="true">
+                                        <div class="input-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" viewBox="0 0 16 16">
+                                                <path fill="currentColor" fill-rule="evenodd"
+                                                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m0 9.5a.5.5 0 0 1-.5-.5V4.5a.5.5 0 0 1 1 0V9a.5.5 0 0 1-.5.5m0 1A.75.75 0 1 1 8 12a.75.75 0 0 1 0-1.5"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="input-warning">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" viewBox="0 0 16 16">
+                                                <path fill="currentColor" fill-rule="evenodd"
+                                                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m0 9.5a.5.5 0 0 1-.5-.5V4.5a.5.5 0 0 1 1 0V9a.5.5 0 0 1-.5.5m0 1A.75.75 0 1 1 8 12a.75.75 0 0 1 0-1.5"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                            <span class="warn-text"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-wrapper lap-50">
+                                <div class="input-content">
+                                    <label class="input-label" for="company">Công ty/ Doanh nghiệp</label>
+                                    <div class="input-detail">
+                                        <input type="text" id="company" name="company" data-input-stage="normal"
+                                            data-regex="none" data-blank-mess="Vui lòng nhập trường này"
+                                            data-cons-mess="Sai điều kiện" data-initial="true">
+                                        <div class="input-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" viewBox="0 0 16 16">
+                                                <path fill="currentColor" fill-rule="evenodd"
+                                                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m0 9.5a.5.5 0 0 1-.5-.5V4.5a.5.5 0 0 1 1 0V9a.5.5 0 0 1-.5.5m0 1A.75.75 0 1 1 8 12a.75.75 0 0 1 0-1.5"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="input-warning">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" viewBox="0 0 16 16">
+                                                <path fill="currentColor" fill-rule="evenodd"
+                                                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m0 9.5a.5.5 0 0 1-.5-.5V4.5a.5.5 0 0 1 1 0V9a.5.5 0 0 1-.5.5m0 1A.75.75 0 1 1 8 12a.75.75 0 0 1 0-1.5"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                            <span class="warn-text"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-wrapper lap-50">
+                                <div class="input-content">
+                                    <label class="input-label" for="email">Email</label>
+                                    <div class="input-detail">
+                                        <input type="text" id="email" name="email" data-input-stage="normal"
+                                            data-regex="^[\w\.-]+@[\w\.-]+\.\w{2,}$" data-req="true"
+                                            data-blank-mess="Vui lòng nhập trường này"
+                                            data-cons-mess="Vui lòng nhập email hợp lệ" data-initial="true">
+                                        <div class="input-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" viewBox="0 0 16 16">
+                                                <path fill="currentColor" fill-rule="evenodd"
+                                                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m0 9.5a.5.5 0 0 1-.5-.5V4.5a.5.5 0 0 1 1 0V9a.5.5 0 0 1-.5.5m0 1A.75.75 0 1 1 8 12a.75.75 0 0 1 0-1.5"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="input-warning">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" viewBox="0 0 16 16">
+                                                <path fill="currentColor" fill-rule="evenodd"
+                                                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m0 9.5a.5.5 0 0 1-.5-.5V4.5a.5.5 0 0 1 1 0V9a.5.5 0 0 1-.5.5m0 1A.75.75 0 1 1 8 12a.75.75 0 0 1 0-1.5"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                            <span class="warn-text"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-wrapper lap-50">
+                                <div class="input-content">
+                                    <label class="input-label" for="phone">SĐT</label>
+                                    <div class="input-detail">
+                                        <input type="tel" id="phone" name="phone" data-input-stage="normal"
+                                            data-regex="^(0\d{9}|(\+84)\d{9})$" data-req="true"
+                                            data-blank-mess="Vui lòng nhập trường này"
+                                            data-cons-mess="Vui lòng nhập số điện thoại hợp lệ" data-initial="true">
+                                        <div class="input-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" viewBox="0 0 16 16">
+                                                <path fill="currentColor" fill-rule="evenodd"
+                                                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m0 9.5a.5.5 0 0 1-.5-.5V4.5a.5.5 0 0 1 1 0V9a.5.5 0 0 1-.5.5m0 1A.75.75 0 1 1 8 12a.75.75 0 0 1 0-1.5"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="input-warning">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" viewBox="0 0 16 16">
+                                                <path fill="currentColor" fill-rule="evenodd"
+                                                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m0 9.5a.5.5 0 0 1-.5-.5V4.5a.5.5 0 0 1 1 0V9a.5.5 0 0 1-.5.5m0 1A.75.75 0 1 1 8 12a.75.75 0 0 1 0-1.5"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                            <span class="warn-text"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-wrapper full">
+                                <div class="input-content">
+                                    <label class="input-label" for="message">Ghi chú</label>
+                                    <div class="input-detail">
+                                        <textarea type="text" id="message" name="message" data-input-stage="normal"
+                                            data-regex="^[A-Za-zÀ-ỹ\s]+$" data-req="false"
+                                            data-blank-mess="Vui lòng nhập trường này"
+                                            data-cons-mess="Vui lòng nhập tên" data-initial="true"></textarea>
+                                        <div class="input-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" viewBox="0 0 16 16">
+                                                <path fill="currentColor" fill-rule="evenodd"
+                                                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m0 9.5a.5.5 0 0 1-.5-.5V4.5a.5.5 0 0 1 1 0V9a.5.5 0 0 1-.5.5m0 1A.75.75 0 1 1 8 12a.75.75 0 0 1 0-1.5"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="input-warning">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" viewBox="0 0 16 16">
+                                                <path fill="currentColor" fill-rule="evenodd"
+                                                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m0 9.5a.5.5 0 0 1-.5-.5V4.5a.5.5 0 0 1 1 0V9a.5.5 0 0 1-.5.5m0 1A.75.75 0 1 1 8 12a.75.75 0 0 1 0-1.5"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                            <span class="warn-text"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-wrapper full">
+                                <div class="input-content">
+                                    <div class="check-box-wrapper">
+                                        <input type="checkbox" name="agree" id="agree">
+                                        <label class="normal-text" for="agree">Tôi đồng ý nhận thông tin tiếp thị về
+                                            sản
+                                            phẩm, dịch vụ và sự kiện của CareSoft. Tôi có thể hủy đăng ký bất cứ lúc
+                                            nào.</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-wrapper full">
+                                <div class="input-content">
+                                    <div class="normal-text">
+                                        Khi gửi thông tin cá nhân, tôi đồng ý để CareSoft thu thập, xử lý và lưu trữ
+                                        dữ
+                                        liệu của mình theo Chính sách quyền riêng tư của CareSoft.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-submit">
+                            <button class="primary-btn" type="submit" id="submitForm">
+                                <span class="btn-text-bg">
+                                    <span class="btn-span">
+                                        <span class="i-text">Contact Sales</span>
+                                        <span class="af-text">Contact Sales</span>
+                                    </span>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="form-submited-wrapper">
+                <button class="close-btn" onclick="toggleOverlay()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16"
+                        aria-hidden="true">
+                        <path stroke="currentColor" stroke-linecap="round" d="M3 13L13 3m0 10L3 3"></path>
+                    </svg>
+                </button>
+                <div class="submited-content">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2">
+                                <path
+                                    d="M3 12c0 -4.97 4.03 -9 9 -9c4.97 0 9 4.03 9 9c0 4.97 -4.03 9 -9 9c-4.97 0 -9 -4.03 -9 -9Z" />
+                                <path d="M8 12l3 3l5 -5" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="submited-text title">
+                        Đã gửi thông tin thành công
+                    </div>
+                    <div class="submited-text">Chúng tôi đã nhận được thông tin đăng ký tư vấn của bạn.</div>
+                    <div class="submited-text">Đội ngũ hỗ trợ sẽ liên hệ trong thời gian sớm nhất.</div>
+                    <button class="close-submited" onclick="toggleOverlay()">Đóng</button>
+                </div>
+            </div>
         </div>
     </main>
 
