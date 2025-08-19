@@ -1315,6 +1315,13 @@ table svg,
     position: relative;
 }
 
+input,
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 .input-detail input {
     background: var(--sec-bg-color);
     border-radius: 12px;
