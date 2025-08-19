@@ -1330,6 +1330,7 @@ textarea {
     font-size: 16px;
     line-height: 24px;
     min-height: 48px;
+    max-height: 48px;
     padding: 12px;
     color: var(--text-color);
     width: 100%;
@@ -1366,8 +1367,8 @@ textarea {
     color: var(--text-color);
     /* box-shadow: var(--text-color) 0px 0px 0px 2px inset; */
     border: 2px solid var(--text-color);
-    outline: var(--bg-hight-light-color) solid 2px;
-    outline-offset: 3px;
+    /* outline: var(--bg-hight-light-color) solid 2px;
+    outline-offset: 3px; */
 }
 
 .input-detail input:hover,
@@ -1771,6 +1772,5 @@ input[data-input-stage="cons"]~.input-icon {
     input,
     textarea {
         outline: none;
-        /* tắt outline trên iOS Safari */
     }
 }
