@@ -11,6 +11,7 @@ function toggleTable() {
 };
 
 function toggleFaq() {
+    console.log('Active');
     const faqToggles = document.querySelectorAll('.ques-heading');
     faqToggles.forEach(row => {
         row.addEventListener('click', () => {

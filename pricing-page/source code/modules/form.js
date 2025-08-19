@@ -246,19 +246,21 @@
 //     });
 // }
 
-const form = document.getElementById('contact-form')
-const formElements = form.querySelectorAll('input, textarea, select');
-const openFormBtns = document.querySelectorAll('.openForm')
-
-openFormBtns.forEach((btn) => {
-    btn.addEventListener('click', () => {
-        toggleOverlay()
-        const formWrapper = overlay.querySelector('.form-wrapper');
-        if (formWrapper) {
-            formWrapper.style.display = 'flex';
+function displayForm() {
+    const openFormBtns = document.querySelectorAll('.openForm')
+    openFormBtns.forEach((btn) => {
+        btn.onclick = () => {
+            toggleOverlay()
+            const formWrapper = overlay.querySelector('.form-wrapper');
+            if (formWrapper && formWrapper.style.display !== 'flex') {
+                formWrapper.style.display = 'flex';
+            }
         }
     })
-})
+}
+
+const form = document.getElementById('contact-form')
+const formElements = form.querySelectorAll('input, textarea, select');
 
 formElements.forEach((inp) => {
     inp.addEventListener('blur', () => {
@@ -269,9 +271,7 @@ formElements.forEach((inp) => {
         const regexPattern = inp.dataset.regex
         const regex = new RegExp(regexPattern)
 
-        // tìm element cảnh báo
         const warnEl = inp.parentElement.querySelector('.warn-text')
-
         if (inp.value.length === 0) {
             inp.dataset.inputStage = 'blank'
             if (warnEl) warnEl.textContent = inp.dataset.blankMess
@@ -282,6 +282,27 @@ formElements.forEach((inp) => {
         }
         else {
             inp.dataset.inputStage = 'normal'
+        }
+    })
+
+    inp.addEventListener('input', () => {
+        if (inp.dataset.initial !== 'true') {
+
+            const regexPattern = inp.dataset.regex
+            const regex = new RegExp(regexPattern)
+
+            const warnEl = inp.parentElement.querySelector('.warn-text')
+            if (inp.value.length === 0) {
+                inp.dataset.inputStage = 'blank'
+                if (warnEl) warnEl.textContent = inp.dataset.blankMess
+            }
+            else if (!regex.test(inp.value)) {
+                inp.dataset.inputStage = 'cons'
+                if (warnEl) warnEl.textContent = inp.dataset.consMess
+            }
+            else {
+                inp.dataset.inputStage = 'normal'
+            }
         }
     })
 })

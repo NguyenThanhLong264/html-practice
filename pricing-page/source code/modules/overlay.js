@@ -11,9 +11,9 @@ overlay.addEventListener('click', (e) => {
 
 function toggleOverlay() {
     overlay.classList.toggle('open');
-    // if (overlay.classList.contains('open')) {
-    //     document.body.classList.add('no-scroll');
-    // } else {
-    //     document.body.classList.remove('no-scroll');
-    // }
+    if (overlay.classList.contains('open')) {
+        document.body.classList.add('no-scroll');
+    } else {
+        document.body.classList.remove('no-scroll');
+    }
 }
