@@ -2,26 +2,19 @@ let lastMode = window.innerWidth < 768 ? 'mobile' : 'desktop';
 
 function applyResponsiveLayout(mode) {
     if (mode === 'mobile') {
-        renderMobileLayout();
+        featureMobileLayout();
         mobileTable();
     } else {
-        renderLaptopLayout();
+        featureDesktopLayout();
         laptopTable();
         replaceIcon();
         highlightMainHeader(1);
         highlightPopularColumn(2);
     }
-    toggleTable();
-    displayForm();
 }
 
 window.addEventListener('load', () => {
-    displayAddOns();
     applyResponsiveLayout(lastMode);
-    logo();
-    displayFaq();
-    toggleFaq();
-    toggleMobileNav();
 });
 
 window.addEventListener('resize', () => {
