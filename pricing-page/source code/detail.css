@@ -1356,14 +1356,16 @@ textarea {
 .input-detail input[data-input-stage='blank'],
 .input-detail input[data-input-stage='cons'],
 .input-detail textarea:invalid[data-touched="true"]:not(:focus) {
-    box-shadow: 0 0 0 2px inset rgb(184, 66, 66);
+    /* box-shadow: 0 0 0 2px inset rgb(184, 66, 66); */
+    border: 2px solid rgb(184, 66, 66);
 }
 
 .input-detail input:focus,
 .input-detail textarea:focus {
     background: var(--main-bg-color);
     color: var(--text-color);
-    box-shadow: var(--text-color) 0px 0px 0px 2px inset;
+    /* box-shadow: var(--text-color) 0px 0px 0px 2px inset; */
+    border: 2px solid var(--text-color);
     outline: var(--bg-hight-light-color) solid 2px;
     outline-offset: 3px;
 }
