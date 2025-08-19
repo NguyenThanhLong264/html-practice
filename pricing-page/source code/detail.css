@@ -1395,7 +1395,7 @@ table svg,
 .input-warning svg {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 8px;
+    /* margin-right: 8px; */
     height: 20px;
     margin-left: 0.25rem;
     width: 20px;
@@ -1714,12 +1714,10 @@ input[data-input-stage="cons"]~.input-icon {
     display: block;
 }
 
-/* Khung modal */
 .submited-content {
     padding: 32px 24px;
     text-align: center;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    animation: fadeInUp 0.35s ease;
 }
 
 .submited-content .icon {
@@ -1733,7 +1731,7 @@ input[data-input-stage="cons"]~.input-icon {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 8px;
-    color: #111;
+    color: var(--text-color);
 }
 
 .submited-text {
@@ -1752,7 +1750,7 @@ input[data-input-stage="cons"]~.input-icon {
     font-size: 15px;
     font-weight: 500;
     cursor: pointer;
-    transition: background 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 .close-submited:hover {
