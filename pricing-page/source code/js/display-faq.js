@@ -1,11 +1,11 @@
 const faqSection = document.querySelector('.ques-section')
 
-function displayFaq() {
-    questions.forEach((question, i) => {
-        const wrapper = document.createElement('div');
-        wrapper.classList.add('ques-sec-wrapper');
+// function displayFaq() {
+questions.forEach((question, i) => {
+    const wrapper = document.createElement('div');
+    wrapper.classList.add('ques-sec-wrapper');
 
-        wrapper.innerHTML = `
+    wrapper.innerHTML = `
             <h3 class="small-title">${question.topic}</h3>
             <div class="ques-li-wrapper">
                 ${question.questions.map(ques => `
@@ -31,6 +31,6 @@ function displayFaq() {
             </div>
         `;
 
-        faqSection.appendChild(wrapper);
-    });
-}
+    faqSection.appendChild(wrapper);
+});
+// }

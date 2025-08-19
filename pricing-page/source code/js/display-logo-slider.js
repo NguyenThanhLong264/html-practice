@@ -4,24 +4,24 @@ const imgList = [];
 
 let loadedCount = 0;
 
-function logo() {
-    imageNames.forEach(name => {
-        const img = new Image();
-        img.src = `img/logos/${name}`;
-        img.alt = name;
+// function logo() {
+imageNames.forEach(name => {
+    const img = new Image();
+    img.src = `img/logos/${name}`;
+    img.alt = name;
 
-        img.onload = () => {
-            imgList.push(img.cloneNode());
-            loadedCount++;
-            checkDone();
-        };
+    img.onload = () => {
+        imgList.push(img.cloneNode());
+        loadedCount++;
+        checkDone();
+    };
 
-        img.onerror = () => {
-            loadedCount++;
-            checkDone();
-        };
-    });
-}
+    img.onerror = () => {
+        loadedCount++;
+        checkDone();
+    };
+});
+// }
 function checkDone() {
     if (loadedCount === imageNames.length) {
         finalizeSlider();

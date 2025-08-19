@@ -7,10 +7,10 @@ function applyResponsiveLayout(mode) {
     } else {
         featureDesktopLayout();
         laptopTable();
-        replaceIcon();
         highlightMainHeader(1);
         highlightPopularColumn(2);
     }
+    displayForm()
 }
 
 window.addEventListener('load', () => {
