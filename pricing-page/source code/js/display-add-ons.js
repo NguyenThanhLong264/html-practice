@@ -2,18 +2,18 @@ const planSection = document.querySelector('.plans')
 const planContainer = planSection.querySelector('.container')
 
 
-function displayAddOns() {
-    const addOnsArray = []
-    document.querySelectorAll('part-wrapper', 'add-ons').innerHTML = "";
-    add_ons.forEach((addOn, addOnIndex) => {
-        const addOnWrapper = document.createElement('div')
-        addOnWrapper.classList.add('add-on-wrapper')
-        const addOnCard = document.createElement('div');
-        addOnCard.classList.add('add-on-card');
+// function displayAddOns() {
+const addOnsArray = []
+document.querySelectorAll('part-wrapper', 'add-ons').innerHTML = "";
+add_ons.forEach((addOn, addOnIndex) => {
+    const addOnWrapper = document.createElement('div')
+    addOnWrapper.classList.add('add-on-wrapper')
+    const addOnCard = document.createElement('div');
+    addOnCard.classList.add('add-on-card');
 
-        addOnWrapper.appendChild(addOnCard);
+    addOnWrapper.appendChild(addOnCard);
 
-        addOnCard.innerHTML = `
+    addOnCard.innerHTML = `
         <span class="tag">
             <span class="tag-text">${addOn.isNew}</span>
         </span>
@@ -58,28 +58,28 @@ function displayAddOns() {
             </span>
         </button>
 `
-        addOnsArray.push(addOnWrapper)
-    })
+    addOnsArray.push(addOnWrapper)
+})
 
-    addOnsArray.forEach((addOn, index) => {
-        if (index % 2 === 0) {
-            const partWrapper = document.createElement('div');
-            partWrapper.classList.add('part-wrapper', 'add-ons');
+addOnsArray.forEach((addOn, index) => {
+    if (index % 2 === 0) {
+        const partWrapper = document.createElement('div');
+        partWrapper.classList.add('part-wrapper', 'add-ons');
 
 
-            partWrapper.appendChild(addOnsArray[index]);
+        partWrapper.appendChild(addOnsArray[index]);
 
-            if (addOnsArray[index + 1]) {
-                partWrapper.appendChild(addOnsArray[index + 1]);
-            }
-
-            const lastChild = planContainer.lastElementChild;
-
-            if (lastChild && lastChild.classList.contains('part-wrapper') && lastChild.classList.contains('cta')) {
-                planContainer.insertBefore(partWrapper, lastChild);
-            } else {
-                planContainer.appendChild(partWrapper);
-            }
+        if (addOnsArray[index + 1]) {
+            partWrapper.appendChild(addOnsArray[index + 1]);
         }
-    });
-}
+
+        const lastChild = planContainer.lastElementChild;
+
+        if (lastChild && lastChild.classList.contains('part-wrapper') && lastChild.classList.contains('cta')) {
+            planContainer.insertBefore(partWrapper, lastChild);
+        } else {
+            planContainer.appendChild(partWrapper);
+        }
+    }
+});
+// }

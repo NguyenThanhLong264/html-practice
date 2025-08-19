@@ -1,15 +1,11 @@
-const featuresArea = document.querySelector('.plan-content-wrapper')
+const featuresArea = document.getElementById('features')
 
-function renderLaptopLayout() {
+function featureDesktopLayout() {
     featuresArea.innerHTML = ``;
-    const featureContent = document.createElement('div');
-    featureContent.className = 'feature-content card';
-
     const contentFlex = document.createElement('div');
-    contentFlex.className = 'content-flex';
+    contentFlex.className = 'content-flex card';
 
-    featureContent.appendChild(contentFlex);
-    featuresArea.appendChild(featureContent);
+    featuresArea.appendChild(contentFlex);
 
     // Render từng feature-col
     features.forEach((fea) => {
@@ -88,37 +84,13 @@ function renderLaptopLayout() {
             el.style.minHeight = `${maxHeight}px`;
         }
     });
-
-    featuresArea.innerHTML += `
-<div class="feature-btn">
-                    <a href="#table-plans" class="primary-btn">
-                        <span class="btn-text-bg">
-                            <span class="btn-span">
-                                <span class="i-text">Chi tiết tính năng</span>
-                                <span class="af-text">Chi tiết tính năng</span>
-                            </span>
-                        </span>
-                    </a>
-                </div>`
 }
 
-function renderMobileLayout() {
+function featureMobileLayout() {
     featuresArea.innerHTML = `
         <div class="feature-wrapper">
             <div class="feature-p-wrapper">
-                <div class="feature-content">
-                    <div class="feature-m-content">
-                    </div>
-                </div>
-                <div class="feature-btn">
-                    <a href="#table-plans" class="primary-btn">
-                        <span class="btn-text-bg">
-                            <span class="btn-span">
-                                <span class="i-text">Chi tiết tính năng</span>
-                                <span class="af-text">Chi tiết tính năng</span>
-                            </span>
-                        </span>
-                    </a>
+                <div class="feature-m-content">
                 </div>
             </div>
         </div>
@@ -264,10 +236,9 @@ function renderMobileLayout() {
         });
         featureLi.innerHTML = liContents[index];
 
-        // Đặt lại sau một khoảng delay nhỏ để tránh loop scroll
         setTimeout(() => {
             isAutoScrolling = false;
-        }, 500); // hoặc bằng duration của smooth scroll (tuỳ chỉnh)
+        }, 500);
     };
 
     updateView(currentIndex);
@@ -291,7 +262,7 @@ function renderMobileLayout() {
     });
 
     slickList.addEventListener('scroll', () => {
-        if (isAutoScrolling) return; // ⛔ Không xử lý scroll khi đang auto scroll
+        if (isAutoScrolling) return;
 
         const scrollLeft = slickList.scrollLeft;
         const containerWidth = slickList.clientWidth;
