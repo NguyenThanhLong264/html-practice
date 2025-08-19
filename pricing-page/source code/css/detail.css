@@ -1364,7 +1364,7 @@ table svg,
     background: var(--main-bg-color);
     border-color: #999;
 }
-F
+
 .input-detail input:focus,
 .input-detail textarea:focus {
     color: var(--text-color);

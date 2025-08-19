@@ -16,7 +16,7 @@ function featureDesktopLayout() {
         ${fea.marked ? '<span class="marker" ><span class="marker-text">Most popular</span></span >' : ''}
             <div class="col-wrapper">
                 <div class="col-content">
-                    <div>
+                    <div class='col-flex-stretch'>
                         <h4 class="col-title">${fea.title}</h4>
                         <p class="col-sub-title">${fea.description}</p>
                         <div>

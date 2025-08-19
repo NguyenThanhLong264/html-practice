@@ -332,4 +332,8 @@
     .part-wrapper.add-ons>*:not(:first-child) {
         margin-top: 48px;
     }
+
+    .col-content {
+        height: 100%;
+    }
 }
