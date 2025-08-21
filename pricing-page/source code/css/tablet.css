@@ -1,4 +1,9 @@
 @media (min-width:768px) {
+
+    .plans .container {
+        max-width: 90%;
+    }
+
     section {
         padding-bottom: 64px;
         padding-top: 64px;
@@ -32,11 +37,14 @@
 
     .col-title {
         font-size: 22px;
+        min-height: 60px;
+        text-align: center;
     }
 
     .col-sub-title {
         min-height: 70px;
         margin-bottom: 16px;
+        text-align: justify;
     }
 
     .price {
