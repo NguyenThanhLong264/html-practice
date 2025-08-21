@@ -9,6 +9,10 @@
     overflow-x: hidden;
 }
 
+/* .plans .container {
+    max-width: 90%;
+} */
+
 .test {
     background-color: var(--sec-bg-color);
 }

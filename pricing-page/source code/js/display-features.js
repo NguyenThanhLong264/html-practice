@@ -13,7 +13,7 @@ function featureDesktopLayout() {
         featureCol.className = 'feature-col';
 
         featureCol.innerHTML = `
-        ${fea.marked ? '<span class="marker" ><span class="marker-text">Most popular</span></span >' : ''}
+        ${fea.marked ? '<span class="marker" ><span class="marker-text">Khuyên dùng</span></span >' : ''}
             <div class="col-wrapper">
                 <div class="col-content">
                     <div class='col-flex-stretch'>
