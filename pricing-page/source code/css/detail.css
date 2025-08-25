@@ -1759,3 +1759,70 @@ input[data-input-stage="cons"]~.input-icon {
 .close-submited:hover {
     background: #16a34a;
 }
+
+.flyout-menu {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    position: absolute;
+    top: 100%;
+    top: calc(100% + 1px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1120px;
+    min-height: 50px;
+    z-index: 20;
+    background-color: var(--sec-bg-color);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 16px 24px;
+    border-radius: 0 0 12px 12px;
+}
+
+.hover-menu:hover .flyout-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.flyout-wrapper {
+    padding: 24px 36px;
+}
+
+.flyout-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-list {
+    flex: 0 0 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.product-content {
+    flex: 1 0 auto;
+}
+
+.list-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    /* border: 1px solid black; */
+    border-radius: 8px;
+    padding: 8px;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.list-item:hover {
+    cursor: pointer;
+    background-color: var(--bg-hight-light-color);
+}
+
+.list-item .icon {
+    margin: 0;
+    width: 18px;
+    height: 18px;
+}

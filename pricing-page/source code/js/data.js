@@ -8,7 +8,7 @@ const features = [
         buy_btn_text: 'Mua ngay',
         key_feature: 'Key feature',
         keys: [
-            { title: 'Tích hợp kênh thoại và email', tag: 'Mới', description: 'Các ticket được tạo từ các nguồn sẽ được tự động chia việc cho nhân viên. Các agent, phòng ban có thể luân chuyển ticket cho nhau để cùng xử lý 1 công việc.Báo cáo chi tiết ticket: thời gian phản hồi lần đầu, thời gian xử lý trung bình, báo cáo chi tiết theo nội dung', imgUrl: 'assets/imgs/gg-logo.png' },
+            { title: 'Tích hợp kênh thoại và email', description: 'Các ticket được tạo từ các nguồn sẽ được tự động chia việc cho nhân viên. Các agent, phòng ban có thể luân chuyển ticket cho nhau để cùng xử lý 1 công việc.Báo cáo chi tiết ticket: thời gian phản hồi lần đầu, thời gian xử lý trung bình, báo cáo chi tiết theo nội dung', imgUrl: 'assets/imgs/gg-logo.png' },
             { title: 'Quản lý thông tin khách hàng - customer 360°', description: 'Nothing', },
             { title: 'Quản lý phiếu ghi', description: 'Nothing' },
             { title: 'Khảo sát khách hàng', description: 'Nothing' },
@@ -21,26 +21,6 @@ const features = [
         marked: false
     },
     {
-        title: 'Contact Center',
-        description: 'Giải pháp đa kênh tối ưu cho doanh nghiệp xây dựng trung tâm chăm sóc khách hàng chuyên nghiệp, tập trung vào tiếp nhận, phản hồi tự động, phân phối, giám sát và phân tích tương tác để nâng cao trải nghiệm và hiệu quả vận hành.',
-        price: '800.000 VNĐ',
-        price_tag: '/ user/ tháng',
-        buy_btn_link: '/',
-        buy_btn_text: 'Mua ngay',
-        key_feature: 'Key feature',
-        keys: [
-            { title: 'Tích hợp các kênh tương tác với khách hàng (customer engagement)', tag: 'Mới', description: 'Các ticket được tạo từ các nguồn sẽ được tự động chia việc cho nhân viên. Các agent, phòng ban có thể luân chuyển ticket cho nhau để cùng xử lý 1 công việc.Báo cáo chi tiết ticket: thời gian phản hồi lần đầu, thời gian xử lý trung bình, báo cáo chi tiết theo nội dung', imgUrl: 'assets/imgs/gg-logo.png' },
-            { title: 'Quản lý thông tin khách hàng - customer 360°', description: 'Nothing', },
-            { title: 'Quản lý phiếu ghi', description: 'Nothing' },
-            { title: 'Khảo sát khách hàng', description: 'Nothing' },
-            { title: 'Quản lý chiến dịch (Campaign)', description: 'Nothing' },
-            { title: 'Tự động hóa quy trình (Workflow)', description: 'Nothing' },
-            { title: 'Cơ sở tri thức', description: 'Nothing' },
-            { title: 'Tính năng dashboard và báo cáo', description: 'Nothing' },
-            { title: 'Ứng dụng mobile', description: 'Nothing' }
-        ],
-        marked: true
-    }, {
         title: 'OMNI-Channel CRM',
         description: 'Giải pháp tích hợp toàn diện các kênh liên lạc và công cụ quản lý, thực thi, giám sát, tự động hóa và tối ưu hoạt động marketing, bán hàng và chăm sóc khách hàng trên cùng một nền tảng thống nhất.',
         price: '1.000.000 VNĐ',
@@ -56,14 +36,35 @@ const features = [
             { title: 'Phễu bán hàng', description: 'Nothing' },
             { title: 'Đo lường và tối ưu hiệu quả quảng cáo', description: 'Nothing' },
             { title: 'Khảo sát khách hàng', description: 'Nothing' },
-            { title: 'Bán hàng qua Facebook (Meta commerce)', description: 'Nothing' },
+            { title: 'Bán hàng qua Facebook (Meta commerce)', description: 'Nothing', tag: 'Mới' },
+            { title: 'Quản lý chiến dịch (Campaign)', description: 'Nothing', tag: 'Mới' },
+            { title: 'Tự động hóa quy trình (Workflow)', description: 'Nothing' },
+            { title: 'Tính năng dashboard và báo cáo', description: 'Nothing', tag: 'Mới' },
+            { title: 'Ứng dụng mobile', description: 'Nothing' }
+        ],
+        marked: true
+    },
+    {
+        title: 'OMNI-Channel Contact Center',
+        description: 'Giải pháp đa kênh tối ưu cho doanh nghiệp xây dựng trung tâm chăm sóc khách hàng chuyên nghiệp, tập trung vào tiếp nhận, phản hồi tự động, phân phối, giám sát và phân tích tương tác để nâng cao trải nghiệm và hiệu quả vận hành.',
+        price: '800.000 VNĐ',
+        price_tag: '/ user/ tháng',
+        buy_btn_link: '/',
+        buy_btn_text: 'Mua ngay',
+        key_feature: 'Key feature',
+        keys: [
+            { title: 'Tích hợp các kênh tương tác với khách hàng (customer engagement)', description: 'Các ticket được tạo từ các nguồn sẽ được tự động chia việc cho nhân viên. Các agent, phòng ban có thể luân chuyển ticket cho nhau để cùng xử lý 1 công việc.Báo cáo chi tiết ticket: thời gian phản hồi lần đầu, thời gian xử lý trung bình, báo cáo chi tiết theo nội dung', imgUrl: 'assets/imgs/gg-logo.png' },
+            { title: 'Quản lý thông tin khách hàng - customer 360°', description: 'Nothing', },
+            { title: 'Quản lý phiếu ghi', description: 'Nothing' },
+            { title: 'Khảo sát khách hàng', description: 'Nothing' },
             { title: 'Quản lý chiến dịch (Campaign)', description: 'Nothing' },
             { title: 'Tự động hóa quy trình (Workflow)', description: 'Nothing' },
+            { title: 'Cơ sở tri thức', description: 'Nothing' },
             { title: 'Tính năng dashboard và báo cáo', description: 'Nothing' },
             { title: 'Ứng dụng mobile', description: 'Nothing' }
         ],
         marked: false
-    }
+    },
 ]
 
 const add_ons = [
@@ -101,10 +102,10 @@ const add_ons = [
         isNew: 'Add-on',
         name: 'Smart Dialer',
         price: 'Liên hệ với chúng tôi để triển khai',
-        description: `Ứng dụng AI ở tất cả các giai đoạn, từ phản hồi khách hàng tự động, hỗ trợ chuyên viên đến đánh giá mức độ tiềm năng của khách hàng, đánh giá chất lượng dịch vụ chuyên viên và nhiều ứng dụng khác`,
+        description: `Tự động hóa việc quay số/ tự động thực hiện các cuộc gọi khảo sát, lấy xác nhận của khách hàng dựa trên kịch bản thiết lập sẵn nhằm tối ưu thời gian, nguồn lực của chuyên viên và không làm giảm trải nghiệm khách hàng.`,
         features: [
             { title: 'Tự động quay số (auto dialer)', description: 'Nothing', imgUrl: false },
-            { title: 'Tạo danh sách theo bộ lọc, quản lý danh sách blacklist, tạo dữ liệu qua API ', description: 'Nothing', imgUrl: false },
+            { title: 'Tạo danh sách theo bộ lọc, quản lý danh sách blacklist, tạo dữ liệu qua API', description: 'Nothing', imgUrl: false },
             { title: 'Tự động gọi (auto call)', description: 'Nothing', imgUrl: false },
             { title: 'Tự động đảo số, lựa chọn đầu số để tối ưu cước phí', description: 'Nothing', imgUrl: false },
         ],
@@ -161,6 +162,7 @@ const plans = [{
         ['Quản lý kho tri thức (KB)', true, true, true],
         ['Chấm điểm dịch vụ nội bộ', true, true, true],
         ['Quản lý quy trình tự động hóa nhắc việc, thông báo, gửi thông tin cho khách hàng', true, true, true],
+        ['Tự động chấm điểm chất lượng bằng AI', true, true, true],
     ]
 },
 {
@@ -253,6 +255,14 @@ const plans = [{
     rows: [
         ['Tạo tệp dữ liệu', true, true, true],
         ['Lọc và kết xuất dữ liệu', true, true, true],
+    ]
+},
+{
+    title: 'Công cụ workflow tự động',
+    rows: [
+        ['Thiết lập workflow bằng công cụ khai báo và kéo thả (no code)', true, true, true],
+        ['Tạo workflow từ các mẫu có sẵn', true, true, true],
+        ['Quản lý lịch sử hành động và hiệu suất của từng workflow ', true, true, true],
     ]
 },
 {
