@@ -7,8 +7,8 @@ function applyResponsiveLayout(mode) {
     } else {
         featureDesktopLayout();
         laptopTable();
-        highlightMainHeader(1);
-        highlightPopularColumn(2);
+        highlightMainHeader(2);
+        highlightPopularColumn(3);
     }
     displayForm()
 }

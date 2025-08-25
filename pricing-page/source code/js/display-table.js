@@ -1,4 +1,3 @@
-const mainTableRows = ['Call Center', 'Contact Center', 'Omni-Channel CRM']
 const mainTable = document.getElementById('main')
 
 const tableHead = document.createElement('thead');
@@ -13,9 +12,9 @@ function laptopTable() {
     mainBody.innerHTML = '';
     headRow.innerHTML = '';
     tableHead.classList.remove('mobile');
-    mainTableRows.forEach(text => {
+    mainTableRows.forEach(item => {
         const th = document.createElement('th');
-        th.innerHTML = `<p class="head-text">${text}</p>`
+        th.innerHTML = `<p key=${item.id} class="head-text">${item.title}</p>`
         headRow.appendChild(th);
     });
 

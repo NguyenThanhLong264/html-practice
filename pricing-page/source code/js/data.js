@@ -114,6 +114,12 @@ const add_ons = [
     },
 ];
 
+const mainTableRows = [
+    { id: "callcenter", title: "Call Center" },
+    { id: "contactcenter", title: "Contact Center" },
+    { id: "omnichannel", title: "Omni-Channel CRM" },
+]
+
 const plans = [{
     title: 'Tích hợp các kênh tương tác với khách hàng (customer engagement)',
     rows: [
@@ -130,7 +136,6 @@ const plans = [{
     ]
 },
 {
-    // title: null,
     title: 'Tính năng nâng cao của kênh chat',
     rows: [
         ['Chat bot', true, true, false],
@@ -214,7 +219,11 @@ const plans = [{
 {
     title: 'Tính năng trợ lý ảo AI',
     rows: [
-        ['Hỗ trợ chuyên viên bằng AI', true, false, false],
+        ['Gợi ý phản hồi khách hàng bằng AI', true, false, false],
+        ['Tóm tắt nội dung phiếu ghi bằng AI', true, false, false],
+        ['Phân loại phiếu ghi bằng AI', true, false, false],
+        ['Tra cứu thông tin bằng AI', true, false, false],
+        ['Hỗ trợ nâng cao: thực hiện các tác vụ tạo bộ lọc, tạo báo cáo, tạo workflow,..theo yêu cầu bằng AI (Coming soon)', true, false, false],
     ]
 },
 {
