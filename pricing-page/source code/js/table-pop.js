@@ -33,10 +33,10 @@ function highlightMainHeader(index) {
 
     const markerText = document.createElement('span');
     markerText.className = 'marker-text';
-    markerText.textContent = 'Most popular';
+    markerText.textContent = 'Khuyên dùng';
 
     marker.appendChild(markerText);
 
     th.appendChild(marker);
 }
-{/* < span class="marker" ><span class="marker-text">Most popular</span></span > */ }
+{/* < span class="marker" ><span class="marker-text">Khuyên dùng</span></span > */ }

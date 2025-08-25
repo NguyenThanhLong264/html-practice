@@ -292,37 +292,53 @@ const plans = [{
 
 const questions = [
     {
-        topic: 'Dịch vụ',
+        topic: 'Chi phí',
         questions: [
             {
-                ques: "Chi phí dịch vụ đã bao gồm những gì?",
-                ans: "Giá đã bao gồm hạ tầng cloud, bảo trì hệ thống và các tính năng cốt lõi. Bạn không cần đầu tư phần cứng hay tổng đài vật lý."
+                ques: "Sử dụng Caresoft, tôi có phải trả chi phí lưu trữ file ghi âm và các tài liệu đính kèm không?",
+                ans: "Không. Phí phần mềm Caresoft đã bao gồm chi phí lưu trữ dữ liệu (file ghi âm, tài liệu, hình ảnh đính kèm), chỉ có giới hạn về dung lượng từng file (25Mb) và thời gian lưu trữ (12 tháng)."
             },
             {
-                ques: "Tôi có thể nâng cấp hoặc hạ cấp gói bất cứ lúc nào không?",
-                ans: "Hoàn toàn được. Bạn có thể thay đổi gói dịch vụ bất kỳ lúc nào. Hệ thống sẽ tự động điều chỉnh chi phí theo chu kỳ sử dụng."
+                ques: "Dịch vụ triển khai của Caresoft gồm những hạng mục nào, thời gian triển khai trong bao lâu?",
+                ans: "Dịch vụ triển khai của Caresoft bao gồm các hoạt động tư vấn xây dựng quy trình nghiệp vụ tối ưu nhất cho doanh nghiệp trên hệ thống Caresoft, thiết lập hệ thống, đào tạo và chuyển giao. Tùy phạm vi nghiệp vụ và nhu cầu quản lý của doanh nghiệp, thời gian triển khai có thể kéo dài từ 1 tuần đến 3 tuần hoặc dài hơn để đảm bảo doanh nghiệp có thể khai thác được đầy đủ nhất các tính năng của Caresoft."
             },
             {
-                ques: "Có phát sinh chi phí khởi tạo hoặc triển khai không?",
-                ans: "Có. Mỗi khách hàng sẽ cần thanh toán một khoản phí triển khai một lần ban đầu để đội ngũ Caresoft tiến hành cấu hình hệ thống, tích hợp và đào tạo sử dụng. Mức phí cụ thể sẽ được báo giá tùy theo quy mô và yêu cầu của doanh nghiệp."
-            }
+                ques: "Caresoft có tăng giá dịch vụ khi tôi tiến hành gia hạn không?",
+                ans: "Không. Caresoft cam kết không tăng giá đối với các khách hàng đang sử dụng và tiếp tục gia hạn gói dịch vụ hiện tại. Khi có chính sách giá mới, Caresoft sẽ chỉ áp dụng cho khách hàng mới từ thời điểm ban hành."
+            },
+            {
+                ques: "Tôi có thể thiết kế gói dịch vụ gồm nhiều loại tài khoản khác nhau cho từng nhóm người dùng khác nhau không?",
+                ans: "Có. Caresoft cung cấp các gói dịch vụ linh hoạt, kết hợp nhiều loại tài khoản cho từng nhóm người dùng khác nhau để tối ưu chi phí cho doanh nghiệp."
+            },
+            {
+                ques: "Caresoft có thu các loại cước phí thoại, SMS không?",
+                ans: "Không. Caresoft không thực hiện thu cước phí Thoại và SMS brandname, khách hàng sẽ ký hợp đồng và thanh toán phí dịch vụ trực tiếp cho nhà cung cấp dịch vụ."
+            },
+            {
+                ques: "Caresoft có thu phí gửi tin nhắn Zalo không?",
+                ans: "Đối với cước gửi các tin nhắn mất phí của Zalo, khách hàng có 2 lựa chọn: thứ nhất là sử dụng ví Zalo mặc định mà Caresoft đăng ký với Zalo - trường hợp này khách hàng sẽ thanh toán cước phí cho Caresoft thông qua hình thức đối soát cuối kỳ, lựa chọn thứ 2 là khách hàng sử dụng ví của đối tác khác, Caresoft sẽ thực hiện tích hợp với đối tác mà khách hàng chỉ định với điều kiện đối tác hỗ trợ việc tích hợp này."
+            },
         ]
     },
     {
         topic: 'Kỹ thuật',
         questions: [
             {
-                ques: "Tôi có cần cài đặt phần mềm hay thiết bị gì không?",
-                ans: "Không cần. Caresoft hoạt động hoàn toàn trên nền tảng đám mây. Bạn chỉ cần trình duyệt và kết nối Internet để sử dụng."
+                ques: "Khi sử dụng Caresoft, người dùng có phải cài đặt phần mềm lên máy tính không?",
+                ans: "Không. Caresoft hoạt động trên nền tảng web, khi sử dụng Caresoft trên máy tính, người dùng chỉ cần có kết nối Internet và trình duyệt web."
             },
             {
-                ques: "Caresoft hỗ trợ những kênh tương tác nào?",
-                ans: "Hệ thống hỗ trợ gọi điện (Call Center), live chat, email, Facebook, Zalo, SMS và nhiều kênh khác – tích hợp trên một nền tảng duy nhất."
+                ques: "Tôi có cần thể sử dụng Caresoft trên điện thoại không?",
+                ans: "Có. Bạn có thể tải ứng dụng Caresoft từ kho ứng dụng của Apple và Google và sử dụng song song với trình duyệt web. Dữ liệu cập nhật từ ứng dụng mobile được cập nhật và đồng bộ tức thời."
             },
             {
-                ques: "Có thể tích hợp Caresoft với CRM/ERP không?",
-                ans: "Có. Caresoft hỗ trợ tích hợp linh hoạt qua API, cũng như các kết nối sẵn với nhiều hệ thống CRM, ERP, eCommerce phổ biến."
-            }
+                ques: "Tôi có thể sử dụng máy điện thoại IP để bàn để nghe gọi cho khách hàng không?",
+                ans: "Có. Bạn có thể thiết lập máy điện thoại IP phone để nghe gọi. Ngoài ra bạn cũng có thể sử dụng tai nghe và micro kết nối trực tiếp với máy tính hoặc điện thoại di động có cài ứng dụng Caresoft."
+            },
+            {
+                ques: "Việc tích hợp Caresoft với các phần mềm quản trị doanh nghiệp khác có phức tạp không? ",
+                ans: "Khi bạn quyết định sử dụng Caresoft, đội ngũ tư vấn triển khai của Caresoft sẽ cùng bạn thiết kế luồng tích hợp dữ liệu tối ưu nhất. Caresoft cung cấp đẩy đủ các API và các phương thức tích hợp để kết nối với các phần mềm ERP, POS phổ biến hiện nay."
+            },
         ]
     },
     {
@@ -330,18 +346,18 @@ const questions = [
         questions: [
             {
                 ques: "Caresoft có hỗ trợ kỹ thuật trong quá trình sử dụng không?",
-                ans: "Có. Chúng tôi cung cấp hỗ trợ kỹ thuật 24/7 qua hotline, email và live chat. Các gói nâng cao có CSKH riêng đồng hành cùng doanh nghiệp."
+                ans: "Có. Chúng tôi cung cấp hỗ trợ kỹ thuật 24/7 qua hotline, email và live chat để hỗ trợ trực tiếp cho tất cả người dùng, đảm bảo SLA cam kết."
             },
             {
                 ques: "Nếu tôi ngừng sử dụng thì dữ liệu có bị mất không?",
                 ans: "Không. Dữ liệu của bạn sẽ được lưu trữ an toàn trong vòng 30 ngày sau khi hủy dịch vụ, và bạn có thể xuất hoặc khôi phục trong thời gian đó."
             },
             {
-                ques: "Hệ thống có đảm bảo ổn định không?",
-                ans: "Có. Caresoft cam kết uptime 99%, có hệ thống giám sát và sao lưu liên tục để đảm bảo hoạt động không gián đoạn."
+                ques: "Hệ thống Caresoft có đảm bảo tính ổn định không?",
+                ans: "Có. Caresoft cam kết thời gian hoạt động 99%, có hệ thống giám sát và sao lưu liên tục để đảm bảo hoạt động không gián đoạn."
             },
             {
-                ques: 'Bạn có câu hỏi?',
+                ques: 'Bạn có câu hỏi khác?',
                 ans: "Hãy liên hệ chúng tôi ngay!"
             }
         ]
